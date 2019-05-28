@@ -14,7 +14,7 @@ class Player
 	int guessp;
 	int guesspNum()
 	{
-	System.out.println("player please input the number");
+	System.out.println("player please guess the number");
 	Scanner guess=new Scanner(System.in);
 	guessp=guess.nextInt();
 	return guessp;
@@ -22,16 +22,16 @@ class Player
 }
 class Umpire
 {
-		int p1n,p2n,p3n;//players number
-		int gn;//guesser number
+		int p1n,p2n,p3n;                   //players number
+		int gn;                           //guesser number
 	      void collect_Num_From_Guesser()
 		  {
-		   Guesser g=new Guesser();  //Guesser object created
+		   Guesser g=new Guesser();      //Guesser object created
 		   gn=g.guessNum();
 		  }
 	void collect_Num_From_Player()
 	{
-     Player p1=new Player();   //player one object created
+     Player p1=new Player();
 	 p1n=p1.guesspNum();
 	 Player p2=new Player();
 	 p2n=p2.guesspNum();
@@ -40,14 +40,24 @@ class Umpire
 	}
 	void Compare()
 	{
+		int v=0;
 		if (gn==p1n)
+		{
 			System.out.println("player1 wins");
-		else if(gn==p2n)
+			v++;
+		}
+		if(gn==p2n)
+		{
 			System.out.println("Player2 wins");
-		else if(gn==p3n)
+			v++;
+		}
+		if(gn==p3n)
+		{
 			System.out.println("player3 wins");
-		else
-			System.out.println("all loosses");
+		    v++;
+		}
+		if(v==0)
+			System.out.println("no one wins");
 	}
 }
 class GuesserGame
