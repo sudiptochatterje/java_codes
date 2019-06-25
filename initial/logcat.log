@@ -1,0 +1,1840 @@
+--------- beginning of main
+06-04 04:42:18.848 W/auditd  (  461): type=2000 audit(0.0:1): initialized
+06-04 04:42:22.083 I/auditd  (  461): type=1403 audit(0.0:2): policy loaded auid=4294967295 ses=4294967295
+06-04 04:42:22.190 I/init    (  428): type=1400 audit(0.0:3): avc: denied { write } for uid=0 name="/" dev="rootfs" ino=2 scontext=u:r:vendor_init:s0 tcontext=u:object_r:rootfs:s0 tclass=dir permissive=1
+06-04 04:42:22.190 I/init    (  428): type=1400 audit(0.0:4): avc: denied { add_name } for uid=0 name="tombstones" scontext=u:r:vendor_init:s0 tcontext=u:object_r:rootfs:s0 tclass=dir permissive=1
+06-04 04:42:22.190 I/init    (  428): type=1400 audit(0.0:5): avc: denied { create } for uid=0 name="firmware" scontext=u:r:vendor_init:s0 tcontext=u:object_r:firmware_file:s0 tclass=lnk_file permissive=1
+06-04 04:42:22.190 I/init    (  428): type=1400 audit(0.0:6): avc: denied { create } for uid=0 name="dsp" scontext=u:r:vendor_init:s0 tcontext=u:object_r:adsprpcd_file:s0 tclass=lnk_file permissive=1
+06-04 04:42:23.450 I/init    (  428): type=1400 audit(0.0:7): avc: denied { create } for uid=0 name="schedtune.prefer_idle" scontext=u:r:vendor_init:s0 tcontext=u:object_r:device:s0 tclass=file permissive=1
+06-04 04:42:23.450 I/init    (  428): type=1400 audit(0.0:8): avc: denied { write } for uid=0 path="/dev/stune/foreground/schedtune.prefer_idle" dev="tmpfs" ino=8000 scontext=u:r:vendor_init:s0 tcontext=u:object_r:device:s0 tclass=file permissive=1
+06-04 04:42:23.793 I/e2fsck  (  458): type=1400 audit(0.0:9): avc: denied { read } for uid=0 name="mmcblk0p30" dev="tmpfs" ino=16030 scontext=u:r:fsck:s0 tcontext=u:object_r:block_device:s0 tclass=blk_file permissive=1
+06-04 04:42:23.793 I/e2fsck  (  458): type=1400 audit(0.0:10): avc: denied { open } for uid=0 path="/dev/block/mmcblk0p30" dev="tmpfs" ino=16030 scontext=u:r:fsck:s0 tcontext=u:object_r:block_device:s0 tclass=blk_file permissive=1
+06-04 04:42:23.917 I/SELinux (  464): SELinux: Loaded service_contexts from:
+06-04 04:42:23.918 I/SELinux (  464):     /vendor/etc/selinux/vndservice_contexts
+--------- beginning of system
+06-04 04:42:24.040 I/vold    (  473): Vold 3.0 (the awakening) firing up
+06-04 04:42:24.041 V/vold    (  473): Detected support for: exfat ext4 f2fs ntfs vfat
+06-04 04:42:24.046 W/vold    (  473): Failed to LOOP_GET_STATUS64 /dev/block/loop1: No such device or address
+06-04 04:42:24.046 W/vold    (  473): Failed to LOOP_GET_STATUS64 /dev/block/loop4: No such device or address
+06-04 04:42:24.046 W/vold    (  473): Failed to LOOP_GET_STATUS64 /dev/block/loop5: No such device or address
+06-04 04:42:24.046 W/vold    (  473): Failed to LOOP_GET_STATUS64 /dev/block/loop6: No such device or address
+06-04 04:42:24.046 W/vold    (  473): Failed to LOOP_GET_STATUS64 /dev/block/loop0: No such device or address
+06-04 04:42:24.046 W/vold    (  473): Failed to LOOP_GET_STATUS64 /dev/block/loop7: No such device or address
+06-04 04:42:24.046 W/vold    (  473): Failed to LOOP_GET_STATUS64 /dev/block/loop2: No such device or address
+06-04 04:42:24.046 W/vold    (  473): Failed to LOOP_GET_STATUS64 /dev/block/loop3: No such device or address
+06-04 04:42:24.061 I/SELinux (  462): SELinux: Loaded service_contexts from:
+06-04 04:42:24.062 I/SELinux (  462):     /system/etc/selinux/plat_service_contexts
+06-04 04:42:24.063 D/vold    (  473): VoldNativeService::start() completed OK
+06-04 04:42:24.099 I/hwservicemanager(  463): hwservicemanager is ready now.
+06-04 04:42:24.116 D/vndksupport(  472): Loading /vendor/lib64/hw/android.hardware.keymaster@3.0-impl.so from current namespace instead of sphal namespace.
+06-04 04:42:24.130 I/android.hardware.keymaster@3.0-impl(  472): Fetching keymaster device name default
+06-04 04:42:24.131 D/vndksupport(  472): Loading /vendor/lib64/hw/keystore.msm8953.so from current namespace instead of sphal namespace.
+06-04 04:42:24.169 D/vold    (  473): e4crypt_init_user0
+06-04 04:42:24.169 D/vold    (  473): e4crypt_prepare_user_storage for volume null, user 0, serial 0, flags 1
+06-04 04:42:24.169 D/vold    (  473): Preparing: /data/system/users/0
+06-04 04:42:24.169 D/vold    (  473): Preparing: /data/misc/profiles/cur/0
+06-04 04:42:24.170 D/vold    (  473): Preparing: /data/system_de/0
+06-04 04:42:24.170 D/vold    (  473): Preparing: /data/misc_de/0
+06-04 04:42:24.171 D/vold    (  473): Preparing: /data/vendor_de/0
+06-04 04:42:24.171 D/vold    (  473): Preparing: /data/user_de/0
+06-04 04:42:24.171 V/vold    (  473): /system/bin/vold_prepare_subdirs
+06-04 04:42:24.171 V/vold    (  473):     prepare
+06-04 04:42:24.171 V/vold    (  473):     
+06-04 04:42:24.171 V/vold    (  473):     0
+06-04 04:42:24.171 V/vold    (  473):     1
+06-04 04:42:24.189 I/vold_prepare_subdirs(  473): SELinux: Loaded file_contexts
+06-04 04:42:24.194 D/vold_prepare_subdirs(  478): Setting up mode 700 uid 0 gid 0 context u:object_r:vold_data_file:s0 on path: /data/misc_de/0/vold
+06-04 04:42:24.196 D/vold_prepare_subdirs(  478): Setting up mode 700 uid 0 gid 0 context u:object_r:storaged_data_file:s0 on path: /data/misc_de/0/storaged
+06-04 04:42:24.197 D/vold_prepare_subdirs(  478): Setting up mode 700 uid 1000 gid 1000 context u:object_r:fingerprint_vendor_data_file:s0 on path: /data/vendor_de/0/fpdata
+06-04 04:42:24.198 D/vold    (  473): e4crypt_unlock_user_key 0 serial=0 token_present=0
+06-04 04:42:24.211 I//system/bin/tzdatacheck(  480): timezone distro dir /data/misc/zoneinfo/current does not exist. No action required.
+06-04 04:42:24.264 I/Magisk  (  483): Magisk v19.1(19100) daemon started
+06-04 04:42:24.264 I/Magisk  (  483): * Device API level: 28
+06-04 04:42:24.289 I/Magisk  (  483): ** post-fs-data mode running
+06-04 04:42:24.292 I/Magisk  (  483): * Initializing Magisk environment
+06-04 04:42:24.295 I/Magisk  (  483): * Mounting mirrors
+06-04 04:42:24.295 I/Magisk  (  483): mount: /sbin/.magisk/mirror/system
+06-04 04:42:24.295 I/Magisk  (  483): mount: /sbin/.magisk/mirror/vendor
+06-04 04:42:24.296 I/Magisk  (  483): mount: /sbin/.magisk/mirror/data
+06-04 04:42:24.297 I/Magisk  (  483): * Setting up internal busybox
+06-04 04:42:24.311 I/Magisk  (  483): * Running post-fs-data.d scripts
+06-04 04:42:24.338 I/Magisk  (  483): * Running module post-fs-data scripts
+06-04 04:42:24.338 I/Magisk  (  483): * Loading modules
+06-04 04:42:24.339 I/Magisk  (  483): MotoCamG5s+: constructing magic mount structure
+06-04 04:42:24.343 I/Magisk  (  483): mnt_tmpfs : /system/app
+06-04 04:42:24.343 I/Magisk  (  483): bind_mount: /system/app/MediaShortcuts
+06-04 04:42:24.343 I/Magisk  (  483): bind_mount: /system/app/MotoCameraTuner
+06-04 04:42:24.343 I/Magisk  (  483): bind_mount: /system/app/MotoPhotoEditor
+06-04 04:42:24.343 I/Magisk  (  483): bind_mount: /system/app/MotoSignatureApp
+06-04 04:42:24.343 I/Magisk  (  483): bind_mount: /system/app/Blue
+06-04 04:42:24.343 I/Magisk  (  483): bind_mount: /system/app/CompanionDeviceManager
+06-04 04:42:24.343 I/Magisk  (  483): bind_mount: /system/app/webview
+06-04 04:42:24.343 I/Magisk  (  483): bind_mount: /system/app/Bluetooth
+06-04 04:42:24.343 I/Magisk  (  483): bind_mount: /system/app/DeepPurple
+06-04 04:42:24.343 I/Magisk  (  483): bind_mount: /system/app/CertInstaller
+06-04 04:42:24.343 I/Magisk  (  483): bind_mount: /system/app/SecureElement
+06-04 04:42:24.343 I/Magisk  (  483): bind_mount: /system/app/QtiTelephonyService
+06-04 04:42:24.344 I/Magisk  (  483): bind_mount: /system/app/BuiltInPrintService
+06-04 04:42:24.344 I/Magisk  (  483): bind_mount: /system/app/Cyan
+06-04 04:42:24.344 I/Magisk  (  483): bind_mount: /system/app/Traceur
+06-04 04:42:24.344 I/Magisk  (  483): bind_mount: /system/app/Teal
+06-04 04:42:24.344 I/Magisk  (  483): bind_mount: /system/app/DeskClock
+06-04 04:42:24.344 I/Magisk  (  483): bind_mount: /system/app/Indigo
+06-04 04:42:24.344 I/Magisk  (  483): bind_mount: /system/app/Stk
+06-04 04:42:24.344 I/Magisk  (  483): bind_mount: /system/app/Brown
+06-04 04:42:24.344 I/Magisk  (  483): bind_mount: /system/app/LightGreen
+06-04 04:42:24.344 I/Magisk  (  483): bind_mount: /system/app/BlueGrey
+06-04 04:42:24.344 I/Magisk  (  483): bind_mount: /system/app/CaptivePortalLogin
+06-04 04:42:24.344 I/Magisk  (  483): bind_mount: /system/app/Yellow
+06-04 04:42:24.344 I/Magisk  (  483): bind_mount: /system/app/WallpaperBackup
+06-04 04:42:24.344 I/Magisk  (  483): bind_mount: /system/app/Calendar
+06-04 04:42:24.344 I/Magisk  (  483): bind_mount: /system/app/SimAppDialog
+06-04 04:42:24.344 I/Magisk  (  483): bind_mount: /system/app/LightBlue
+06-04 04:42:24.344 I/Magisk  (  483): bind_mount: /system/app/Purple
+06-04 04:42:24.345 I/Magisk  (  483): bind_mount: /system/app/GoogleContactsSyncAdapter
+06-04 04:42:24.345 I/Magisk  (  483): bind_mount: /system/app/Lime
+06-04 04:42:24.345 I/Magisk  (  483): bind_mount: /system/app/DeepOrange
+06-04 04:42:24.345 I/Magisk  (  483): bind_mount: /system/app/embms
+06-04 04:42:24.345 I/Magisk  (  483): bind_mount: /system/app/WAPPushManager
+06-04 04:42:24.345 I/Magisk  (  483): bind_mount: /system/app/GoogleExtShared
+06-04 04:42:24.345 I/Magisk  (  483): bind_mount: /system/app/PrintRecommendationService
+06-04 04:42:24.345 I/Magisk  (  483): bind_mount: /system/app/LatinIME
+06-04 04:42:24.345 I/Magisk  (  483): bind_mount: /system/app/Orange
+06-04 04:42:24.345 I/Magisk  (  483): bind_mount: /system/app/CarrierDefaultApp
+06-04 04:42:24.345 I/Magisk  (  483): bind_mount: /system/app/KeyChain
+06-04 04:42:24.345 I/Magisk  (  483): bind_mount: /system/app/Pink
+06-04 04:42:24.345 I/Magisk  (  483): bind_mount: /system/app/ExactCalculator
+06-04 04:42:24.346 I/Magisk  (  483): bind_mount: /system/app/FaceLock
+06-04 04:42:24.346 I/Magisk  (  483): bind_mount: /system/app/MarkupGoogle
+06-04 04:42:24.346 I/Magisk  (  483): bind_mount: /system/app/SoundPickerPrebuilt
+06-04 04:42:24.346 I/Magisk  (  483): bind_mount: /system/app/ims
+06-04 04:42:24.346 I/Magisk  (  483): bind_mount: /system/app/Amber
+06-04 04:42:24.346 I/Magisk  (  483): bind_mount: /system/app/BluetoothMidiService
+06-04 04:42:24.346 I/Magisk  (  483): bind_mount: /system/app/Gallery2
+06-04 04:42:24.346 I/Magisk  (  483): bind_mount: /system/app/BasicDreams
+06-04 04:42:24.346 I/Magisk  (  483): bind_mount: /system/app/PacProcessor
+06-04 04:42:24.346 I/Magisk  (  483): bind_mount: /system/app/LiveWallpapersPicker
+06-04 04:42:24.346 I/Magisk  (  483): bind_mount: /system/app/PrintSpooler
+06-04 04:42:24.346 I/Magisk  (  483): bind_mount: /system/app/NfcNci
+06-04 04:42:24.346 I/Magisk  (  483): bind_mount: /system/app/messaging
+06-04 04:42:24.346 I/Magisk  (  483): bind_mount: /system/app/GoogleCalendarSyncAdapter
+06-04 04:42:24.346 I/Magisk  (  483): bind_mount: /system/app/CtsShimPrebuilt
+06-04 04:42:24.346 I/Magisk  (  483): bind_mount: /system/app/EasterEgg
+06-04 04:42:24.346 I/Magisk  (  483): bind_mount: /system/app/Red
+06-04 04:42:24.346 I/Magisk  (  483): bind_mount: /system/app/Grey
+06-04 04:42:24.346 I/Magisk  (  483): bind_mount: /system/app/BookmarkProvider
+06-04 04:42:24.346 I/Magisk  (  483): bind_mount: /system/app/GoogleTTS
+06-04 04:42:24.347 I/Magisk  (  483): bind_mount: /system/app/Green
+06-04 04:42:24.347 I/Magisk  (  483): mnt_tmpfs : /system/etc/permissions
+06-04 04:42:24.347 I/Magisk  (  483): bind_mount: /system/etc/permissions/com.motorola.camera2.xml
+06-04 04:42:24.347 I/Magisk  (  483): bind_mount: /system/etc/permissions/com.motorola.motosignature.xml
+06-04 04:42:24.347 I/Magisk  (  483): bind_mount: /system/etc/permissions/com.motorola.photoeditor.xml
+06-04 04:42:24.347 I/Magisk  (  483): bind_mount: /system/etc/permissions/privapp-permissions-com.motorola.camera2.xml
+06-04 04:42:24.347 I/Magisk  (  483): bind_mount: /system/etc/permissions/imscm.xml
+06-04 04:42:24.347 I/Magisk  (  483): bind_mount: /system/etc/permissions/android.software.webview.xml
+06-04 04:42:24.347 I/Magisk  (  483): bind_mount: /system/etc/permissions/android.software.sip.voip.xml
+06-04 04:42:24.347 I/Magisk  (  483): bind_mount: /system/etc/permissions/platform.xml
+06-04 04:42:24.347 I/Magisk  (  483): bind_mount: /system/etc/permissions/qti_libpermissions.xml
+06-04 04:42:24.347 I/Magisk  (  483): bind_mount: /system/etc/permissions/com.google.widevine.software.drm.xml
+06-04 04:42:24.347 I/Magisk  (  483): bind_mount: /system/etc/permissions/qcrilhook.xml
+06-04 04:42:24.347 I/Magisk  (  483): bind_mount: /system/etc/permissions/com.google.android.maps.xml
+06-04 04:42:24.347 I/Magisk  (  483): bind_mount: /system/etc/permissions/qti_permissions.xml
+06-04 04:42:24.348 I/Magisk  (  483): bind_mount: /system/etc/permissions/privapp-permissions-google.xml
+06-04 04:42:24.348 I/Magisk  (  483): bind_mount: /system/etc/permissions/com.android.mediadrm.signer.xml
+06-04 04:42:24.348 I/Magisk  (  483): bind_mount: /system/etc/permissions/ConnectivityExt.xml
+06-04 04:42:24.348 I/Magisk  (  483): bind_mount: /system/etc/permissions/com.qti.location.sdk.xml
+06-04 04:42:24.348 I/Magisk  (  483): bind_mount: /system/etc/permissions/ims.xml
+06-04 04:42:24.348 I/Magisk  (  483): bind_mount: /system/etc/permissions/com.google.android.media.effects.xml
+06-04 04:42:24.348 I/Magisk  (  483): bind_mount: /system/etc/permissions/com.quicinc.cne.xml
+06-04 04:42:24.348 I/Magisk  (  483): bind_mount: /system/etc/permissions/android.software.live_wallpaper.xml
+06-04 04:42:24.348 I/Magisk  (  483): bind_mount: /system/etc/permissions/com.android.ims.rcsmanager.xml
+06-04 04:42:24.348 I/Magisk  (  483): bind_mount: /system/etc/permissions/cneapiclient.xml
+06-04 04:42:24.348 I/Magisk  (  483): bind_mount: /system/etc/permissions/com.qti.dpmframework.xml
+06-04 04:42:24.348 I/Magisk  (  483): bind_mount: /system/etc/permissions/qti-vzw-ims-internal.xml
+06-04 04:42:24.348 I/Magisk  (  483): bind_mount: /system/etc/permissions/com.qti.snapdragon.sdk.display.xml
+06-04 04:42:24.348 I/Magisk  (  483): bind_mount: /system/etc/permissions/com.qualcomm.location.xml
+06-04 04:42:24.348 I/Magisk  (  483): bind_mount: /system/etc/permissions/izat.xt.srv.xml
+06-04 04:42:24.348 I/Magisk  (  483): bind_mount: /system/etc/permissions/privapp-permissions-platform.xml
+06-04 04:42:24.348 I/Magisk  (  483): bind_mount: /system/etc/permissions/com.google.android.dialer.support.xml
+06-04 04:42:24.348 I/Magisk  (  483): bind_mount: /system/etc/permissions/com.android.location.provider.xml
+06-04 04:42:24.349 I/Magisk  (  483): bind_mount: /system/etc/permissions/com.android.media.remotedisplay.xml
+06-04 04:42:24.349 I/Magisk  (  483): bind_mount: /system/etc/permissions/embms.xml
+06-04 04:42:24.349 I/Magisk  (  483): mnt_tmpfs : /system/framework
+06-04 04:42:24.349 I/Magisk  (  483): bind_mount: /system/framework/com.motorola.motosignature.jar
+06-04 04:42:24.349 I/Magisk  (  483): bind_mount: /system/framework/com.qti.snapdragon.sdk.display.jar
+06-04 04:42:24.349 I/Magisk  (  483): bind_mount: /system/framework/qti-vzw-ims-internal.jar
+06-04 04:42:24.349 I/Magisk  (  483): bind_mount: /system/framework/com.google.android.maps.jar
+06-04 04:42:24.349 I/Magisk  (  483): bind_mount: /system/framework/telecom.jar
+06-04 04:42:24.349 I/Magisk  (  483): bind_mount: /system/framework/com.android.location.provider.jar
+06-04 04:42:24.349 I/Magisk  (  483): bind_mount: /system/framework/framework-oahl-backward-compatibility.jar
+06-04 04:42:24.349 I/Magisk  (  483): bind_mount: /system/framework/framework.jar
+06-04 04:42:24.350 I/Magisk  (  483): bind_mount: /system/framework/izat.xt.srv.jar
+06-04 04:42:24.350 I/Magisk  (  483): bind_mount: /system/framework/com.quicinc.cne.api-V1.0-java.jar
+06-04 04:42:24.350 I/Magisk  (  483): bind_mount: /system/framework/boot-okhttp.vdex
+06-04 04:42:24.350 I/Magisk  (  483): bind_mount: /system/framework/cneapiclient.jar
+06-04 04:42:24.350 I/Magisk  (  483): bind_mount: /system/framework/dpmapi.jar
+06-04 04:42:24.350 I/Magisk  (  483): bind_mount: /system/framework/oat
+06-04 04:42:24.350 I/Magisk  (  483): bind_mount: /system/framework/qcrilhook.jar
+06-04 04:42:24.350 I/Magisk  (  483): bind_mount: /system/framework/org.apache.http.legacy.boot.jar
+06-04 04:42:24.350 I/Magisk  (  483): bind_mount: /system/framework/telephony-ext.jar
+06-04 04:42:24.350 I/Magisk  (  483): bind_mount: /system/framework/boot-framework-oahl-backward-compatibility.vdex
+06-04 04:42:24.350 I/Magisk  (  483): bind_mount: /system/framework/boot-ext.vdex
+06-04 04:42:24.350 I/Magisk  (  483): bind_mount: /system/framework/boot-QPerformance.vdex
+06-04 04:42:24.350 I/Magisk  (  483): bind_mount: /system/framework/imscmlibrary.jar
+06-04 04:42:24.350 I/Magisk  (  483): bind_mount: /system/framework/com.android.mediadrm.signer.jar
+06-04 04:42:24.350 I/Magisk  (  483): bind_mount: /system/framework/com.google.android.dialer.support.jar
+06-04 04:42:24.350 I/Magisk  (  483): bind_mount: /system/framework/boot-framework.vdex
+06-04 04:42:24.350 I/Magisk  (  483): bind_mount: /system/framework/boot-bouncycastle.vdex
+06-04 04:42:24.350 I/Magisk  (  483): bind_mount: /system/framework/uiautomator.jar
+06-04 04:42:24.351 I/Magisk  (  483): bind_mount: /system/framework/boot-conscrypt.vdex
+06-04 04:42:24.351 I/Magisk  (  483): bind_mount: /system/framework/media_cmd.jar
+06-04 04:42:24.351 I/Magisk  (  483): bind_mount: /system/framework/hid.jar
+06-04 04:42:24.351 I/Magisk  (  483): bind_mount: /system/framework/android.hidl.base-V1.0-java.jar
+06-04 04:42:24.351 I/Magisk  (  483): bind_mount: /system/framework/arm
+06-04 04:42:24.351 I/Magisk  (  483): bind_mount: /system/framework/com.android.future.usb.accessory.jar
+06-04 04:42:24.351 I/Magisk  (  483): bind_mount: /system/framework/com.quicinc.cne.jar
+06-04 04:42:24.351 I/Magisk  (  483): bind_mount: /system/framework/sm.jar
+06-04 04:42:24.351 I/Magisk  (  483): bind_mount: /system/framework/android.hidl.manager-V1.0-java.jar
+06-04 04:42:24.351 I/Magisk  (  483): bind_mount: /system/framework/am.jar
+06-04 04:42:24.351 I/Magisk  (  483): bind_mount: /system/framework/bu.jar
+06-04 04:42:24.351 I/Magisk  (  483): bind_mount: /system/framework/vr.jar
+06-04 04:42:24.351 I/Magisk  (  483): bind_mount: /system/framework/apache-xml.jar
+06-04 04:42:24.351 I/Magisk  (  483): bind_mount: /system/framework/svc.jar
+06-04 04:42:24.351 I/Magisk  (  483): bind_mount: /system/framework/boot.vdex
+06-04 04:42:24.351 I/Magisk  (  483): bind_mount: /system/framework/com.qti.dpmframework.jar
+06-04 04:42:24.351 I/Magisk  (  483): bind_mount: /system/framework/com.google.widevine.software.drm.jar
+06-04 04:42:24.351 I/Magisk  (  483): bind_mount: /system/framework/services.jar
+06-04 04:42:24.352 I/Magisk  (  483): bind_mount: /system/framework/tcmclient.jar
+06-04 04:42:24.352 I/Magisk  (  483): bind_mount: /system/framework/ethernet-service.jar
+06-04 04:42:24.352 I/Magisk  (  483): bind_mount: /system/framework/voip-common.jar
+06-04 04:42:24.352 I/Magisk  (  483): bind_mount: /system/framework/rcsimssettings.jar
+06-04 04:42:24.352 I/Magisk  (  483): bind_mount: /system/framework/boot-telephony-ext.vdex
+06-04 04:42:24.352 I/Magisk  (  483): bind_mount: /system/framework/boot-android.hidl.manager-V1.0-java.vdex
+06-04 04:42:24.352 I/Magisk  (  483): bind_mount: /system/framework/com.android.ims.rcsmanager.jar
+06-04 04:42:24.352 I/Magisk  (  483): bind_mount: /system/framework/com.qualcomm.qti.imscmservice@1.0-java.jar
+06-04 04:42:24.352 I/Magisk  (  483): bind_mount: /system/framework/boot-android.hidl.base-V1.0-java.vdex
+06-04 04:42:24.352 I/Magisk  (  483): bind_mount: /system/framework/android.test.runner.jar
+06-04 04:42:24.352 I/Magisk  (  483): bind_mount: /system/framework/javax.obex.jar
+06-04 04:42:24.352 I/Magisk  (  483): bind_mount: /system/framework/qti-telephony-common.jar
+06-04 04:42:24.352 I/Magisk  (  483): bind_mount: /system/framework/android.test.base.jar
+06-04 04:42:24.352 I/Magisk  (  483): bind_mount: /system/framework/okhttp.jar
+06-04 04:42:24.352 I/Magisk  (  483): bind_mount: /system/framework/com.android.media.remotedisplay.jar
+06-04 04:42:24.352 I/Magisk  (  483): bind_mount: /system/framework/embmslibrary.jar
+06-04 04:42:24.352 I/Magisk  (  483): bind_mount: /system/framework/conscrypt.jar
+06-04 04:42:24.353 I/Magisk  (  483): bind_mount: /system/framework/bouncycastle.jar
+06-04 04:42:24.353 I/Magisk  (  483): bind_mount: /system/framework/appwidget.jar
+06-04 04:42:24.353 I/Magisk  (  483): bind_mount: /system/framework/arm64
+06-04 04:42:24.353 I/Magisk  (  483): bind_mount: /system/framework/boot-telephony-common.vdex
+06-04 04:42:24.353 I/Magisk  (  483): bind_mount: /system/framework/framework-res.apk
+06-04 04:42:24.353 I/Magisk  (  483): bind_mount: /system/framework/ims-common.jar
+06-04 04:42:24.353 I/Magisk  (  483): bind_mount: /system/framework/boot-ims-common.vdex
+06-04 04:42:24.353 I/Magisk  (  483): bind_mount: /system/framework/QtiTelephonyServicelibrary.jar
+06-04 04:42:24.353 I/Magisk  (  483): bind_mount: /system/framework/com.android.nfc_extras.jar
+06-04 04:42:24.353 I/Magisk  (  483): bind_mount: /system/framework/requestsync.jar
+06-04 04:42:24.353 I/Magisk  (  483): bind_mount: /system/framework/wifi-service.jar
+06-04 04:42:24.353 I/Magisk  (  483): bind_mount: /system/framework/core-oj.jar
+06-04 04:42:24.353 I/Magisk  (  483): bind_mount: /system/framework/boot-android.test.base.vdex
+06-04 04:42:24.353 I/Magisk  (  483): bind_mount: /system/framework/input.jar
+06-04 04:42:24.353 I/Magisk  (  483): bind_mount: /system/framework/UxPerformance.jar
+06-04 04:42:24.353 I/Magisk  (  483): bind_mount: /system/framework/monkey.jar
+06-04 04:42:24.353 I/Magisk  (  483): bind_mount: /system/framework/com.qti.location.sdk.jar
+06-04 04:42:24.353 I/Magisk  (  483): bind_mount: /system/framework/wifi-service.jar.prof
+06-04 04:42:24.354 I/Magisk  (  483): bind_mount: /system/framework/content.jar
+06-04 04:42:24.354 I/Magisk  (  483): bind_mount: /system/framework/boot-tcmiface.vdex
+06-04 04:42:24.354 I/Magisk  (  483): bind_mount: /system/framework/ext.jar
+06-04 04:42:24.354 I/Magisk  (  483): bind_mount: /system/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar
+06-04 04:42:24.354 I/Magisk  (  483): bind_mount: /system/framework/boot-voip-common.vdex
+06-04 04:42:24.354 I/Magisk  (  483): bind_mount: /system/framework/com.google.android.media.effects.jar
+06-04 04:42:24.354 I/Magisk  (  483): bind_mount: /system/framework/org.apache.http.legacy.boot.jar.prof
+06-04 04:42:24.354 I/Magisk  (  483): bind_mount: /system/framework/locksettings.jar
+06-04 04:42:24.354 I/Magisk  (  483): bind_mount: /system/framework/vendor.qti.hardware.alarm-V1.0-java.jar
+06-04 04:42:24.354 I/Magisk  (  483): bind_mount: /system/framework/boot-core-libart.vdex
+06-04 04:42:24.354 I/Magisk  (  483): bind_mount: /system/framework/tcmiface.jar
+06-04 04:42:24.354 I/Magisk  (  483): bind_mount: /system/framework/QPerformance.jar
+06-04 04:42:24.354 I/Magisk  (  483): bind_mount: /system/framework/android.test.mock.jar
+06-04 04:42:24.354 I/Magisk  (  483): bind_mount: /system/framework/core-libart.jar
+06-04 04:42:24.354 I/Magisk  (  483): bind_mount: /system/framework/dpm.jar
+06-04 04:42:24.354 I/Magisk  (  483): bind_mount: /system/framework/services.jar.prof
+06-04 04:42:24.354 I/Magisk  (  483): bind_mount: /system/framework/bmgr.jar
+06-04 04:42:24.354 I/Magisk  (  483): bind_mount: /system/framework/boot-apache-xml.vdex
+06-04 04:42:24.355 I/Magisk  (  483): bind_mount: /system/framework/boot-UxPerformance.vdex
+06-04 04:42:24.355 I/Magisk  (  483): bind_mount: /system/framework/telephony-common.jar
+06-04 04:42:24.355 I/Magisk  (  483): mnt_tmpfs : /system/priv-app
+06-04 04:42:24.355 I/Magisk  (  483): bind_mount: /system/priv-app/MotCamera2
+06-04 04:42:24.355 I/Magisk  (  483): bind_mount: /system/priv-app/CNEService
+06-04 04:42:24.355 I/Magisk  (  483): bind_mount: /system/priv-app/EmergencyInfo
+06-04 04:42:24.355 I/Magisk  (  483): bind_mount: /system/priv-app/Contacts
+06-04 04:42:24.355 I/Magisk  (  483): bind_mount: /system/priv-app/WellbeingPrebuilt
+06-04 04:42:24.355 I/Magisk  (  483): bind_mount: /system/priv-app/Tag
+06-04 04:42:24.355 I/Magisk  (  483): bind_mount: /system/priv-app/GooglePackageInstaller
+06-04 04:42:24.355 I/Magisk  (  483): bind_mount: /system/priv-app/Dialer
+06-04 04:42:24.355 I/Magisk  (  483): bind_mount: /system/priv-app/Telecom
+06-04 04:42:24.356 I/Magisk  (  483): bind_mount: /system/priv-app/CalendarProvider
+06-04 04:42:24.356 I/Magisk  (  483): bind_mount: /system/priv-app/CallLogBackup
+06-04 04:42:24.356 I/Magisk  (  483): bind_mount: /system/priv-app/com.qualcomm.location
+06-04 04:42:24.356 I/Magisk  (  483): bind_mount: /system/priv-app/CarrierConfig
+06-04 04:42:24.356 I/Magisk  (  483): bind_mount: /system/priv-app/VpnDialogs
+06-04 04:42:24.356 I/Magisk  (  483): bind_mount: /system/priv-app/CellBroadcastReceiver
+06-04 04:42:24.356 I/Magisk  (  483): bind_mount: /system/priv-app/MotoActions
+06-04 04:42:24.356 I/Magisk  (  483): bind_mount: /system/priv-app/BlockedNumberProvider
+06-04 04:42:24.356 I/Magisk  (  483): bind_mount: /system/priv-app/SystemUI
+06-04 04:42:24.356 I/Magisk  (  483): bind_mount: /system/priv-app/ProxyHandler
+06-04 04:42:24.356 I/Magisk  (  483): bind_mount: /system/priv-app/SettingsProvider
+06-04 04:42:24.356 I/Magisk  (  483): bind_mount: /system/priv-app/MusicFX
+06-04 04:42:24.356 I/Magisk  (  483): bind_mount: /system/priv-app/PrebuiltGmsCorePi
+06-04 04:42:24.356 I/Magisk  (  483): bind_mount: /system/priv-app/GooglePartnerSetup
+06-04 04:42:24.356 I/Magisk  (  483): bind_mount: /system/priv-app/AndroidPlatformServices
+06-04 04:42:24.356 I/Magisk  (  483): bind_mount: /system/priv-app/OneTimeInitializer
+06-04 04:42:24.356 I/Magisk  (  483): bind_mount: /system/priv-app/DownloadProviderUi
+06-04 04:42:24.356 I/Magisk  (  483): bind_mount: /system/priv-app/Phonesky
+06-04 04:42:24.356 I/Magisk  (  483): bind_mount: /system/priv-app/BackupRestoreConfirmation
+06-04 04:42:24.357 I/Magisk  (  483): bind_mount: /system/priv-app/ExternalStorageProvider
+06-04 04:42:24.357 I/Magisk  (  483): bind_mount: /system/priv-app/FusedLocation
+06-04 04:42:24.357 I/Magisk  (  483): bind_mount: /system/priv-app/StatementService
+06-04 04:42:24.357 I/Magisk  (  483): bind_mount: /system/priv-app/StorageManager
+06-04 04:42:24.357 I/Magisk  (  483): bind_mount: /system/priv-app/UserDictionaryProvider
+06-04 04:42:24.357 I/Magisk  (  483): bind_mount: /system/priv-app/SettingsIntelligence
+06-04 04:42:24.357 I/Magisk  (  483): bind_mount: /system/priv-app/SharedStorageBackup
+06-04 04:42:24.357 I/Magisk  (  483): bind_mount: /system/priv-app/MmsService
+06-04 04:42:24.357 I/Magisk  (  483): bind_mount: /system/priv-app/TelephonyProvider
+06-04 04:42:24.357 I/Magisk  (  483): bind_mount: /system/priv-app/atfwd
+06-04 04:42:24.357 I/Magisk  (  483): bind_mount: /system/priv-app/DownloadProvider
+06-04 04:42:24.357 I/Magisk  (  483): bind_mount: /system/priv-app/ConfigUpdater
+06-04 04:42:24.357 I/Magisk  (  483): bind_mount: /system/priv-app/TeleService
+06-04 04:42:24.357 I/Magisk  (  483): bind_mount: /system/priv-app/Settings
+06-04 04:42:24.357 I/Magisk  (  483): bind_mount: /system/priv-app/ManagedProvisioning
+06-04 04:42:24.357 I/Magisk  (  483): bind_mount: /system/priv-app/DefaultContainerService
+06-04 04:42:24.357 I/Magisk  (  483): bind_mount: /system/priv-app/MediaProvider
+06-04 04:42:24.357 I/Magisk  (  483): bind_mount: /system/priv-app/CtsShimPrivPrebuilt
+06-04 04:42:24.357 I/Magisk  (  483): bind_mount: /system/priv-app/qcrilmsgtunnel
+06-04 04:42:24.357 I/Magisk  (  483): bind_mount: /system/priv-app/GoogleExtServices
+06-04 04:42:24.358 I/Magisk  (  483): bind_mount: /system/priv-app/GoogleFeedback
+06-04 04:42:24.358 I/Magisk  (  483): bind_mount: /system/priv-app/Shell
+06-04 04:42:24.358 I/Magisk  (  483): bind_mount: /system/priv-app/GoogleOneTimeInitializer
+06-04 04:42:24.358 I/Magisk  (  483): bind_mount: /system/priv-app/Launcher3QuickStep
+06-04 04:42:24.358 I/Magisk  (  483): bind_mount: /system/priv-app/InputDevices
+06-04 04:42:24.358 I/Magisk  (  483): bind_mount: /system/priv-app/WallpaperCropper
+06-04 04:42:24.358 I/Magisk  (  483): bind_mount: /system/priv-app/AndroidMigratePrebuilt
+06-04 04:42:24.358 I/Magisk  (  483): bind_mount: /system/priv-app/MtpDocumentsProvider
+06-04 04:42:24.358 I/Magisk  (  483): bind_mount: /system/priv-app/Turbo
+06-04 04:42:24.358 I/Magisk  (  483): bind_mount: /system/priv-app/ContactsProvider
+06-04 04:42:24.358 I/Magisk  (  483): bind_mount: /system/priv-app/SetupWizard
+06-04 04:42:24.358 I/Magisk  (  483): bind_mount: /system/priv-app/Velvet
+06-04 04:42:24.358 I/Magisk  (  483): bind_mount: /system/priv-app/DocumentsUI
+06-04 04:42:24.358 I/Magisk  (  483): bind_mount: /system/priv-app/GoogleServicesFramework
+06-04 04:42:24.358 I/Magisk  (  483): bind_mount: /system/priv-app/GoogleBackupTransport
+06-04 04:42:24.363 I/init    (    1): type=1400 audit(0.0:15): avc: denied { setattr } for uid=0 name="file" dev="sysfs" ino=33481 scontext=u:r:init:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+06-04 04:42:24.366 I/init    (  428): type=1400 audit(0.0:16): avc: denied { search } for uid=0 name="tombstones" dev="mmcblk0p54" ino=197147 scontext=u:r:vendor_init:s0 tcontext=u:object_r:tombstone_data_file:s0 tclass=dir permissive=1
+06-04 04:42:24.366 I/init    (  428): type=1400 audit(0.0:17): avc: denied { setattr } for uid=0 name="modem" dev="mmcblk0p54" ino=197193 scontext=u:r:vendor_init:s0 tcontext=u:object_r:tombstone_data_file:s0 tclass=dir permissive=1
+06-04 04:42:24.373 I/Magisk  (  483): * Starting MagiskHide
+06-04 04:42:24.373 I/Magisk  (  483): hide_utils: Hiding sensitive props
+06-04 04:42:24.374 I/Magisk  (  483): hide_list init: [com.google.android.gms/com.google.android.gms.unstable]
+06-04 04:42:24.373 I/init    (  428): type=1400 audit(0.0:18): avc: denied { setattr } for uid=0 name="dts" dev="mmcblk0p54" ino=197199 scontext=u:r:vendor_init:s0 tcontext=u:object_r:system_data_file:s0 tclass=dir permissive=1
+06-04 04:42:24.383 I/Magisk  (  483): hide_list init: [org.microg.gms.droidguard/com.google.android.gms.unstable]
+06-04 04:42:24.383 I/init    (  428): type=1400 audit(0.0:19): avc: denied { setattr } for uid=0 name="camera" dev="mmcblk0p54" ino=197213 scontext=u:r:vendor_init:s0 tcontext=u:object_r:camera_data_file:s0 tclass=dir permissive=1
+06-04 04:42:24.383 I/init    (  428): type=1400 audit(0.0:20): avc: denied { setattr } for uid=0 name="media" dev="mmcblk0p54" ino=4 scontext=u:r:vendor_init:s0 tcontext=u:object_r:media_rw_data_file:s0 tclass=dir permissive=1
+06-04 04:42:24.396 I/init    (  428): type=1400 audit(0.0:21): avc: denied { setattr } for uid=0 name="dpm" dev="mmcblk0p54" ino=197230 scontext=u:r:vendor_init:s0 tcontext=u:object_r:dpmd_data_file:s0 tclass=dir permissive=1
+06-04 04:42:24.440 I/init    (  428): type=1400 audit(0.0:22): avc: denied { setattr } for uid=0 name="fpc" dev="mmcblk0p54" ino=197275 scontext=u:r:vendor_init:s0 tcontext=u:object_r:fingerprintd_data_file:s0 tclass=dir permissive=1
+06-04 04:42:24.530 I/kworker/3:1(  447): type=1400 audit(0.0:23): avc: denied { open } for uid=0 path="/vendor/firmware_mnt/image/adsp.mdt" dev="mmcblk0p19" ino=31 scontext=u:r:kernel:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+06-04 04:42:24.536 I/Netd    (  492): Netd 1.0 starting
+06-04 04:42:24.538 D/TetherController(  492): Setting IP forward enable = 0
+06-04 04:42:24.561 I/Netd    (  492): Creating child chains: 18.7ms
+06-04 04:42:24.561 I/Netd    (  492): Setting up OEM hooks: 0.2ms
+06-04 04:42:24.565 I/Netd    (  492): Setting up FirewallController hooks: 4.0ms
+06-04 04:42:24.567 I/Netd    (  492): Setting up TetherController hooks: 2.3ms
+06-04 04:42:24.569 I/Netd    (  492): Setting up BandwidthController hooks: 1.9ms
+06-04 04:42:24.569 I/Netd    (  492): Setting up IdletimerController hooks: 0.1ms
+06-04 04:42:24.569 I/Netd    (  492): initializing traffic control: 0.0ms
+06-04 04:42:24.574 I/Netd    (  492): Disabling bandwidth control: 5.1ms
+06-04 04:42:24.618 I/ServiceManagement(  500): Removing namespace from process name android.hidl.allocator@1.0-service to allocator@1.0-service.
+06-04 04:42:24.633 D/vndksupport(  507): Loading /vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl.so from current namespace instead of sphal namespace.
+06-04 04:42:24.640 I/health@2.0/(  501): health@2.0/backup: Hal starting main loop...
+06-04 04:42:24.640 I/health@2.0/(  501): health@2.0/backup Hal is starting up...
+06-04 04:42:24.642 W/hwservicemanager(  463): getTransport: Cannot find entry android.hardware.health@1.0::IHealth/default in either framework or device manifest.
+06-04 04:42:24.643 I/irsc_util(  526): Starting irsc tool
+06-04 04:42:24.645 I/health@2.0/(  501): health@2.0/backup: Hal init done
+06-04 04:42:24.648 I/ServiceManagement(  511): Removing namespace from process name android.hardware.light@2.0-service.sanders to light@2.0-service.sanders.
+06-04 04:42:24.649 D/vndksupport(  514): Loading /vendor/lib64/hw/android.hardware.power@1.0-impl.so from current namespace instead of sphal namespace.
+06-04 04:42:24.649 I/android.hardware.light@2.0-service.sanders(  511): Light HAL service ready.
+06-04 04:42:24.651 D/vndksupport(  512): Loading /vendor/lib64/hw/android.hardware.memtrack@1.0-impl.so from current namespace instead of sphal namespace.
+06-04 04:42:24.654 I/android.hardware.bluetooth@1.0-service(  503): registering BT & FM services
+06-04 04:42:24.655 I/ServiceManagement(  517): Removing namespace from process name android.hardware.usb@1.0-service.basic to usb@1.0-service.basic.
+06-04 04:42:24.655 D/vndksupport(  516): Loading /vendor/lib64/hw/android.hardware.thermal@1.0-impl.so from current namespace instead of sphal namespace.
+06-04 04:42:24.656 D/vndksupport(  503): Loading /vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so from current namespace instead of sphal namespace.
+06-04 04:42:24.657 I//vendor/bin/hw/android.hardware.usb@1.0-service.basic(  517): USB HAL Ready.
+06-04 04:42:24.658 I/irsc_util(  526): Num of entries:297
+06-04 04:42:24.658 D/vndksupport(  507): Loading /vendor/lib64/hw/gatekeeper.msm8953.so from current namespace instead of sphal namespace.
+06-04 04:42:24.659 I/irsc_util(  526): Ending irsc tool
+06-04 04:42:24.660 I/health@2.0/(  510): health@2.0/default: Hal starting main loop...
+06-04 04:42:24.660 I/health@2.0/(  510): health@2.0/default Hal is starting up...
+06-04 04:42:24.661 I/ServiceManagement(  510): Removing namespace from process name android.hardware.health@2.0-service to health@2.0-service.
+06-04 04:42:24.663 I/health@2.0/(  510): health@2.0/default: Hal init done
+06-04 04:42:24.664 D/vndksupport(  514): Loading /vendor/lib64/hw/power.qcom.so from current namespace instead of sphal namespace.
+06-04 04:42:24.671 D/vndksupport(  508): Loading /vendor/lib64/hw/android.hardware.graphics.allocator@2.0-impl.so from current namespace instead of sphal namespace.
+06-04 04:42:24.671 D/vendor.qti.esepowermanager@1.0-service(  521): loading eseservice
+06-04 04:42:24.671 D/QSEECOMAPI(  521): QSEECom_get_handle sb_length = 0x400
+06-04 04:42:24.671 D/QSEECOMAPI(  521): App is not loaded in QSEE
+06-04 04:42:24.671 E/QSEECOMAPI(  521): Error::Cannot open the file /vendor/firmware_mnt/image/eseservice.mdt errno = 2
+06-04 04:42:24.671 E/QSEECOMAPI(  521): Error::Loading image failed with ret = -1
+06-04 04:42:24.671 D/vendor.qti.esepowermanager@1.0-service(  521): loading eseservice failed
+06-04 04:42:24.671 D/vendor.qti.esepowermanager@1.0-service(  521): eSEPowerManager is starting
+06-04 04:42:24.674 D/vndksupport(  524): Loading /vendor/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so from current namespace instead of sphal namespace.
+06-04 04:42:24.674 I/MSM-irqbalance(  530): msm-irq_balance (1.3) initialized
+06-04 04:42:24.674 I/MSM-irqbalance(  530): Configuration
+06-04 04:42:24.674 I/MSM-irqbalance(  530): Rate: 0.2 Hz
+06-04 04:42:24.674 I/MSM-irqbalance(  530): Decay Factor: 75.0
+06-04 04:42:24.674 I/MSM-irqbalance(  530): Balancing Factor: 0.1
+06-04 04:42:24.674 I/MSM-irqbalance(  530): Debug Log: OFF
+06-04 04:42:24.674 I/MSM-irqbalance(  530): Cfg file: /vendor/etc/msm_irqbalance.conf
+06-04 04:42:24.674 I/MSM-irqbalance(  530): CPU PRIO: CPU0: 0 CPU1: 0 CPU2: 0 CPU3: 0 CPU4: 1 CPU5: 1 CPU6: 1 CPU7: 1 
+06-04 04:42:24.674 I/MSM-irqbalance(  530): Ignored IRQs: 3 5 
+06-04 04:42:24.675 D/vndksupport(  521): Loading /vendor/lib64/hw/vendor.qti.esepowermanager@1.0-impl.so from current namespace instead of sphal namespace.
+06-04 04:42:24.676 D/vndksupport(  516): Loading /vendor/lib64/hw/thermal.msm8953.so from current namespace instead of sphal namespace.
+06-04 04:42:24.677 D/gatekeeper_device(  507): HwGkOpen called
+06-04 04:42:24.683 D/vndksupport(  508): Loading /vendor/lib64/hw/gralloc.msm8953.so from current namespace instead of sphal namespace.
+06-04 04:42:24.683 D/QSEECOMD: (  525): qseecom listener services process entry PPID = 1
+06-04 04:42:24.683 E/QSEECOMD: (  525): Listener: index = 0, hierarchy = 0
+06-04 04:42:24.683 D/vndksupport(  512): Loading /vendor/lib64/hw/memtrack.msm8953.so from current namespace instead of sphal namespace.
+06-04 04:42:24.684 I/lowmemorykiller(  533): Using in-kernel low memory killer interface
+06-04 04:42:24.690 D/vndksupport(  515): Loading /vendor/lib64/hw/android.hardware.sensors@1.0-impl.so from current namespace instead of sphal namespace.
+06-04 04:42:24.694 I/ServiceManagement(  516): Removing namespace from process name android.hardware.thermal@1.0-service to thermal@1.0-service.
+06-04 04:42:24.694 D/vndksupport(  509): Loading /vendor/lib64/hw/android.hardware.graphics.composer@2.1-impl.so from current namespace instead of sphal namespace.
+06-04 04:42:24.694 I/ServiceManagement(  521): Removing namespace from process name vendor.qti.esepowermanager@1.0-service to esepowermanager@1.0-service.
+06-04 04:42:24.695 I/android.hardware.thermal@1.0-service(  516): Registration complete for android.hardware.thermal@1.0::IThermal/default.
+06-04 04:42:24.696 I/vendor.qti.esepowermanager@1.0-service(  521): Registration complete for vendor.qti.esepowermanager@1.0::IEsePowerManager/default.
+06-04 04:42:24.696 I/ServiceManagement(  512): Removing namespace from process name android.hardware.memtrack@1.0-service to memtrack@1.0-service.
+06-04 04:42:24.697 I/android.hardware.memtrack@1.0-service(  512): Registration complete for android.hardware.memtrack@1.0::IMemtrack/default.
+06-04 04:42:24.703 I/tftp_server(  528): Starting...
+06-04 04:42:24.703 I/rmt_storage(  527): Shared memory initialised successfully.
+06-04 04:42:24.703 I/rmt_storage(  527): Registering modemst1: 0x4a /boot/modem_fs1
+06-04 04:42:24.703 I/rmt_storage(  527): Registering modemst2: 0x4b /boot/modem_fs2
+06-04 04:42:24.703 I/rmt_storage(  527): Registering fsc: 0xff /boot/modem_fsc
+06-04 04:42:24.703 I/rmt_storage(  527): Registering fsg: 0x58 /boot/modem_fsg
+06-04 04:42:24.703 I/rmt_storage(  527): 4 GPT partitions found
+06-04 04:42:24.703 I/rmt_storage(  527): Capset success!
+06-04 04:42:24.706 D/QSEECOMD: (  525): Init dlopen(librpmb.so, RTLD_NOW) succeeds
+06-04 04:42:24.706 D/QSEECOMD: (  525): Init::Init dlsym(g_FSHandle rpmb_init_service) succeeds
+06-04 04:42:24.706 I/rpmb_emmc(  525): RPMB Mult (512-bytes sector) = 8192, Rel_sec_cnt = 32
+06-04 04:42:24.706 E/DrmLibRpmb(  525): rpmb_init succeeded! with ret = 0
+06-04 04:42:24.706 D/QSEECOMD: (  525): Init rpmb_init_service ret = 0
+06-04 04:42:24.706 D/QSEECOMD: (  525): RPMB system services: init (Listener ID = 8192)
+06-04 04:42:24.706 E/QSEECOMD: (  525): Listener: index = 1, hierarchy = 0
+06-04 04:42:24.706 D/vndksupport(  518): Loading /vendor/lib64/hw/android.hardware.vibrator@1.0-impl.so from current namespace instead of sphal namespace.
+06-04 04:42:24.713 D/QSEECOMD: (  525): Init dlopen(libssd.so, RTLD_NOW) succeeds
+06-04 04:42:24.713 D/QSEECOMD: (  525): Init::Init dlsym(g_FSHandle ssd_init_service) succeeds
+06-04 04:42:24.713 E/SSD     (  525): ssd_init_service succeeded!
+06-04 04:42:24.713 D/QSEECOMD: (  525): Init ssd_init_service ret = 0
+06-04 04:42:24.713 D/QSEECOMD: (  525): SSD system services: init (Listener ID = 12288)
+06-04 04:42:24.713 E/QSEECOMD: (  525): Listener: index = 2, hierarchy = 0
+06-04 04:42:24.713 E/QSEECOMD: (  525): Init dlopen(libsecureui.so, RLTD_NOW) is failed.... dlopen failed: library "libsecureui.so" not found
+06-04 04:42:24.713 D/QSEECOMD: (  525): SEC_UI_INIT failed, shall not start secure ui listener
+06-04 04:42:24.714 D/QSEECOMD: (  525): Parent qseecom daemon process paused!! 
+06-04 04:42:24.714 D/QSEECOMD: (  539): qseecom listener service threads starting!!! 
+06-04 04:42:24.714 D/QSEECOMD: (  539): Total listener services to start = 9
+06-04 04:42:24.714 E/QSEECOMD: (  539): Listener: index = 0, hierarchy = 1
+06-04 04:42:24.714 D/QSEECOMD: (  539): Init dlopen(librpmb.so, RTLD_NOW) succeeds
+06-04 04:42:24.714 D/QSEECOMD: (  539): Init::Init dlsym(g_FSHandle rpmb_start) succeeds
+06-04 04:42:24.714 D/QSEECOMAPI(  539): QSEECom_register_listener 8192 sb_length = 0x6400
+06-04 04:42:24.715 D/QSEECOMD: (  539): Init rpmb_start ret = 0
+06-04 04:42:24.715 D/QSEECOMD: (  539): RPMB system services: Started (Listener ID = 8192)
+06-04 04:42:24.715 E/QSEECOMD: (  539): Listener: index = 1, hierarchy = 1
+06-04 04:42:24.715 D/QSEECOMD: (  539): Init dlopen(libssd.so, RTLD_NOW) succeeds
+06-04 04:42:24.715 D/QSEECOMD: (  539): Init::Init dlsym(g_FSHandle ssd_start) succeeds
+06-04 04:42:24.715 D/QSEECOMAPI(  539): QSEECom_register_listener 12288 sb_length = 0x5000
+06-04 04:42:24.716 D/QSEECOMD: (  539): Init ssd_start ret = 0
+06-04 04:42:24.716 D/QSEECOMD: (  539): SSD system services: Started (Listener ID = 12288)
+06-04 04:42:24.716 E/QSEECOMD: (  539): Listener: index = 2, hierarchy = 1
+06-04 04:42:24.716 E/QSEECOMD: (  539): Init dlopen(libsecureui.so, RLTD_NOW) is failed.... dlopen failed: library "libsecureui.so" not found
+06-04 04:42:24.716 E/QSEECOMD: (  539): Listener: index = 3, hierarchy = 1
+06-04 04:42:24.720 D/vndksupport(  518): Loading /vendor/lib64/hw/vibrator.default.so from current namespace instead of sphal namespace.
+06-04 04:42:24.727 I/ServiceManagement(  508): Removing namespace from process name android.hardware.graphics.allocator@2.0-service to allocator@2.0-service.
+06-04 04:42:24.729 I/android.hardware.graphics.allocator@2.0-service(  508): Registration complete for android.hardware.graphics.allocator@2.0::IAllocator/default.
+06-04 04:42:24.730 D/        (  518): Vibrator using timed_output
+06-04 04:42:24.731 I/ServiceManagement(  518): Removing namespace from process name android.hardware.vibrator@1.0-service to vibrator@1.0-service.
+06-04 04:42:24.733 I/android.hardware.vibrator@1.0-service(  518): Registration complete for android.hardware.vibrator@1.0::IVibrator/default.
+06-04 04:42:24.734 D/QSEECOMD: (  539): Init dlopen(libdrmtime.so, RTLD_NOW) succeeds
+06-04 04:42:24.734 D/QSEECOMD: (  539): Init::Init dlsym(g_FSHandle atime_start) succeeds
+06-04 04:42:24.734 D/DrmLibTime(  539): QSEE Time Listener: atime_start
+06-04 04:42:24.734 D/QSEECOMAPI(  539): QSEECom_register_listener 11 sb_length = 0x5000
+06-04 04:42:24.734 D/android.hardware.drm@1.0-service(  506): android.hardware.drm@1.0-service starting...
+06-04 04:42:24.734 D/android.hardware.cas@1.0-service(  504): android.hardware.cas@1.0-service starting...
+06-04 04:42:24.735 I/ServiceManagement(  504): Removing namespace from process name android.hardware.cas@1.0-service to cas@1.0-service.
+06-04 04:42:24.735 D/DrmLibTime(  539): registering fs service to QSEECom is done!
+06-04 04:42:24.735 D/DrmLibTime(  539): begin to create a thread!
+06-04 04:42:24.735 D/DrmLibTime(  539): Creating a pthread in atime_start is done! return 0
+06-04 04:42:24.735 D/QSEECOMD: (  539): Init atime_start ret = 0
+06-04 04:42:24.735 D/QSEECOMD: (  539): time services: Started (Listener ID = 11)
+06-04 04:42:24.735 E/QSEECOMD: (  539): Listener: index = 4, hierarchy = 1
+06-04 04:42:24.735 D/DrmLibTime(  539): QSEE Time Listener: dispatch
+06-04 04:42:24.735 D/DrmLibTime(  539): before calling ioctl to read the next time_cmd
+06-04 04:42:24.735 D/QSEECOMD: (  539): Init dlopen(libdrmfs.so, RTLD_NOW) succeeds
+06-04 04:42:24.735 D/QSEECOMD: (  539): Init::Init dlsym(g_FSHandle fs_start) succeeds
+06-04 04:42:24.735 D/QSEECOMAPI(  539): QSEECom_register_listener 10 sb_length = 0x5000
+06-04 04:42:24.736 D/QSEECOMD: (  539): Init fs_start ret = 0
+06-04 04:42:24.736 D/QSEECOMD: (  539): file system services: Started (Listener ID = 10)
+06-04 04:42:24.736 E/QSEECOMD: (  539): Listener: index = 5, hierarchy = 1
+06-04 04:42:24.736 D/QSEECOMD: (  539): Init dlopen(libdrmfs.so, RTLD_NOW) succeeds
+06-04 04:42:24.736 D/QSEECOMD: (  539): Init::Init dlsym(g_FSHandle gpfs_start) succeeds
+06-04 04:42:24.736 D/QSEECOMAPI(  539): QSEECom_register_listener 28672 sb_length = 0x7e000
+06-04 04:42:24.738 D/QSEECOMD: (  539): Init gpfs_start ret = 0
+06-04 04:42:24.738 D/QSEECOMD: (  539): gpfile system services: Started (Listener ID = 28672)
+06-04 04:42:24.738 E/QSEECOMD: (  539): Listener: index = 6, hierarchy = 1
+06-04 04:42:24.743 D/vndksupport(  509): Loading /vendor/lib64/hw/hwcomposer.msm8953.so from current namespace instead of sphal namespace.
+06-04 04:42:24.748 D/vndksupport(  506): Loading /vendor/lib/hw/android.hardware.drm@1.0-impl.so from current namespace instead of sphal namespace.
+06-04 04:42:24.749 D/QSEECOMD: (  539): Init dlopen(libqisl.so, RTLD_NOW) succeeds
+06-04 04:42:24.749 D/QSEECOMD: (  539): Init::Init dlsym(g_FSHandle qisl_start) succeeds
+06-04 04:42:24.750 I/QISL    (  539): QSEE Interrupt Service Listener Thread is started
+06-04 04:42:24.750 D/QSEECOMAPI(  539): QSEECom_register_listener 36864 sb_length = 0x1f4
+06-04 04:42:24.756 I/ServiceManagement(  524): Removing namespace from process name vendor.qti.hardware.sensorscalibrate@1.0-service to sensorscalibrate@1.0-service.
+06-04 04:42:24.756 I/ServiceManagement(  503): Removing namespace from process name android.hardware.bluetooth@1.0-service-qti to bluetooth@1.0-service-qti.
+06-04 04:42:24.757 I/PerMgrSrv(  529): Adding entry for modem : offTimeout : 500 ackTimeout : 200
+06-04 04:42:24.757 W/hwservicemanager(  463): getTransport: Cannot find entry android.hardware.thermal@1.1::IThermal/default in either framework or device manifest.
+06-04 04:42:24.757 W/thermalserviced(  535): Unable to get Thermal HAL V1.1, vendor thermal event notification not available
+06-04 04:42:24.758 I/vendor.qti.hardware.sensorscalibrate@1.0-service(  524): Registration complete for vendor.qti.hardware.sensorscalibrate@1.0::ISensorsCalibrate/default.
+06-04 04:42:24.759 I/        (  503): Registration complete for android.hardware.bluetooth@1.0::IBluetoothHci/default.
+06-04 04:42:24.759 W/hwservicemanager(  463): getTransport: Cannot find entry vendor.qti.hardware.fm@1.0::IFmHci/default in either framework or device manifest.
+06-04 04:42:24.759 D/vndksupport(  503): Loading /vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so from current namespace instead of sphal namespace.
+06-04 04:42:24.764 I/PerMgrSrv(  529): Peripheral Mananager service start
+06-04 04:42:24.764 I/PerMgrSrv(  529): power-off timeout 500,ms; event-ack timeout 200,ms; debug-mode false
+06-04 04:42:24.764 I/PerMgrSrv(  529): Statistics for : modem
+06-04 04:42:24.764 I/PerMgrSrv(  529): modem: Current State : is off-line
+06-04 04:42:24.764 I/PerMgrSrv(  529): modem: Voter/Listener count : 0/0
+06-04 04:42:24.764 I/PerMgrSrv(  529): modem: Power on count : 0
+06-04 04:42:24.764 I/PerMgrSrv(  529): modem: Power off count: 0
+06-04 04:42:24.764 I/PerMgrSrv(  529): modem: Client list:
+06-04 04:42:24.765 I/ServiceManagement(  520): Removing namespace from process name vendor.display.color@1.0-service to color@1.0-service.
+06-04 04:42:24.766 I/PerMgrSrv(  529): QMI service start
+06-04 04:42:24.772 E/libsensor1(  515): check_sensors_enabled: Sensors enabled = true
+06-04 04:42:24.778 I/ServiceManagement(  523): Removing namespace from process name vendor.qti.hardware.perf@1.0-service to perf@1.0-service.
+06-04 04:42:24.780 E/vendor.qti.hardware.perf@1.0-service(  523): Registered IPerf HAL service success!
+06-04 04:42:24.781 I/tftp_server(  528): pid=528 tid=528 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [17] [/data/vendor/tombstones/rfs/modem] [File exists]
+06-04 04:42:24.781 I/tftp_server(  528): pid=528 tid=528 tftp-server : INF :[tftp_os_la.c, 141] chown failed: [1] [/data/vendor/tombstones/rfs/modem] [Operation not permitted]
+06-04 04:42:24.781 I/tftp_server(  528): pid=528 tid=528 tftp-server : INF :[tftp_os_la.c, 141] chown failed: [1] [/data/vendor/tombstones/rfs/modem] [Operation not permitted]
+06-04 04:42:24.781 I/tftp_server(  528): pid=528 tid=528 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [17] [/data/vendor/tombstones/rfs/modem/] [File exists]
+06-04 04:42:24.781 I/tftp_server(  528): pid=528 tid=528 tftp-server : INF :[tftp_os_la.c, 141] chown failed: [1] [/data/vendor/tombstones/rfs/modem/] [Operation not permitted]
+06-04 04:42:24.782 D/nxpnfc@1.0-service(  513): NFC HAL Service 1.1 is starting.
+06-04 04:42:24.782 I/ServiceManagement(  513): Removing namespace from process name android.hardware.nfc@1.1-service to nfc@1.1-service.
+06-04 04:42:24.783 I/QTI PowerHAL(  514): Initing
+06-04 04:42:24.784 I/Netd    (  492): Initializing RouteController: 209.1ms
+06-04 04:42:24.784 D/XfrmController(  492): Sending Netlink XFRM Message: XFRM_MSG_FLUSHSA
+06-04 04:42:24.784 D/XfrmController(  492): Sending Netlink XFRM Message: XFRM_MSG_FLUSHPOLICY
+06-04 04:42:24.784 I/        (  503): Registration complete for vendor.qti.hardware.fm@1.0::IFmHci/default.
+06-04 04:42:24.784 I/ServiceManagement(  514): Removing namespace from process name android.hardware.power@1.0-service to power@1.0-service.
+06-04 04:42:24.785 E/SELinux (  463): avc:  denied  { add } for interface=vendor.nxp.nxpnfc::INxpNfc pid=513 scontext=u:r:hal_nfc_default:s0 tcontext=u:object_r:default_android_hwservice:s0 tclass=hwservice_manager permissive=1
+06-04 04:42:24.786 I/tftp_server(  528): pid=528 tid=528 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [17] [/data/vendor/tombstones/rfs/lpass] [File exists]
+06-04 04:42:24.786 I/tftp_server(  528): pid=528 tid=528 tftp-server : INF :[tftp_os_la.c, 141] chown failed: [1] [/data/vendor/tombstones/rfs/lpass] [Operation not permitted]
+06-04 04:42:24.786 I/tftp_server(  528): pid=528 tid=528 tftp-server : INF :[tftp_os_la.c, 141] chown failed: [1] [/data/vendor/tombstones/rfs/lpass] [Operation not permitted]
+06-04 04:42:24.786 I/tftp_server(  528): pid=528 tid=528 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [17] [/data/vendor/tombstones/rfs/lpass/] [File exists]
+06-04 04:42:24.786 I/tftp_server(  528): pid=528 tid=528 tftp-server : INF :[tftp_os_la.c, 141] chown failed: [1] [/data/vendor/tombstones/rfs/lpass/] [Operation not permitted]
+06-04 04:42:24.786 D/nxpnfc@1.0-service(  513): NFC service is ready
+06-04 04:42:24.787 I/android.hardware.power@1.0-service(  514): Registration complete for android.hardware.power@1.0::IPower/default.
+06-04 04:42:24.791 I/tftp_server(  528): pid=528 tid=528 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [17] [/data/vendor/tombstones/rfs/tn] [File exists]
+06-04 04:42:24.791 I/tftp_server(  528): pid=528 tid=528 tftp-server : INF :[tftp_os_la.c, 141] chown failed: [1] [/data/vendor/tombstones/rfs/tn] [Operation not permitted]
+06-04 04:42:24.791 I/tftp_server(  528): pid=528 tid=528 tftp-server : INF :[tftp_os_la.c, 141] chown failed: [1] [/data/vendor/tombstones/rfs/tn] [Operation not permitted]
+06-04 04:42:24.791 I/tftp_server(  528): pid=528 tid=528 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [17] [/data/vendor/tombstones/rfs/tn/] [File exists]
+06-04 04:42:24.791 I/tftp_server(  528): pid=528 tid=528 tftp-server : INF :[tftp_os_la.c, 141] chown failed: [1] [/data/vendor/tombstones/rfs/tn/] [Operation not permitted]
+06-04 04:42:24.793 I/tftp_server(  528): pid=528 tid=528 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [17] [/data/vendor/tombstones/rfs/slpi] [File exists]
+06-04 04:42:24.793 I/tftp_server(  528): pid=528 tid=528 tftp-server : INF :[tftp_os_la.c, 141] chown failed: [1] [/data/vendor/tombstones/rfs/slpi] [Operation not permitted]
+06-04 04:42:24.793 I/tftp_server(  528): pid=528 tid=528 tftp-server : INF :[tftp_os_la.c, 141] chown failed: [1] [/data/vendor/tombstones/rfs/slpi] [Operation not permitted]
+06-04 04:42:24.793 I/tftp_server(  528): pid=528 tid=528 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [17] [/data/vendor/tombstones/rfs/slpi/] [File exists]
+06-04 04:42:24.793 I/tftp_server(  528): pid=528 tid=528 tftp-server : INF :[tftp_os_la.c, 141] chown failed: [1] [/data/vendor/tombstones/rfs/slpi/] [Operation not permitted]
+06-04 04:42:24.793 I/tftp_server(  528): pid=528 tid=528 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [17] [/persist/rfs/shared] [File exists]
+06-04 04:42:24.793 I/tftp_server(  528): pid=528 tid=528 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [17] [/persist/rfs/shared/] [File exists]
+06-04 04:42:24.793 I/tftp_server(  528): pid=528 tid=528 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [17] [/persist/rfs/msm/mpss] [File exists]
+06-04 04:42:24.793 I/tftp_server(  528): pid=528 tid=528 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [17] [/persist/rfs/msm/mpss/] [File exists]
+06-04 04:42:24.793 I/tftp_server(  528): pid=528 tid=528 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [17] [/persist/rfs/msm/adsp] [File exists]
+06-04 04:42:24.793 I/tftp_server(  528): pid=528 tid=528 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [17] [/persist/rfs/msm/adsp/] [File exists]
+06-04 04:42:24.793 I/tftp_server(  528): pid=528 tid=528 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [17] [/persist/rfs/msm/slpi] [File exists]
+06-04 04:42:24.793 I/tftp_server(  528): pid=528 tid=528 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [17] [/persist/rfs/msm/slpi/] [File exists]
+06-04 04:42:24.793 I/tftp_server(  528): pid=528 tid=528 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [17] [/persist/rfs/mdm/mpss] [File exists]
+06-04 04:42:24.793 I/tftp_server(  528): pid=528 tid=528 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [17] [/persist/rfs/mdm/mpss/] [File exists]
+06-04 04:42:24.793 I/tftp_server(  528): pid=528 tid=528 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [17] [/persist/rfs/mdm/adsp] [File exists]
+06-04 04:42:24.793 I/tftp_server(  528): pid=528 tid=528 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [17] [/persist/rfs/mdm/adsp/] [File exists]
+06-04 04:42:24.793 I/tftp_server(  528): pid=528 tid=528 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [17] [/persist/rfs/mdm/slpi] [File exists]
+06-04 04:42:24.793 I/tftp_server(  528): pid=528 tid=528 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [17] [/persist/rfs/mdm/slpi/] [File exists]
+06-04 04:42:24.793 I/tftp_server(  528): pid=528 tid=528 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [17] [/persist/rfs/mdm/tn] [File exists]
+06-04 04:42:24.793 I/tftp_server(  528): pid=528 tid=528 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [17] [/persist/rfs/mdm/tn/] [File exists]
+06-04 04:42:24.793 I/tftp_server(  528): pid=528 tid=528 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [17] [/persist/rfs/apq/gnss] [File exists]
+06-04 04:42:24.793 I/tftp_server(  528): pid=528 tid=528 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [17] [/persist/rfs/apq/gnss/] [File exists]
+06-04 04:42:24.793 I/tftp_server(  528): pid=528 tid=528 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [17] [/persist/hlos_rfs/shared] [File exists]
+06-04 04:42:24.793 I/tftp_server(  528): pid=528 tid=528 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [17] [/persist/hlos_rfs/shared/] [File exists]
+06-04 04:42:24.804 I/LocSvc_HIDL_vendor.qti.gnss@1.0-service(  522): main
+06-04 04:42:24.806 W/hwservicemanager(  463): getTransport: Cannot find entry android.hardware.gnss@1.1::IGnss/default in either framework or device manifest.
+06-04 04:42:24.806 E/LocSvc_HIDL_vendor.qti.gnss@1.0-service(  522): Could not get passthrough implementation for android.hardware.gnss@1.1::IGnss/default.
+06-04 04:42:24.806 W/LocSvc_HIDL_vendor.qti.gnss@1.0-service(  522): Failed to register IGnss 1.1 service: 1, try IGnss 1.0
+06-04 04:42:24.807 D/vndksupport(  522): Loading /vendor/lib64/hw/android.hardware.gnss@1.0-impl-qti.so from current namespace instead of sphal namespace.
+06-04 04:42:24.821 D/vndksupport(  502): Loading /vendor/lib/hw/android.hardware.audio@4.0-impl.so from current namespace instead of sphal namespace.
+06-04 04:42:24.824 I/android.hardware.wifi@1.0-service(  519): Wifi Hal is booting up...
+06-04 04:42:24.825 I/ServiceManagement(  519): Removing namespace from process name android.hardware.wifi@1.0-service to wifi@1.0-service.
+06-04 04:42:24.827 W//vendor/bin/hw/android.hardware.configstore@1.1-service(  505): libminijail[505]: allowing syscall: connect
+06-04 04:42:24.827 W//vendor/bin/hw/android.hardware.configstore@1.1-service(  505): libminijail[505]: allowing syscall: fcntl
+06-04 04:42:24.827 W//vendor/bin/hw/android.hardware.configstore@1.1-service(  505): libminijail[505]: allowing syscall: sendto
+06-04 04:42:24.827 W//vendor/bin/hw/android.hardware.configstore@1.1-service(  505): libminijail[505]: allowing syscall: socket
+06-04 04:42:24.827 W//vendor/bin/hw/android.hardware.configstore@1.1-service(  505): libminijail[505]: allowing syscall: writev
+06-04 04:42:24.838 E/PerMgrProxy(  562): Starting pm-proxy service
+06-04 04:42:24.839 I/PerMgrProxy(  562): Found internal modem
+06-04 04:42:24.840 D/PerMgrSrv(  529): modem state: is off-line, add client PM-PROXY-THREAD
+06-04 04:42:24.840 D/PerMgrSrv(  529): PM-PROXY-THREAD registered
+06-04 04:42:24.840 D/PerMgrLib(  562): PM-PROXY-THREAD successfully registered for modem
+06-04 04:42:24.840 I/PerMgrProxy(  562): pm-proxy-thread Voting for internal modem
+06-04 04:42:24.840 D/PerMgrLib(  562): PM-PROXY-THREAD voting for modem
+06-04 04:42:24.840 D/PerMgrSrv(  529): PM-PROXY-THREAD voting for modem
+06-04 04:42:24.840 D/PerMgrSrv(  529): modem new state: going on-line
+06-04 04:42:24.840 D/PerMgrSrv(  529): modem num voters is 1
+06-04 04:42:24.841 W//vendor/bin/hw/android.hardware.configstore@1.1-service(  505): libminijail[505]: logging seccomp filter failures
+06-04 04:42:24.841 I/ServiceManagement(  505): Removing namespace from process name android.hardware.configstore@1.1-service to configstore@1.1-service.
+06-04 04:42:24.842 I/Netd    (  492): Initializing XfrmController: 58.7ms
+06-04 04:42:24.844 E/Netd    (  492): Unable to create netlink socket: Protocol not supported
+06-04 04:42:24.844 W/Netd    (  492): Unable to open qlog quota socket, check if xt_quota2 can send via UeventHandler
+06-04 04:42:24.844 D/MDnsDS  (  492): MDnsSdListener::Hander starting up
+06-04 04:42:24.844 D/MDnsDS  (  492): MDnsSdListener starting to monitor
+06-04 04:42:24.844 D/MDnsDS  (  492): Going to poll with pollCount 1
+06-04 04:42:24.845 I/adbd    (  561): initializing functionfs
+06-04 04:42:24.845 I/adbd    (  561): opening control endpoint /dev/usb-ffs/adb/ep0
+06-04 04:42:24.845 I/ServiceManagement(  506): Removing namespace from process name android.hardware.drm@1.0-service to drm@1.0-service.
+06-04 04:42:24.846 I/Netd    (  492): Registering NetdNativeService: 1.8ms
+06-04 04:42:24.846 I/Netd    (  492): Starting CommandListener: 0.1ms
+06-04 04:42:24.847 I/android.hardware.drm@1.0-service(  506): Registration complete for android.hardware.drm@1.0::IDrmFactory/default.
+06-04 04:42:24.849 D/vndksupport(  506): Loading /vendor/lib/hw/android.hardware.drm@1.0-impl.so from current namespace instead of sphal namespace.
+06-04 04:42:24.850 I/Netd    (  492): Registering NetdHwService: 3.6ms
+06-04 04:42:24.850 I/Netd    (  492): Netd started in 313ms
+06-04 04:42:24.850 I/ServiceManagement(  506): Removing namespace from process name android.hardware.drm@1.0-service to drm@1.0-service.
+06-04 04:42:24.851 I/android.hardware.drm@1.0-service(  506): Registration complete for android.hardware.drm@1.0::ICryptoFactory/default.
+06-04 04:42:24.854 I/ssr_setup(  563): Using persist.sys.ssr.restart_level for ssr_setup
+06-04 04:42:24.855 I/ssr_setup(  563): Enabling SSR for subsys0
+06-04 04:42:24.855 I/ssr_setup(  563): Enabling SSR for subsys1
+06-04 04:42:24.855 I/ssr_setup(  563): Enabling SSR for subsys2
+06-04 04:42:24.855 I/ssr_setup(  563): Enabling SSR for subsys3
+06-04 04:42:24.855 I/ssr_setup(  563): Enabling SSR for subsys4
+06-04 04:42:24.856 I/adbd    (  561): functionfs successfully initialized
+06-04 04:42:24.856 I/adbd    (  561): registering usb transport
+06-04 04:42:24.858 I/LocSvc_HIDL_vendor.qti.gnss@1.0-service(  522): Registration complete for android.hardware.gnss@1.0::IGnss/default.
+06-04 04:42:24.859 D/vndksupport(  522): Loading /vendor/lib64/hw/vendor.qti.gnss@1.0-impl.so from current namespace instead of sphal namespace.
+06-04 04:42:24.868 I/ServiceManagement(  502): Removing namespace from process name android.hardware.audio@2.0-service to audio@2.0-service.
+06-04 04:42:24.870 I/audiohalservice(  502): Registration complete for android.hardware.audio@4.0::IDevicesFactory/default.
+06-04 04:42:24.873 D/vndksupport(  502): Loading /vendor/lib/hw/android.hardware.audio.effect@4.0-impl.so from current namespace instead of sphal namespace.
+06-04 04:42:24.880 I/QISL    (  539): QSEE Interrupt Service Listener was activated successfully
+06-04 04:42:24.880 D/QSEECOMD: (  539): Init qisl_start ret = 0
+06-04 04:42:24.880 D/QSEECOMD: (  539): interrupt services: Started (Listener ID = 36864)
+06-04 04:42:24.880 E/QSEECOMD: (  539): Listener: index = 7, hierarchy = 1
+06-04 04:42:24.880 E/QSEECOMD: (  539): Init dlopen(libspl.so, RLTD_NOW) is failed.... dlopen failed: library "libspl.so" not found
+06-04 04:42:24.880 E/QSEECOMD: (  539): Listener: index = 8, hierarchy = 1
+06-04 04:42:24.888 E//vendor/bin/adsprpcd(  597): vendor/qcom/proprietary/commonsys-intf/adsprpc/src/adsprpcd.c:29:adsp daemon starting
+06-04 04:42:24.897 D/QSEECOMD: (  539): Init dlopen(libGPreqcancel.so, RTLD_NOW) succeeds
+06-04 04:42:24.898 D/QSEECOMD: (  539): Init::Init dlsym(g_FSHandle gp_reqcancel_start) succeeds
+06-04 04:42:24.898 D/QSEECOMAPI(  539): QSEECom_register_listener 4352 sb_length = 0x5000
+06-04 04:42:24.912 D/QSEECOMD: (  539): Init gp_reqcancel_start ret = 0
+06-04 04:42:24.912 D/QSEECOMD: (  539): gp request cancellation services: Started (Listener ID = 4352)
+06-04 04:42:24.924 E/Diag_Lib(  598): qpLogDiagInit <== result : 1
+06-04 04:42:24.925 E/Diag_Lib(  598): QMID : gIsQXDMDisabled 0, gIsADBDisabled 1, gIsDebugDisabled 0, gIsIMSLogsDisabled 0
+06-04 04:42:24.925 E/Diag_Lib(  598): [IMS_QMID] |imsqmiserver.c | 541 | QMID#$$#0#QMI DAEMON STARTED
+06-04 04:42:24.926 D//vendor/bin/adsprpcd(  597): vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:1561: Error: Device node open failed for domain 0 (errno Operation not permitted)
+06-04 04:42:24.926 D//vendor/bin/adsprpcd(  597): vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:1858: Error 0x57: apps_dev_init failed. domain 0, errno Operation not permitted
+06-04 04:42:24.926 D//vendor/bin/adsprpcd(  597): vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:1950: Error 57: open dev -1 for domain 0 failed
+06-04 04:42:24.926 D//vendor/bin/adsprpcd(  597): vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:896: Error 2c: remote handle invoke failed. domain 0, handle ffffffff, sc 0, pra 0x0
+06-04 04:42:24.926 E//vendor/bin/adsprpcd(  597): vendor/qcom/proprietary/commonsys-intf/adsprpc/src/adsprpcd.c:43:adsp daemon will restart after 25ms...
+06-04 04:42:24.950 D/QSEECOMD: (  539): QSEECOM DAEMON RUNNING 
+06-04 04:42:24.951 I/audiohalservice(  502): Registration complete for android.hardware.audio.effect@4.0::IEffectsFactory/default.
+06-04 04:42:24.951 W/hwservicemanager(  463): getTransport: Cannot find entry android.hardware.soundtrigger@2.1::ISoundTriggerHw/default in either framework or device manifest.
+06-04 04:42:24.953 D//vendor/bin/adsprpcd(  597): vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:1561: Error: Device node open failed for domain 0 (errno Operation not permitted)
+06-04 04:42:24.953 D//vendor/bin/adsprpcd(  597): vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:1858: Error 0x57: apps_dev_init failed. domain 0, errno Operation not permitted
+06-04 04:42:24.953 D//vendor/bin/adsprpcd(  597): vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:1950: Error 57: open dev -1 for domain 0 failed
+06-04 04:42:24.953 D//vendor/bin/adsprpcd(  597): vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:896: Error 2c: remote handle invoke failed. domain 0, handle ffffffff, sc 0, pra 0x0
+06-04 04:42:24.953 E//vendor/bin/adsprpcd(  597): vendor/qcom/proprietary/commonsys-intf/adsprpc/src/adsprpcd.c:43:adsp daemon will restart after 25ms...
+06-04 04:42:24.953 I/ThermalEngine(  595): Throttling daemon started
+06-04 04:42:24.955 I/ThermalEngine(  595): No target config file, falling back to '/vendor/etc/thermal-engine.conf'
+06-04 04:42:24.955 I/ThermalEngine(  595): devices_manager_init: Init
+06-04 04:42:24.955 I/ThermalEngine(  595): Number of gpus :1
+06-04 04:42:24.955 I/Thermal-IOCTL(  595): KTM IOCTL interface "/dev/msm_thermal_query" opened
+06-04 04:42:24.955 I/ThermalEngine(  595): update_cpu_topology: Cluster Info[0]. Cluster Id: 0 cpu_bits:0xf sync:1
+06-04 04:42:24.955 I/ThermalEngine(  595): update_cpu_topology: Cluster Info[1]. Cluster Id: 1 cpu_bits:0xf0 sync:1
+06-04 04:42:24.957 E/QMI_FW  (  595): QMUXD: WARNING qmi_qmux_if_pwr_up_init failed! rc=-6
+06-04 04:42:24.957 I/ThermalEngine(  595): vdd_rstr_init: Init KTM VDD RSTR enabled: 0
+06-04 04:42:24.959 E/audiohalservice(  502): Could not get passthrough implementation for android.hardware.soundtrigger@2.1::ISoundTriggerHw/default.
+06-04 04:42:24.960 W/hwservicemanager(  463): getTransport: Cannot find entry android.hardware.soundtrigger@2.0::ISoundTriggerHw/default in either framework or device manifest.
+06-04 04:42:24.960 E/audiohalservice(  502): Could not get passthrough implementation for android.hardware.soundtrigger@2.0::ISoundTriggerHw/default.
+06-04 04:42:24.960 I/installd(  609): installd firing up
+06-04 04:42:24.960 W/audiohalservice(  502): Could not register soundtrigger API 2.0 nor 2.1
+06-04 04:42:24.961 W/hwservicemanager(  463): getTransport: Cannot find entry android.hardware.bluetooth.a2dp@1.0::IBluetoothAudioOffload/default in either framework or device manifest.
+06-04 04:42:24.961 E/audiohalservice(  502): Could not get passthrough implementation for android.hardware.bluetooth.a2dp@1.0::IBluetoothAudioOffload/default.
+06-04 04:42:24.961 W/audiohalservice(  502): Could not register Bluetooth audio offload 1.0
+06-04 04:42:24.963 I/PerfDaemon(  617): PerfDaemon is starting.
+06-04 04:42:24.966 I/wcnss_service(  596): dynamic nv only for QRD platform, current platform:MTP.
+06-04 04:42:24.966 E/wcnss_service(  596): Serial Number is  326aca8c
+06-04 04:42:24.966 E/wcnss_service(  596): Failed to write to /dev/wcnss_ctrl : Invalid argument
+06-04 04:42:24.967 W/KHUNG   (  631):  Khung is not enabled for msm8953
+06-04 04:42:24.974 D/QC-time-services(  629): Daemon:genoff_pre_init::Base = 0
+06-04 04:42:24.974 D/QC-time-services(  629): Daemon:ats_rtc_init: Time read from RTC -- year = 70, month = 5,day = 3
+06-04 04:42:24.978 D/QSEECOMAPI(  507): QSEECom_get_handle sb_length = 0xa000
+06-04 04:42:24.978 D/QSEECOMAPI(  507): App is already loaded QSEE and app id = 65537
+06-04 04:42:24.981 W/KHUNG   (  642):  Khung is not enabled for msm8953
+06-04 04:42:24.984 I/SDM     (  509): HWCSession::StartServices: IDisplayConfig service registration completed.
+06-04 04:42:24.985 I/ThermalEngine(  595): sensors_manager_init: Init
+06-04 04:42:24.985 D/vndksupport(  509): Loading /vendor/lib64/hw/gralloc.msm8953.so from current namespace instead of sphal namespace.
+06-04 04:42:24.989 D/QC-time-services(  629): Daemon ats_rtc_init: seconds = 13302744
+06-04 04:42:24.989 D/QC-time-services(  629): Daemon:Value read from RTC seconds = 13302744000
+06-04 04:42:24.989 D/QC-time-services(  629): Daemon:genoff_init_config: ATS_RTC initialized with rc: 0
+06-04 04:42:24.989 D/QC-time-services(  629): Daemon:genoff_pre_init::Base = 1
+06-04 04:42:24.989 D/QC-time-services(  629): Daemon: Storage Name: ats_1 
+06-04 04:42:24.989 D/QC-time-services(  629): Daemon:Opening File: /mnt/vendor/persist/time/ats_1 /data/vendor/time/ats_1
+06-04 04:42:24.989 D/QC-time-services(  629): Daemon:time_persistent_memory_opr:Genoff Read operation 
+06-04 04:42:24.990 W/KHUNG   (  636):  Khung is not enabled for msm8953
+06-04 04:42:24.993 I/Magisk  (  483): ** late_start service mode running
+06-04 04:42:24.994 I/Magisk  (  483): * Running service.d scripts
+06-04 04:42:25.000 W/KHUNG   (  652):  Khung is not enabled for msm8953
+06-04 04:42:25.000 D/QCALOG  (  638): [location-mq] SRV Socket-Opend
+06-04 04:42:25.007 D/QC-time-services(  629): Daemon:Open File: /data/vendor/time/ats_1
+06-04 04:42:25.008 D/QC-time-services(  629): Daemon:genoff_pre_init::Base = 2
+06-04 04:42:25.008 D/QC-time-services(  629): Daemon: Storage Name: ats_2 
+06-04 04:42:25.008 D/QC-time-services(  629): Daemon:Opening File: /mnt/vendor/persist/time/ats_2 /data/vendor/time/ats_2
+06-04 04:42:25.008 D/QC-time-services(  629): Daemon:time_persistent_memory_opr:Genoff Read operation 
+06-04 04:42:25.008 I/Magisk  (  483): * Running module service scripts
+06-04 04:42:25.026 E/ThermalEngine(  595): bcl_setup: Error opening /sys/devices/soc/soc:qcom,bcl/iavail
+06-04 04:42:25.026 E/ThermalEngine(  595): add_tgt_sensor: bcl sensor setup failed failed.
+06-04 04:42:25.026 E/ThermalEngine(  595): add_tgt_sensors_set: Error adding bcl
+06-04 04:42:25.026 E/ThermalEngine(  595): sensors_init: Error adding BCL TS
+06-04 04:42:25.026 E/ThermalEngine(  595): sysfs_setup: opening /sys/class/power_supply/battery/capacity
+06-04 04:42:25.026 E/ThermalEngine(  595): sysfs_setup: found sensor cluster0: cluster id = 0
+06-04 04:42:25.026 E/ThermalEngine(  595): sysfs_setup: found sensor cluster1: cluster id = 1
+06-04 04:42:25.026 E/ThermalEngine(  595): sysfs_setup: opening /sys/class/power_supply/battery/charge_rate
+06-04 04:42:25.027 E/ThermalEngine(  595): sysfs_setup: Error: path /sys/class/power_supply/usbeb/present does not exist
+06-04 04:42:25.027 E/ThermalEngine(  595): add_tgt_sensor: usbeb sensor setup failed failed.
+06-04 04:42:25.027 E/ThermalEngine(  595): add_tgt_sensors_set: Error adding usbeb
+06-04 04:42:25.027 E/ThermalEngine(  595): sensors_init: Error adding GEN TS
+06-04 04:42:25.028 D/QC-time-services(  629): Daemon:Open File: /data/vendor/time/ats_2
+06-04 04:42:25.028 D/QC-time-services(  629): Daemon:genoff_pre_init::Base = 3
+06-04 04:42:25.028 D/QC-time-services(  629): Daemon: Storage Name: ats_3 
+06-04 04:42:25.028 D/QC-time-services(  629): Daemon:Opening File: /mnt/vendor/persist/time/ats_3 /data/vendor/time/ats_3
+06-04 04:42:25.028 D/QC-time-services(  629): Daemon:time_persistent_memory_opr:Genoff Read operation 
+06-04 04:42:25.028 D/QC-time-services(  629): Daemon:Open File: /data/vendor/time/ats_3
+06-04 04:42:25.028 D/QC-time-services(  629): Daemon:Unable to open filefor read
+06-04 04:42:25.028 D/QC-time-services(  629): Daemon:genoff_post_init:Error in accessing storage
+06-04 04:42:25.028 D/QC-time-services(  629): Daemon:genoff_pre_init::Base = 4
+06-04 04:42:25.028 D/QC-time-services(  629): Daemon: Storage Name: ats_4 
+06-04 04:42:25.029 D/QC-time-services(  629): Daemon:Opening File: /mnt/vendor/persist/time/ats_4 /data/vendor/time/ats_4
+06-04 04:42:25.029 D/QC-time-services(  629): Daemon:time_persistent_memory_opr:Genoff Read operation 
+06-04 04:42:25.029 D/QC-time-services(  629): Daemon:Open File: /data/vendor/time/ats_4
+06-04 04:42:25.029 D/QC-time-services(  629): Daemon:Unable to open filefor read
+06-04 04:42:25.029 D/QC-time-services(  629): Daemon:genoff_post_init:Error in accessing storage
+06-04 04:42:25.029 D/QC-time-services(  629): Daemon:genoff_pre_init::Base = 5
+06-04 04:42:25.029 D/QC-time-services(  629): Daemon: Storage Name: ats_5 
+06-04 04:42:25.029 D/QC-time-services(  629): Daemon:Opening File: /mnt/vendor/persist/time/ats_5 /data/vendor/time/ats_5
+06-04 04:42:25.029 D/QC-time-services(  629): Daemon:time_persistent_memory_opr:Genoff Read operation 
+06-04 04:42:25.029 D/QC-time-services(  629): Daemon:Open File: /data/vendor/time/ats_5
+06-04 04:42:25.029 D/QC-time-services(  629): Daemon:Unable to open filefor read
+06-04 04:42:25.029 D/QC-time-services(  629): Daemon:genoff_post_init:Error in accessing storage
+06-04 04:42:25.029 D/QC-time-services(  629): Daemon:genoff_pre_init::Base = 6
+06-04 04:42:25.029 D/QC-time-services(  629): Daemon: Storage Name: ats_6 
+06-04 04:42:25.029 D/QC-time-services(  629): Daemon:Opening File: /mnt/vendor/persist/time/ats_6 /data/vendor/time/ats_6
+06-04 04:42:25.029 D/QC-time-services(  629): Daemon:time_persistent_memory_opr:Genoff Read operation 
+06-04 04:42:25.029 D/QC-time-services(  629): Daemon:Open File: /data/vendor/time/ats_6
+06-04 04:42:25.029 D/QC-time-services(  629): Daemon:Unable to open filefor read
+06-04 04:42:25.029 D/QC-time-services(  629): Daemon:genoff_post_init:Error in accessing storage
+06-04 04:42:25.029 D/QC-time-services(  629): Daemon:genoff_pre_init::Base = 7
+06-04 04:42:25.029 D/QC-time-services(  629): Daemon: Storage Name: ats_7 
+06-04 04:42:25.029 D/QC-time-services(  629): Daemon:Opening File: /mnt/vendor/persist/time/ats_7 /data/vendor/time/ats_7
+06-04 04:42:25.029 D/QC-time-services(  629): Daemon:time_persistent_memory_opr:Genoff Read operation 
+06-04 04:42:25.029 D/QC-time-services(  629): Daemon:Open File: /data/vendor/time/ats_7
+06-04 04:42:25.029 D/QC-time-services(  629): Daemon:Unable to open filefor read
+06-04 04:42:25.029 D/QC-time-services(  629): Daemon:genoff_post_init:Error in accessing storage
+06-04 04:42:25.029 D/QC-time-services(  629): Daemon:genoff_pre_init::Base = 8
+06-04 04:42:25.029 D/QC-time-services(  629): Daemon: Storage Name: ats_8 
+06-04 04:42:25.029 D/QC-time-services(  629): Daemon:Opening File: /mnt/vendor/persist/time/ats_8 /data/vendor/time/ats_8
+06-04 04:42:25.029 D/QC-time-services(  629): Daemon:time_persistent_memory_opr:Genoff Read operation 
+06-04 04:42:25.029 D/QC-time-services(  629): Daemon:Open File: /data/vendor/time/ats_8
+06-04 04:42:25.029 D/QC-time-services(  629): Daemon:Unable to open filefor read
+06-04 04:42:25.029 E/ThermalEngine(  595): No hwmon device found in the kernel for sensor tmp108
+06-04 04:42:25.029 D/QC-time-services(  629): Daemon:genoff_post_init:Error in accessing storage
+06-04 04:42:25.029 D/QC-time-services(  629): Daemon:genoff_pre_init::Base = 9
+06-04 04:42:25.029 E/ThermalEngine(  595): add_tgt_sensor: tmp108 sensor setup failed failed.
+06-04 04:42:25.029 D/QC-time-services(  629): Daemon: Storage Name: ats_9 
+06-04 04:42:25.029 E/ThermalEngine(  595): add_tgt_sensors_set: Error adding tmp108
+06-04 04:42:25.029 D/QC-time-services(  629): Daemon:Opening File: /mnt/vendor/persist/time/ats_9 /data/vendor/time/ats_9
+06-04 04:42:25.029 E/ThermalEngine(  595): sensors_init: Error adding HWMON TS
+06-04 04:42:25.029 D/QC-time-services(  629): Daemon:time_persistent_memory_opr:Genoff Read operation 
+06-04 04:42:25.029 D/QC-time-services(  629): Daemon:Open File: /data/vendor/time/ats_9
+06-04 04:42:25.029 D/QC-time-services(  629): Daemon:Unable to open filefor read
+06-04 04:42:25.029 D/QC-time-services(  629): Daemon:genoff_post_init:Error in accessing storage
+06-04 04:42:25.029 D/QC-time-services(  629): Daemon:genoff_pre_init::Base = 10
+06-04 04:42:25.029 D/QC-time-services(  629): Daemon: Storage Name: ats_10 
+06-04 04:42:25.029 D/QC-time-services(  629): Daemon:Opening File: /mnt/vendor/persist/time/ats_10 /data/vendor/time/ats_10
+06-04 04:42:25.029 D/QC-time-services(  629): Daemon:time_persistent_memory_opr:Genoff Read operation 
+06-04 04:42:25.029 D/QC-time-services(  629): Daemon:Open File: /data/vendor/time/ats_10
+06-04 04:42:25.029 D/QC-time-services(  629): Daemon:Unable to open filefor read
+06-04 04:42:25.029 D/QC-time-services(  629): Daemon:genoff_post_init:Error in accessing storage
+06-04 04:42:25.029 D/QC-time-services(  629): Daemon:genoff_pre_init::Base = 11
+06-04 04:42:25.029 D/QC-time-services(  629): Daemon: Storage Name: ats_11 
+06-04 04:42:25.029 D/QC-time-services(  629): Daemon:Opening File: /mnt/vendor/persist/time/ats_11 /data/vendor/time/ats_11
+06-04 04:42:25.029 D/QC-time-services(  629): Daemon:time_persistent_memory_opr:Genoff Read operation 
+06-04 04:42:25.029 D/QC-time-services(  629): Daemon:Open File: /data/vendor/time/ats_11
+06-04 04:42:25.029 D/QC-time-services(  629): Daemon:Unable to open filefor read
+06-04 04:42:25.029 D/QC-time-services(  629): Daemon:genoff_post_init:Error in accessing storage
+06-04 04:42:25.029 D/QC-time-services(  629): Daemon:genoff_pre_init::Base = 12
+06-04 04:42:25.029 D/QC-time-services(  629): Daemon: Storage Name: ats_12 
+06-04 04:42:25.029 D/QC-time-services(  629): Daemon:Opening File: /mnt/vendor/persist/time/ats_12 /data/vendor/time/ats_12
+06-04 04:42:25.029 D/QC-time-services(  629): Daemon:time_persistent_memory_opr:Genoff Read operation 
+06-04 04:42:25.029 I/ThermalEngine(  595): Loading config file for virtual sensor
+06-04 04:42:25.029 I/ThermalEngine(  595): Loading configuration file /vendor/etc/thermal-engine.conf
+06-04 04:42:25.034 D/QSEECOMAPI(  472): QSEECom_get_handle sb_length = 0xa000
+06-04 04:42:25.034 D/QSEECOMAPI(  472): App is already loaded QSEE and app id = 65537
+06-04 04:42:25.042 I/ThermalEngine(  595): Parsing section global
+06-04 04:42:25.043 I/ThermalEngine(  595): Created section 'FRONT_TEMP'
+06-04 04:42:25.043 I/ThermalEngine(  595): Algo Type 'virtual'
+06-04 04:42:25.043 I/ThermalEngine(  595): Parsing section FRONT_TEMP
+06-04 04:42:25.043 I/ThermalEngine(  595): Found field 'trip_sensor'
+06-04 04:42:25.043 I/ThermalEngine(  595): Found field 'set_point'
+06-04 04:42:25.043 I/ThermalEngine(  595): Found field 'set_point_clr'
+06-04 04:42:25.043 I/ThermalEngine(  595): Found field 'sensors'
+06-04 04:42:25.043 I/ThermalEngine(  595): Found field 'weights'
+06-04 04:42:25.043 I/ThermalEngine(  595): Found field 'offsets'
+06-04 04:42:25.043 I/ThermalEngine(  595): Found field 'sampling'
+06-04 04:42:25.043 I/ThermalEngine(  595): Found field 'math'
+06-04 04:42:25.043 I/ThermalEngine(  595): Found field 'sys_temp'
+06-04 04:42:25.043 I/ThermalEngine(  595): Created section 'BACK_TEMP'
+06-04 04:42:25.043 I/ThermalEngine(  595): Algo Type 'virtual'
+06-04 04:42:25.043 I/ThermalEngine(  595): Parsing section BACK_TEMP
+06-04 04:42:25.043 I/ThermalEngine(  595): Found field 'trip_sensor'
+06-04 04:42:25.043 I/ThermalEngine(  595): Found field 'set_point'
+06-04 04:42:25.043 I/ThermalEngine(  595): Found field 'set_point_clr'
+06-04 04:42:25.043 I/ThermalEngine(  595): Found field 'sensors'
+06-04 04:42:25.043 I/ThermalEngine(  595): Found field 'weights'
+06-04 04:42:25.043 I/ThermalEngine(  595): Found field 'offsets'
+06-04 04:42:25.043 I/ThermalEngine(  595): Found field 'sampling'
+06-04 04:42:25.043 I/ThermalEngine(  595): Found field 'math'
+06-04 04:42:25.043 I/ThermalEngine(  595): Found field 'sys_temp'
+06-04 04:42:25.043 I/ThermalEngine(  595): Created section 'VIRTUAL-MSM-CPU'
+06-04 04:42:25.043 I/ThermalEngine(  595): Algo Type 'virtual'
+06-04 04:42:25.043 I/ThermalEngine(  595): Parsing section VIRTUAL-MSM-CPU
+06-04 04:42:25.043 I/ThermalEngine(  595): Found field 'trip_sensor'
+06-04 04:42:25.043 I/ThermalEngine(  595): Found field 'set_point'
+06-04 04:42:25.043 I/ThermalEngine(  595): Found field 'set_point_clr'
+06-04 04:42:25.043 I/ThermalEngine(  595): Found field 'sensors'
+06-04 04:42:25.043 I/ThermalEngine(  595): Found field 'weights'
+06-04 04:42:25.043 I/ThermalEngine(  595): Found field 'sampling'
+06-04 04:42:25.043 I/ThermalEngine(  595): Found field 'math'
+06-04 04:42:25.043 I/ThermalEngine(  595): Created section 'VIRTUAL-MSM-GPU'
+06-04 04:42:25.043 I/ThermalEngine(  595): Algo Type 'virtual'
+06-04 04:42:25.043 I/ThermalEngine(  595): Parsing section VIRTUAL-MSM-GPU
+06-04 04:42:25.043 I/ThermalEngine(  595): Found field 'trip_sensor'
+06-04 04:42:25.043 I/ThermalEngine(  595): Found field 'set_point'
+06-04 04:42:25.043 I/ThermalEngine(  595): Found field 'set_point_clr'
+06-04 04:42:25.043 I/ThermalEngine(  595): Found field 'sensors'
+06-04 04:42:25.043 I/ThermalEngine(  595): Found field 'sampling'
+06-04 04:42:25.043 I/ThermalEngine(  595): Found field 'math'
+06-04 04:42:25.043 I/ThermalEngine(  595): Found section 'VIRTUAL-CPUS'
+06-04 04:42:25.043 I/ThermalEngine(  595): Algo Type 'virtual'
+06-04 04:42:25.043 I/ThermalEngine(  595): Parsing section VIRTUAL-CPUS
+06-04 04:42:25.043 I/ThermalEngine(  595): Found field 'trip_sensor'
+06-04 04:42:25.043 I/ThermalEngine(  595): Found field 'set_point'
+06-04 04:42:25.043 I/ThermalEngine(  595): Found field 'set_point_clr'
+06-04 04:42:25.043 I/ThermalEngine(  595): Found field 'sensors'
+06-04 04:42:25.044 I/ThermalEngine(  595): Found field 'sampling'
+06-04 04:42:25.044 I/ThermalEngine(  595): Found field 'math'
+06-04 04:42:25.044 I/ThermalEngine(  595): [VIRTUAL-CPUS]
+06-04 04:42:25.044 I/ThermalEngine(  595): #algo_type virtual
+06-04 04:42:25.044 I/ThermalEngine(  595): trip_sensor tsens_tz_sensor9
+06-04 04:42:25.044 I/ThermalEngine(  595): set_point 75000
+06-04 04:42:25.044 I/ThermalEngine(  595): set_point_clr 65000
+06-04 04:42:25.044 I/ThermalEngine(  595): sensors tsens_tz_sensor9 tsens_tz_sensor10 tsens_tz_sensor11 tsens_tz_sensor12 tsens_tz_sensor13 tsens_tz_sensor4 tsens_tz_sensor5 tsens_tz_sensor6 tsens_tz_sensor7 tsens_tz_sensor8
+06-04 04:42:25.044 I/ThermalEngine(  595): weights
+06-04 04:42:25.044 I/ThermalEngine(  595): offsets
+06-04 04:42:25.044 I/ThermalEngine(  595): sampling 50
+06-04 04:42:25.044 I/ThermalEngine(  595): math 2
+06-04 04:42:25.044 I/ThermalEngine(  595): ambient_value
+06-04 04:42:25.044 I/ThermalEngine(  595): rise_value
+06-04 04:42:25.044 I/ThermalEngine(  595): [FRONT_TEMP]
+06-04 04:42:25.044 I/ThermalEngine(  595): algo_type virtual
+06-04 04:42:25.044 I/ThermalEngine(  595): trip_sensor msm_therm
+06-04 04:42:25.044 I/ThermalEngine(  595): set_point -18000
+06-04 04:42:25.044 I/ThermalEngine(  595): set_point_clr -20000
+06-04 04:42:25.044 I/ThermalEngine(  595): sensors msm_therm pa_therm0 chg_therm
+06-04 04:42:25.044 I/ThermalEngine(  595): weights 110 100 85 110
+06-04 04:42:25.044 I/ThermalEngine(  595): offsets -2000 -2000 -2000 -2000
+06-04 04:42:25.044 I/ThermalEngine(  595): sampling 10000
+06-04 04:42:25.044 I/ThermalEngine(  595): math 0
+06-04 04:42:25.044 I/ThermalEngine(  595): sys_temp
+06-04 04:42:25.044 I/ThermalEngine(  595): ambient_value
+06-04 04:42:25.044 I/ThermalEngine(  595): rise_value
+06-04 04:42:25.044 I/ThermalEngine(  595): [BACK_TEMP]
+06-04 04:42:25.044 I/ThermalEngine(  595): algo_type virtual
+06-04 04:42:25.044 I/ThermalEngine(  595): trip_sensor msm_therm
+06-04 04:42:25.044 I/ThermalEngine(  595): set_point -18000
+06-04 04:42:25.044 I/ThermalEngine(  595): set_point_clr -20000
+06-04 04:42:25.044 I/ThermalEngine(  595): sensors msm_therm pa_therm0 chg_therm
+06-04 04:42:25.044 I/ThermalEngine(  595): weights 110 100 85 110
+06-04 04:42:25.044 I/ThermalEngine(  595): offsets -1000 -1000 -1000 -1000
+06-04 04:42:25.044 I/ThermalEngine(  595): sampling 10000
+06-04 04:42:25.044 I/ThermalEngine(  595): math 0
+06-04 04:42:25.044 I/ThermalEngine(  595): sys_temp
+06-04 04:42:25.044 I/ThermalEngine(  595): ambient_value
+06-04 04:42:25.044 I/ThermalEngine(  595): rise_value
+06-04 04:42:25.044 I/ThermalEngine(  595): [VIRTUAL-MSM-CPU]
+06-04 04:42:25.044 I/ThermalEngine(  595): algo_type virtual
+06-04 04:42:25.044 I/ThermalEngine(  595): trip_sensor msm_therm
+06-04 04:42:25.044 I/ThermalEngine(  595): set_point 41000
+06-04 04:42:25.044 I/ThermalEngine(  595): set_point_clr 39000
+06-04 04:42:25.044 I/ThermalEngine(  595): sensors tsens_tz_sensor4 tsens_tz_sensor5 tsens_tz_sensor6 tsens_tz_sensor7
+06-04 04:42:25.044 I/ThermalEngine(  595): weights 1 1 1 1
+06-04 04:42:25.044 I/ThermalEngine(  595): offsets
+06-04 04:42:25.044 I/ThermalEngine(  595): sampling 1000
+06-04 04:42:25.044 I/ThermalEngine(  595): math 0
+06-04 04:42:25.044 I/ThermalEngine(  595): ambient_value
+06-04 04:42:25.044 I/ThermalEngine(  595): rise_value
+06-04 04:42:25.044 I/ThermalEngine(  595): [VIRTUAL-MSM-GPU]
+06-04 04:42:25.044 I/ThermalEngine(  595): algo_type virtual
+06-04 04:42:25.044 I/ThermalEngine(  595): trip_sensor msm_therm
+06-04 04:42:25.044 I/ThermalEngine(  595): set_point 41000
+06-04 04:42:25.044 I/ThermalEngine(  595): set_point_clr 39000
+06-04 04:42:25.044 I/ThermalEngine(  595): sensors tsens_tz_sensor15
+06-04 04:42:25.044 I/ThermalEngine(  595): weights
+06-04 04:42:25.044 I/ThermalEngine(  595): offsets
+06-04 04:42:25.044 I/ThermalEngine(  595): sampling 1000
+06-04 04:42:25.044 I/ThermalEngine(  595): math 2
+06-04 04:42:25.044 I/ThermalEngine(  595): ambient_value
+06-04 04:42:25.044 I/ThermalEngine(  595): rise_value
+06-04 04:42:25.049 I/gatekeeperd(  640): Starting gatekeeperd...
+06-04 04:42:25.055 W/KHUNG   (  719):  Khung is not enabled for msm8953
+06-04 04:42:25.060 D/QC-time-services(  629): Daemon:Open File: /data/vendor/time/ats_12
+06-04 04:42:25.061 D/QC-time-services(  629): Daemon:genoff_pre_init::Base = 13
+06-04 04:42:25.061 D/QC-time-services(  629): Daemon: Storage Name: ats_13 
+06-04 04:42:25.061 D/QC-time-services(  629): Daemon:Opening File: /mnt/vendor/persist/time/ats_13 /data/vendor/time/ats_13
+06-04 04:42:25.061 D/QC-time-services(  629): Daemon:time_persistent_memory_opr:Genoff Read operation 
+06-04 04:42:25.067 D/QC-time-services(  629): Daemon:Open File: /data/vendor/time/ats_13
+06-04 04:42:25.067 D/QC-time-services(  629): Daemon:genoff_pre_init::Base = 14
+06-04 04:42:25.067 D/QC-time-services(  629): Daemon: Storage Name: ats_14 
+06-04 04:42:25.067 D/QC-time-services(  629): Daemon:Opening File: /mnt/vendor/persist/time/ats_14 /data/vendor/time/ats_14
+06-04 04:42:25.067 D/QC-time-services(  629): Daemon:time_persistent_memory_opr:Genoff Read operation 
+06-04 04:42:25.067 D/QC-time-services(  629): Daemon:Open File: /data/vendor/time/ats_14
+06-04 04:42:25.067 D/QC-time-services(  629): Daemon:Unable to open filefor read
+06-04 04:42:25.067 D/QC-time-services(  629): Daemon:genoff_post_init:Error in accessing storage
+06-04 04:42:25.067 D/QC-time-services(  629): Daemon:genoff_pre_init::Base = 15
+06-04 04:42:25.067 D/QC-time-services(  629): Daemon: Storage Name: ats_15 
+06-04 04:42:25.067 D/QC-time-services(  629): Daemon:Opening File: /mnt/vendor/persist/time/ats_15 /data/vendor/time/ats_15
+06-04 04:42:25.067 D/QC-time-services(  629): Daemon:time_persistent_memory_opr:Genoff Read operation 
+06-04 04:42:25.070 I/Atfwd_Daemon(  639): *** Starting ATFWD-daemon *** 
+06-04 04:42:25.070 I/Atfwd_Daemon(  639): init all signals
+06-04 04:42:25.070 I/Atfwd_Daemon(  639): Explicitly disbling qmux 
+06-04 04:42:25.070 I/Atfwd_Daemon(  639): Disabling QMUX complete...
+06-04 04:42:25.070 I/Atfwd_Daemon(  639): getting at svc obj for access terminal QMI svc
+06-04 04:42:25.070 I/Atfwd_Daemon(  639): 
+06-04 04:42:25.070 I/Atfwd_Daemon(  639): 
+06-04 04:42:25.070 I/Atfwd_Daemon(  639):  TrtyInit: retryCnt: 1
+06-04 04:42:25.070 I/Atfwd_Daemon(  639): Using QCCI. Skipping qmi_init
+06-04 04:42:25.070 I/Atfwd_Daemon(  639): result : 1 	 ,Init step :0 	 ,qmiErrorCode: 0
+06-04 04:42:25.070 I/Atfwd_Daemon(  639): 
+06-04 04:42:25.070 I/Atfwd_Daemon(  639):  Back to main.
+06-04 04:42:25.070 I/Atfwd_Daemon(  639):  tryinit complete with connectresult: 1
+06-04 04:42:25.070 I/Atfwd_Daemon(  639): 
+06-04 04:42:25.070 I/Atfwd_Daemon(  639): 
+06-04 04:42:25.070 I/Atfwd_Daemon(  639):  TrtyInit: retryCnt: 1
+06-04 04:42:25.070 I/Atfwd_Daemon(  639): 
+06-04 04:42:25.070 I/Atfwd_Daemon(  639):  qmi_client_init_instance....
+06-04 04:42:25.071 D/QSEECOMAPI(  645): QSEECom_get_handle sb_length = 0x80
+06-04 04:42:25.072 D/QSEECOMAPI(  645): App is not loaded in QSEE
+06-04 04:42:25.078 D/QC-time-services(  629): Daemon:Open File: /data/vendor/time/ats_15
+06-04 04:42:25.078 D/QC-time-services(  629): Daemon:genoff_pre_init::Base = 16
+06-04 04:42:25.078 D/QC-time-services(  629): Daemon: Storage Name: ats_16 
+06-04 04:42:25.078 D/QC-time-services(  629): Daemon:Opening File: /mnt/vendor/persist/time/ats_16 /data/vendor/time/ats_16
+06-04 04:42:25.078 D/QC-time-services(  629): Daemon:time_persistent_memory_opr:Genoff Read operation 
+06-04 04:42:25.101 D/QSEECOMAPI(  645): app_arch = 1, total_files = 8
+06-04 04:42:25.104 D/QC-time-services(  629): Daemon:Open File: /data/vendor/time/ats_16
+06-04 04:42:25.105 D/QC-time-services(  629): Daemon:genoff_init_config: Other bases initilized, exiting genoff_init
+06-04 04:42:25.105 D/QC-time-services(  629): Daemon:rtc_get: Time read from RTC -- MM/DD/YY HH:MM:SS5/3/70 23:12:24
+06-04 04:42:25.105 D/QC-time-services(  629): Daemon rtc_get: seconds = 13302744
+06-04 04:42:25.105 D/QC-time-services(  629): Daemon:Value read from RTC mseconds = 13302744000
+06-04 04:42:25.105 D/QC-time-services(  629): Daemon:Value read from QTimer mseconds = 15794
+06-04 04:42:25.105 D/QC-time-services(  629): Daemon:genoff_opr: Base = 1, val = 0, operation = 1
+06-04 04:42:25.105 D/QC-time-services(  629): Daemon: genoff get for 1
+06-04 04:42:25.105 D/QC-time-services(  629): Daemon:Value read from QTimer mseconds = 15794
+06-04 04:42:25.105 D/QC-time-services(  629): Daemon:Value read from RTC mseconds on boot = 13302744000
+06-04 04:42:25.105 D/QC-time-services(  629): Daemon:Value read from QTimer mseconds = 15794
+06-04 04:42:25.105 D/QC-time-services(  629): Daemon:Value read from generic offset = 1543871263665
+06-04 04:42:25.105 D/QC-time-services(  629): Daemon:Delta read on boot mseconds = 13302728206
+06-04 04:42:25.105 D/QC-time-services(  629): Daemon:Final Time = 1557174007665
+06-04 04:42:25.105 E/QC-time-services(  629): Daemon:genoff: 1557174007 04/06/119 20:20:07
+06-04 04:42:25.105 E/QC-time-services(  629): Daemon:build: 1556763948 04/02/119 02:25:48
+06-04 04:42:25.105 D/QC-time-services(  629): Daemon:genoff_boot_tod_init: Updating system time to sec=1557174007, usec=665000
+05-07 01:50:07.665 D/QC-time-services(  629): Daemon:genoff_modem_qmi_service_request: Initializing QMI 
+05-07 01:50:07.665 D/QC-time-services(  629): Daemon:genoff_wlan_qmi_service_request: Initializing QMI 
+05-07 01:50:07.669 I//system/bin/tombstoned(  643): tombstoned successfully initialized
+05-07 01:50:07.669 E/Diag_Lib(  599):  Diag_LSM_Init: Failed to open handle to diag driver, error = 13
+05-07 01:50:07.670 I/QC-NETMGR-LIB(  599): NetmgrNetdClientInit(): Looking for Netd service
+05-07 01:50:07.675 D/QC-time-services(  629): Daemon: Time-services: All initializations done
+05-07 01:50:07.676 E/QC-time-services(  629): Daemon: Time-services: Waiting to acceptconnection
+05-07 01:50:07.676 D/PerfDaemon(  617): added vendor.perfservice to services and is now running.
+05-07 01:50:07.677 E/QMI_FW  (  629): QMUXD: WARNING qmi_qmux_if_pwr_up_init failed! rc=-6
+05-07 01:50:07.677 D/QC-time-services(  629): Daemon:genoff_wlan_qmi_service_request: qmi_client_get_service_list returned -2num_services 0
+05-07 01:50:07.694 I/wificond(  621): wificond is starting up...
+05-07 01:50:07.697 E/QCNEA   (  634): Cne Version 4.9
+05-07 01:50:07.708 E/Diag_Lib(  665): qpLogDiagInit <== result : 1
+05-07 01:50:07.708 E/Diag_Lib(  665): DATAD : gIsQXDMDisabled 0, gIsADBDisabled 1, gIsDebugDisabled 0, gIsIMSLogsDisabled 0
+05-07 01:50:07.708 E/Diag_Lib(  665): [IMS_DataD] imsdatad.c | 5800 | | 665 |DATAD#$$#0#DATAD STARTED
+05-07 01:50:07.726 D/LocSvc_LBSProxy(  696): checkIfLocationExtendedClientExists] File Exists
+05-07 01:50:07.727 E/QMI_FW  (  696): QMUXD: WARNING qmi_qmux_if_pwr_up_init failed! rc=-6
+05-07 01:50:07.744 E/QMI_FW  (  665): QMUXD: WARNING qmi_qmux_if_pwr_up_init failed! rc=-6
+05-07 01:50:07.777 E/LocSvc_LocIpc(  696): sendData:206] cannot send to socket. reason:No such file or directory
+05-07 01:50:07.794 E/qti_sensors_hal(  515): processSingleSensorInfoResp: either handle is -1 or error is true or mSensors[handle] is NULL!
+05-07 01:50:07.794 E/qti_sensors_hal(  515): processSingleSensorInfoResp: either handle_wakeup is -1 or error is true or mSensors[handle_wakeup] is NULL!
+05-07 01:50:07.794 E/qti_sensors_hal(  515): processSingleSensorInfoResp: either handle is -1 or error is true or mSensors[handle] is NULL!
+05-07 01:50:07.794 E/qti_sensors_hal(  515): processSingleSensorInfoResp: either handle_wakeup is -1 or error is true or mSensors[handle_wakeup] is NULL!
+05-07 01:50:07.794 E/qti_sensors_hal(  515): processSingleSensorInfoResp: either handle_wakeup is -1 or error is true or mSensors[handle_wakeup] is NULL!
+05-07 01:50:07.794 E/qti_sensors_hal(  515):  processSingleSensorInfoResp Unknown sensor type: 0
+05-07 01:50:07.794 E/qti_sensors_hal(  515): processSingleSensorInfoResp: either handle is -1 or error is true or mSensors[handle] is NULL!
+05-07 01:50:07.794 E/qti_sensors_hal(  515): processSingleSensorInfoResp: either handle_wakeup is -1 or error is true or mSensors[handle_wakeup] is NULL!
+05-07 01:50:07.794 E/qti_sensors_hal(  515):  processSingleSensorInfoResp Unknown sensor type: 1
+05-07 01:50:07.794 E/qti_sensors_hal(  515): processSingleSensorInfoResp: either handle is -1 or error is true or mSensors[handle] is NULL!
+05-07 01:50:07.794 E/qti_sensors_hal(  515): processSingleSensorInfoResp: either handle_wakeup is -1 or error is true or mSensors[handle_wakeup] is NULL!
+05-07 01:50:07.813 E/Sensors (  547): sns_debug_main.c(294):Debug Config File missing in EFS!
+05-07 01:50:07.873 D/LocSvc_LBSProxy(  522): checkIfLocationExtendedClientExists] File Exists
+05-07 01:50:07.875 I/ServiceManagement(  522): Removing namespace from process name vendor.qti.gnss@1.0-service to gnss@1.0-service.
+05-07 01:50:07.876 I/LocSvc_HIDL_vendor.qti.gnss@1.0-service(  522): Registration complete for vendor.qti.gnss@1.0::ILocHidlGnss/gnss_vendor.
+05-07 01:50:08.048 V/MediaUtils(  614): physMem: 3723186176
+05-07 01:50:08.048 V/MediaUtils(  614): requested limit: 744637220
+05-07 01:50:08.048 V/MediaUtils(  614): cfi shadow size: 2147483648
+05-07 01:50:08.048 V/MediaUtils(  614): actual limit: 2892120868
+05-07 01:50:08.049 V/MediaUtils(  614): original limits: -1/-1
+05-07 01:50:08.049 V/MediaUtils(  614): new limits: 2892120868/-1
+05-07 01:50:08.056 W/mediaextractor(  614): libminijail[614]: failed to get path of fd 4: No such file or directory
+05-07 01:50:08.056 W/mediaextractor(  614): libminijail[614]: allowing syscall: connect
+05-07 01:50:08.056 W/mediaextractor(  614): libminijail[614]: allowing syscall: fcntl
+05-07 01:50:08.056 W/mediaextractor(  614): libminijail[614]: allowing syscall: sendto
+05-07 01:50:08.056 W/mediaextractor(  614): libminijail[614]: allowing syscall: socket
+05-07 01:50:08.056 W/mediaextractor(  614): libminijail[614]: allowing syscall: writev
+05-07 01:50:08.058 W/mediaextractor(  614): libminijail[614]: logging seccomp filter failures
+05-07 01:50:08.084 I/media.codec(  623): mediacodecservice starting
+05-07 01:50:08.088 W/media.codec(  623): libminijail[623]: failed to get path of fd 4: No such file or directory
+05-07 01:50:08.088 W/media.codec(  623): libminijail[623]: allowing syscall: clock_gettime
+05-07 01:50:08.088 W/media.codec(  623): libminijail[623]: allowing syscall: connect
+05-07 01:50:08.089 W/media.codec(  623): libminijail[623]: allowing syscall: fcntl64
+05-07 01:50:08.089 W/media.codec(  623): libminijail[623]: allowing syscall: socket
+05-07 01:50:08.089 W/media.codec(  623): libminijail[623]: allowing syscall: writev
+05-07 01:50:08.091 W/media.codec(  623): libminijail[623]: logging seccomp filter failures
+05-07 01:50:08.154 I/FastMixerState(  532): sMaxFastTracks = 8
+05-07 01:50:08.161 V/MediaUtils(  532): physMem: 3723186176
+05-07 01:50:08.161 V/MediaUtils(  532): requested limit: 536870912
+05-07 01:50:08.161 V/MediaUtils(  532): actual limit: 536870912
+05-07 01:50:08.161 V/MediaUtils(  532): original limits: 4294967295/4294967295
+05-07 01:50:08.161 V/MediaUtils(  532): new limits: 536870912/4294967295
+05-07 01:50:08.172 D/AndroidRuntime(  493): >>>>>> START com.android.internal.os.ZygoteInit uid 0 <<<<<<
+05-07 01:50:08.206 D/AndroidRuntime(  494): >>>>>> START com.android.internal.os.ZygoteInit uid 0 <<<<<<
+05-07 01:50:08.207 I/zygote64(  493): option[0]=-Xzygote
+05-07 01:50:08.208 I/zygote64(  493): option[1]=-Xusetombstonedtraces
+05-07 01:50:08.208 I/zygote64(  493): option[2]=exit
+05-07 01:50:08.208 I/zygote64(  493): option[3]=vfprintf
+05-07 01:50:08.208 I/zygote64(  493): option[4]=sensitiveThread
+05-07 01:50:08.208 I/zygote64(  493): option[5]=-verbose:gc
+05-07 01:50:08.208 I/zygote64(  493): option[6]=-Xms8m
+05-07 01:50:08.208 I/zygote64(  493): option[7]=-Xmx384m
+05-07 01:50:08.208 I/zygote64(  493): option[8]=-XX:HeapGrowthLimit=192m
+05-07 01:50:08.208 I/zygote64(  493): option[9]=-XX:HeapMinFree=512k
+05-07 01:50:08.208 I/zygote64(  493): option[10]=-XX:HeapMaxFree=8m
+05-07 01:50:08.208 I/zygote64(  493): option[11]=-XX:HeapTargetUtilization=0.75
+05-07 01:50:08.208 I/zygote64(  493): option[12]=-Xusejit:true
+05-07 01:50:08.208 I/zygote64(  493): option[13]=-Xjitsaveprofilinginfo
+05-07 01:50:08.208 I/zygote64(  493): option[14]=-XjdwpOptions:suspend=n,server=y
+05-07 01:50:08.208 I/zygote64(  493): option[15]=-XjdwpProvider:default
+05-07 01:50:08.208 I/zygote64(  493): option[16]=-Ximage-compiler-option
+05-07 01:50:08.208 I/zygote64(  493): option[17]=--runtime-arg
+05-07 01:50:08.208 I/zygote64(  493): option[18]=-Ximage-compiler-option
+05-07 01:50:08.208 I/zygote64(  493): option[19]=-Xms64m
+05-07 01:50:08.208 I/zygote64(  493): option[20]=-Ximage-compiler-option
+05-07 01:50:08.208 I/zygote64(  493): option[21]=--runtime-arg
+05-07 01:50:08.208 I/zygote64(  493): option[22]=-Ximage-compiler-option
+05-07 01:50:08.208 I/zygote64(  493): option[23]=-Xmx64m
+05-07 01:50:08.208 I/zygote64(  493): option[24]=-Ximage-compiler-option
+05-07 01:50:08.208 I/zygote64(  493): option[25]=--profile-file=/system/etc/boot-image.prof
+05-07 01:50:08.208 I/zygote64(  493): option[26]=-Ximage-compiler-option
+05-07 01:50:08.208 I/zygote64(  493): option[27]=--compiler-filter=speed-profile
+05-07 01:50:08.208 I/zygote64(  493): option[28]=-Xcompiler-option
+05-07 01:50:08.208 I/zygote64(  493): option[29]=--runtime-arg
+05-07 01:50:08.208 I/zygote64(  493): option[30]=-Xcompiler-option
+05-07 01:50:08.208 I/zygote64(  493): option[31]=-Xms64m
+05-07 01:50:08.208 I/zygote64(  493): option[32]=-Xcompiler-option
+05-07 01:50:08.208 I/zygote64(  493): option[33]=--runtime-arg
+05-07 01:50:08.208 I/zygote64(  493): option[34]=-Xcompiler-option
+05-07 01:50:08.208 I/zygote64(  493): option[35]=-Xmx512m
+05-07 01:50:08.208 I/zygote64(  493): option[36]=-Xcompiler-option
+05-07 01:50:08.208 I/zygote64(  493): option[37]=-j8
+05-07 01:50:08.208 I/zygote64(  493): option[38]=-Ximage-compiler-option
+05-07 01:50:08.208 I/zygote64(  493): option[39]=-j8
+05-07 01:50:08.208 I/zygote64(  493): option[40]=-Ximage-compiler-option
+05-07 01:50:08.208 I/zygote64(  493): option[41]=--instruction-set-variant=cortex-a53
+05-07 01:50:08.208 I/zygote64(  493): option[42]=-Xcompiler-option
+05-07 01:50:08.208 I/zygote64(  493): option[43]=--instruction-set-variant=cortex-a53
+05-07 01:50:08.208 I/zygote64(  493): option[44]=-Ximage-compiler-option
+05-07 01:50:08.208 I/zygote64(  493): option[45]=--instruction-set-features=default
+05-07 01:50:08.208 I/zygote64(  493): option[46]=-Xcompiler-option
+05-07 01:50:08.208 I/zygote64(  493): option[47]=--instruction-set-features=default
+05-07 01:50:08.208 I/zygote64(  493): option[48]=-Duser.locale=en-US
+05-07 01:50:08.208 I/zygote64(  493): option[49]=--cpu-abilist=arm64-v8a
+05-07 01:50:08.208 I/zygote64(  493): option[50]=-Xfingerprint:google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys
+05-07 01:50:08.228 I/zygote64(  493): VerifyImage: /system/bin/patchoat --input-image-location=/system/framework/boot.art --output-image-directory=/data/dalvik-cache/arm64 --instruction-set=arm64 --verify
+05-07 01:50:08.238 I/zygote  (  494): option[0]=-Xzygote
+05-07 01:50:08.238 I/zygote  (  494): option[1]=-Xusetombstonedtraces
+05-07 01:50:08.238 I/zygote  (  494): option[2]=exit
+05-07 01:50:08.238 I/zygote  (  494): option[3]=vfprintf
+05-07 01:50:08.238 I/zygote  (  494): option[4]=sensitiveThread
+05-07 01:50:08.238 I/zygote  (  494): option[5]=-verbose:gc
+05-07 01:50:08.238 I/zygote  (  494): option[6]=-Xms8m
+05-07 01:50:08.238 I/zygote  (  494): option[7]=-Xmx384m
+05-07 01:50:08.238 I/zygote  (  494): option[8]=-XX:HeapGrowthLimit=192m
+05-07 01:50:08.238 I/zygote  (  494): option[9]=-XX:HeapMinFree=512k
+05-07 01:50:08.238 I/zygote  (  494): option[10]=-XX:HeapMaxFree=8m
+05-07 01:50:08.238 I/zygote  (  494): option[11]=-XX:HeapTargetUtilization=0.75
+05-07 01:50:08.238 I/zygote  (  494): option[12]=-Xusejit:true
+05-07 01:50:08.238 I/zygote  (  494): option[13]=-Xjitsaveprofilinginfo
+05-07 01:50:08.238 I/zygote  (  494): option[14]=-XjdwpOptions:suspend=n,server=y
+05-07 01:50:08.238 I/zygote  (  494): option[15]=-XjdwpProvider:default
+05-07 01:50:08.238 I/zygote  (  494): option[16]=-Ximage-compiler-option
+05-07 01:50:08.238 I/zygote  (  494): option[17]=--runtime-arg
+05-07 01:50:08.238 I/zygote  (  494): option[18]=-Ximage-compiler-option
+05-07 01:50:08.238 I/zygote  (  494): option[19]=-Xms64m
+05-07 01:50:08.238 I/zygote  (  494): option[20]=-Ximage-compiler-option
+05-07 01:50:08.238 I/zygote  (  494): option[21]=--runtime-arg
+05-07 01:50:08.238 I/zygote  (  494): option[22]=-Ximage-compiler-option
+05-07 01:50:08.238 I/zygote  (  494): option[23]=-Xmx64m
+05-07 01:50:08.238 I/zygote  (  494): option[24]=-Ximage-compiler-option
+05-07 01:50:08.238 I/zygote  (  494): option[25]=--profile-file=/system/etc/boot-image.prof
+05-07 01:50:08.238 I/zygote  (  494): option[26]=-Ximage-compiler-option
+05-07 01:50:08.238 I/zygote  (  494): option[27]=--compiler-filter=speed-profile
+05-07 01:50:08.238 I/zygote  (  494): option[28]=-Xcompiler-option
+05-07 01:50:08.238 I/zygote  (  494): option[29]=--runtime-arg
+05-07 01:50:08.238 I/zygote  (  494): option[30]=-Xcompiler-option
+05-07 01:50:08.238 I/zygote  (  494): option[31]=-Xms64m
+05-07 01:50:08.238 I/zygote  (  494): option[32]=-Xcompiler-option
+05-07 01:50:08.238 I/zygote  (  494): option[33]=--runtime-arg
+05-07 01:50:08.238 I/zygote  (  494): option[34]=-Xcompiler-option
+05-07 01:50:08.238 I/zygote  (  494): option[35]=-Xmx512m
+05-07 01:50:08.238 I/zygote  (  494): option[36]=-Xcompiler-option
+05-07 01:50:08.238 I/zygote  (  494): option[37]=-j8
+05-07 01:50:08.238 I/zygote  (  494): option[38]=-Ximage-compiler-option
+05-07 01:50:08.238 I/zygote  (  494): option[39]=-j8
+05-07 01:50:08.238 I/zygote  (  494): option[40]=-Ximage-compiler-option
+05-07 01:50:08.238 I/zygote  (  494): option[41]=--instruction-set-variant=cortex-a53
+05-07 01:50:08.238 I/zygote  (  494): option[42]=-Xcompiler-option
+05-07 01:50:08.238 I/zygote  (  494): option[43]=--instruction-set-variant=cortex-a53
+05-07 01:50:08.239 I/zygote  (  494): option[44]=-Ximage-compiler-option
+05-07 01:50:08.239 I/zygote  (  494): option[45]=--instruction-set-features=default
+05-07 01:50:08.239 I/zygote  (  494): option[46]=-Xcompiler-option
+05-07 01:50:08.239 I/zygote  (  494): option[47]=--instruction-set-features=default
+05-07 01:50:08.239 I/zygote  (  494): option[48]=-Duser.locale=en-US
+05-07 01:50:08.239 I/zygote  (  494): option[49]=--cpu-abilist=armeabi-v7a,armeabi
+05-07 01:50:08.239 I/zygote  (  494): option[50]=-Xfingerprint:google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys
+05-07 01:50:08.243 W/zygote  (  494): Could not reserve sentinel fault page
+05-07 01:50:08.245 I/zygote  (  494): VerifyImage: /system/bin/patchoat --input-image-location=/system/framework/boot.art --output-image-directory=/data/dalvik-cache/arm --instruction-set=arm --verify
+05-07 01:50:08.258 D/com.qualcomm.qti.qseeproxy-daemon(  635): Starting service: com.qualcomm.qti.qseeproxy
+05-07 01:50:08.255 I/qseeproxydaemon(  635): type=1400 audit(0.0:93): avc: denied { read write } for uid=1000 name="binder" dev="tmpfs" ino=6655 scontext=u:r:qseeproxy:s0 tcontext=u:object_r:binder_device:s0 tclass=chr_file permissive=1
+05-07 01:50:08.255 I/qseeproxydaemon(  635): type=1400 audit(0.0:94): avc: denied { open } for uid=1000 path="/dev/binder" dev="tmpfs" ino=6655 scontext=u:r:qseeproxy:s0 tcontext=u:object_r:binder_device:s0 tclass=chr_file permissive=1
+05-07 01:50:08.272 I/wcnss_service(  596): wcnss_read_and_store_cal_data trying to read cal
+05-07 01:50:08.277 E/gatekeeper_device(  507): Gatekeeper initialized
+05-07 01:50:08.278 I/ServiceManagement(  507): Removing namespace from process name android.hardware.gatekeeper@1.0-service to gatekeeper@1.0-service.
+05-07 01:50:08.279 I/ThermalEngine(  595): Loading configuration file /vendor/etc/thermal-engine.conf
+05-07 01:50:08.279 I/ThermalEngine(  595): Parsing section global
+05-07 01:50:08.279 I/ThermalEngine(  595): Created section 'REPORT-FRONT-TEMP'
+05-07 01:50:08.279 I/ThermalEngine(  595): Algo Type 'monitor'
+05-07 01:50:08.279 I/ThermalEngine(  595): Parsing section REPORT-FRONT-TEMP
+05-07 01:50:08.279 I/ThermalEngine(  595): Found field 'sampling'
+05-07 01:50:08.279 I/ThermalEngine(  595): Found field 'sensor'
+05-07 01:50:08.279 I/ThermalEngine(  595): Found field 'thresholds'
+05-07 01:50:08.279 I/ThermalEngine(  595): Found field 'thresholds_clr'
+05-07 01:50:08.279 I/ThermalEngine(  595): Found field 'actions'
+05-07 01:50:08.279 W/SDM     (  509): HWCSession::UEventThread: UEvent dropped. No uevent listener.
+05-07 01:50:08.279 I/ThermalEngine(  595): Found field 'action_info'
+05-07 01:50:08.279 I/ThermalEngine(  595): Created section 'REPORT-BACK-TEMP'
+05-07 01:50:08.279 I/ThermalEngine(  595): Algo Type 'monitor'
+05-07 01:50:08.279 I/ThermalEngine(  595): Parsing section REPORT-BACK-TEMP
+05-07 01:50:08.279 I/ThermalEngine(  595): Found field 'sampling'
+05-07 01:50:08.279 I/ThermalEngine(  595): Found field 'sensor'
+05-07 01:50:08.279 I/ThermalEngine(  595): Found field 'thresholds'
+05-07 01:50:08.279 I/ThermalEngine(  595): Found field 'thresholds_clr'
+05-07 01:50:08.279 I/ThermalEngine(  595): Found field 'actions'
+05-07 01:50:08.279 I/ThermalEngine(  595): Found field 'action_info'
+05-07 01:50:08.279 I/ThermalEngine(  595): Created section 'SS-BATT-BATT'
+05-07 01:50:08.279 I/ThermalEngine(  595): Algo Type 'ss'
+05-07 01:50:08.279 I/ThermalEngine(  595): Parsing section SS-BATT-BATT
+05-07 01:50:08.279 I/ThermalEngine(  595): Found field 'sampling'
+05-07 01:50:08.280 I/ThermalEngine(  595): Found field 'sensor'
+05-07 01:50:08.280 I/ThermalEngine(  595): Found field 'device'
+05-07 01:50:08.280 I/ThermalEngine(  595): Found field 'set_point'
+05-07 01:50:08.280 I/ThermalEngine(  595): Found field 'set_point_clr'
+05-07 01:50:08.280 I/ThermalEngine(  595): Created section 'SS-CHG-BATT'
+05-07 01:50:08.280 I/ThermalEngine(  595): Algo Type 'ss'
+05-07 01:50:08.280 I/ThermalEngine(  595): Parsing section SS-CHG-BATT
+05-07 01:50:08.280 I/ThermalEngine(  595): Found field 'sampling'
+05-07 01:50:08.280 I/ThermalEngine(  595): Found field 'sensor'
+05-07 01:50:08.280 I/ThermalEngine(  595): Found field 'device'
+05-07 01:50:08.280 I/ThermalEngine(  595): Found field 'set_point'
+05-07 01:50:08.280 I/ThermalEngine(  595): Found field 'set_point_clr'
+05-07 01:50:08.280 I/ThermalEngine(  595): Found field 'time_constant'
+05-07 01:50:08.280 I/ThermalEngine(  595): Created section 'SS-MSM-CPU'
+05-07 01:50:08.280 I/ThermalEngine(  595): Algo Type 'ss'
+05-07 01:50:08.280 I/ThermalEngine(  595): Parsing section SS-MSM-CPU
+05-07 01:50:08.280 I/ThermalEngine(  595): Found field 'sampling'
+05-07 01:50:08.280 I/ThermalEngine(  595): Found field 'sensor'
+05-07 01:50:08.280 I/ThermalEngine(  595): Found field 'device'
+05-07 01:50:08.280 I/ThermalEngine(  595): Found field 'set_point'
+05-07 01:50:08.280 I/ThermalEngine(  595): Found field 'set_point_clr'
+05-07 01:50:08.280 I/ThermalEngine(  595): Created section 'SS-MSM-GPU'
+05-07 01:50:08.280 I/ThermalEngine(  595): Algo Type 'ss'
+05-07 01:50:08.280 I/ThermalEngine(  595): Parsing section SS-MSM-GPU
+05-07 01:50:08.280 I/ThermalEngine(  595): Found field 'sampling'
+05-07 01:50:08.280 I/ThermalEngine(  595): Found field 'sensor'
+05-07 01:50:08.280 I/ThermalEngine(  595): Found field 'device'
+05-07 01:50:08.280 I/ThermalEngine(  595): Found field 'set_point'
+05-07 01:50:08.280 I/ThermalEngine(  595): Found field 'set_point_clr'
+05-07 01:50:08.280 I/ThermalEngine(  595): Created section 'SS-MSM-CLUSTER0'
+05-07 01:50:08.280 I/ThermalEngine(  595): Algo Type 'ss'
+05-07 01:50:08.280 I/ThermalEngine(  595): Parsing section SS-MSM-CLUSTER0
+05-07 01:50:08.280 I/ThermalEngine(  595): Found field 'sampling'
+05-07 01:50:08.280 I/ThermalEngine(  595): Found field 'sensor'
+05-07 01:50:08.280 I/ThermalEngine(  595): Found field 'device'
+05-07 01:50:08.280 I/ThermalEngine(  595): Found field 'set_point'
+05-07 01:50:08.280 I/ThermalEngine(  595): Found field 'set_point_clr'
+05-07 01:50:08.280 I/ThermalEngine(  595): Found field 'device_max_limit'
+05-07 01:50:08.280 I/mediaserver(  611): ServiceManager: 0xecf1c120
+05-07 01:50:08.280 D/PerMgrSrv(  529): modem new state: is on-line
+05-07 01:50:08.280 I/ThermalEngine(  595): Found section 'SS-GPU'
+05-07 01:50:08.280 I/ThermalEngine(  595): Algo Type 'ss'
+05-07 01:50:08.280 I/ThermalEngine(  595): Parsing section SS-GPU
+05-07 01:50:08.280 I/ThermalEngine(  595): Found field 'sampling'
+05-07 01:50:08.280 I/ThermalEngine(  595): Found field 'sensor'
+05-07 01:50:08.280 I/ThermalEngine(  595): Found field 'device'
+05-07 01:50:08.280 I/ThermalEngine(  595): Found field 'set_point'
+05-07 01:50:08.280 I/ThermalEngine(  595): Found field 'set_point_clr'
+05-07 01:50:08.280 I/ThermalEngine(  595): Found section 'SS-POPMEM'
+05-07 01:50:08.280 I/ThermalEngine(  595): Algo Type 'ss'
+05-07 01:50:08.280 I/ThermalEngine(  595): Parsing section SS-POPMEM
+05-07 01:50:08.280 I/ThermalEngine(  595): Found field 'disable'
+05-07 01:50:08.280 I/ThermalEngine(  595): Found field 'sampling'
+05-07 01:50:08.280 I/ThermalEngine(  595): Found field 'sensor'
+05-07 01:50:08.280 I/ThermalEngine(  595): Found field 'device'
+05-07 01:50:08.280 I/ThermalEngine(  595): Found field 'set_point'
+05-07 01:50:08.280 I/ThermalEngine(  595): Found field 'set_point_clr'
+05-07 01:50:08.280 I/ThermalEngine(  595): Found field 'time_constant'
+05-07 01:50:08.280 I/ThermalEngine(  595): Found section 'SS-CPUS-ALL'
+05-07 01:50:08.280 I/ThermalEngine(  595): Algo Type 'ss'
+05-07 01:50:08.280 I/ThermalEngine(  595): Parsing section SS-CPUS-ALL
+05-07 01:50:08.280 I/ThermalEngine(  595): Found field 'sampling'
+05-07 01:50:08.280 I/ThermalEngine(  595): Found field 'sensor'
+05-07 01:50:08.280 I/ThermalEngine(  595): Found field 'device'
+05-07 01:50:08.280 I/ThermalEngine(  595): Found field 'set_point'
+05-07 01:50:08.280 I/ThermalEngine(  595): Found field 'set_point_clr'
+05-07 01:50:08.280 I/ThermalEngine(  595): Created section 'MONITOR-CAMERA-MSM'
+05-07 01:50:08.280 I/ThermalEngine(  595): Algo Type 'monitor'
+05-07 01:50:08.280 I/ThermalEngine(  595): Parsing section MONITOR-CAMERA-MSM
+05-07 01:50:08.280 I/ThermalEngine(  595): Found field 'sampling'
+05-07 01:50:08.280 I/ThermalEngine(  595): Found field 'sensor'
+05-07 01:50:08.280 I/ThermalEngine(  595): Found field 'thresholds'
+05-07 01:50:08.280 I/ThermalEngine(  595): Found field 'thresholds_clr'
+05-07 01:50:08.280 I/ThermalEngine(  595): Found field 'actions'
+05-07 01:50:08.280 I/ThermalEngine(  595): Found field 'action_info'
+05-07 01:50:08.285 I/android.hardwar(  645): type=1400 audit(0.0:95): avc: denied { ioctl } for uid=1000 path="/dev/ion" dev="tmpfs" ino=115 ioctlcmd=4900 scontext=u:r:init:s0 tcontext=u:object_r:ion_device:s0 tclass=chr_file permissive=1
+05-07 01:50:08.285 I/cnd     (  634): type=1400 audit(0.0:96): avc: denied { dac_override } for uid=0 capability=1 scontext=u:r:cnd:s0 tcontext=u:r:cnd:s0 tclass=capability permissive=1
+05-07 01:50:08.281 I/ThermalEngine(  595): [MONITOR-CAMERA-MSM]
+05-07 01:50:08.281 I/ThermalEngine(  595): algo_type monitor
+05-07 01:50:08.281 I/ThermalEngine(  595): sampling 1000
+05-07 01:50:08.281 I/ThermalEngine(  595): sensor msm_therm
+05-07 01:50:08.281 I/ThermalEngine(  595): thresholds 52000 56000
+05-07 01:50:08.281 I/ThermalEngine(  595): thresholds_clr 47000 53000
+05-07 01:50:08.281 I/ThermalEngine(  595): actions camera camera
+05-07 01:50:08.281 I/ThermalEngine(  595): action_info 1 2
+05-07 01:50:08.281 I/ThermalEngine(  595): [REPORT-BACK-TEMP]
+05-07 01:50:08.281 I/ThermalEngine(  595): algo_type monitor
+05-07 01:50:08.281 I/ThermalEngine(  595): sampling 300000
+05-07 01:50:08.281 I/ThermalEngine(  595): sensor BACK_TEMP
+05-07 01:50:08.281 I/ThermalEngine(  595): thresholds 45000
+05-07 01:50:08.281 I/ThermalEngine(  595): thresholds_clr 43000
+05-07 01:50:08.281 I/ThermalEngine(  595): actions report
+05-07 01:50:08.281 I/ThermalEngine(  595): action_info 1
+05-07 01:50:08.281 I/ThermalEngine(  595): [REPORT-FRONT-TEMP]
+05-07 01:50:08.281 I/ThermalEngine(  595): algo_type monitor
+05-07 01:50:08.281 I/ThermalEngine(  595): sampling 300000
+05-07 01:50:08.281 I/ThermalEngine(  595): sensor FRONT_TEMP
+05-07 01:50:08.281 I/ThermalEngine(  595): thresholds 45000
+05-07 01:50:08.281 I/ThermalEngine(  595): thresholds_clr 43000
+05-07 01:50:08.281 I/ThermalEngine(  595): actions report
+05-07 01:50:08.281 I/ThermalEngine(  595): action_info 1
+05-07 01:50:08.281 I/ThermalEngine(  595): [VDD_RSTR_MONITOR-TSENS15]
+05-07 01:50:08.281 I/ThermalEngine(  595): #algo_type monitor
+05-07 01:50:08.281 I/ThermalEngine(  595): sampling 1000
+05-07 01:50:08.281 I/ThermalEngine(  595): sensor tsens_tz_sensor15
+05-07 01:50:08.281 I/ThermalEngine(  595): thresholds 5000
+05-07 01:50:08.281 I/ThermalEngine(  595): thresholds_clr 10000
+05-07 01:50:08.281 I/ThermalEngine(  595): actions vdd_restriction
+05-07 01:50:08.281 I/ThermalEngine(  595): action_info 1
+05-07 01:50:08.281 I/ThermalEngine(  595): descending
+05-07 01:50:08.281 I/ThermalEngine(  595): [VDD_RSTR_MONITOR-TSENS14]
+05-07 01:50:08.281 I/ThermalEngine(  595): #algo_type monitor
+05-07 01:50:08.281 I/ThermalEngine(  595): sampling 1000
+05-07 01:50:08.281 I/ThermalEngine(  595): sensor tsens_tz_sensor14
+05-07 01:50:08.288 I/qseeproxydaemon(  635): type=1400 audit(0.0:97): avc: denied { ioctl } for uid=1000 path="/dev/binder" dev="tmpfs" ino=6655 ioctlcmd=6209 scontext=u:r:qseeproxy:s0 tcontext=u:object_r:binder_device:s0 tclass=chr_file permissive=1
+05-07 01:50:08.281 I/ThermalEngine(  595): thresholds 5000
+05-07 01:50:08.281 I/ThermalEngine(  595): thresholds_clr 10000
+05-07 01:50:08.281 I/ThermalEngine(  595): actions vdd_restriction
+05-07 01:50:08.281 I/ThermalEngine(  595): action_info 1
+05-07 01:50:08.281 I/ThermalEngine(  595): descending
+05-07 01:50:08.281 I/ThermalEngine(  595): [VDD_RSTR_MONITOR-TSENS13]
+05-07 01:50:08.281 I/ThermalEngine(  595): #algo_type monitor
+05-07 01:50:08.281 I/ThermalEngine(  595): sampling 1000
+05-07 01:50:08.281 I/ThermalEngine(  595): sensor tsens_tz_sensor13
+05-07 01:50:08.281 I/ThermalEngine(  595): thresholds 5000
+05-07 01:50:08.281 I/ThermalEngine(  595): thresholds_clr 10000
+05-07 01:50:08.281 I/ThermalEngine(  595): actions vdd_restriction
+05-07 01:50:08.281 I/ThermalEngine(  595): action_info 1
+05-07 01:50:08.281 I/ThermalEngine(  595): descending
+05-07 01:50:08.281 I/ThermalEngine(  595): [VDD_RSTR_MONITOR-TSENS12]
+05-07 01:50:08.281 I/ThermalEngine(  595): #algo_type monitor
+05-07 01:50:08.281 I/ThermalEngine(  595): sampling 1000
+05-07 01:50:08.281 I/ThermalEngine(  595): sensor tsens_tz_sensor12
+05-07 01:50:08.281 I/ThermalEngine(  595): thresholds 5000
+05-07 01:50:08.281 I/ThermalEngine(  595): thresholds_clr 10000
+05-07 01:50:08.281 I/ThermalEngine(  595): actions vdd_restriction
+05-07 01:50:08.281 I/ThermalEngine(  595): action_info 1
+05-07 01:50:08.281 I/ThermalEngine(  595): descending
+05-07 01:50:08.281 I/ThermalEngine(  595): [VDD_RSTR_MONITOR-TSENS11]
+05-07 01:50:08.281 I/ThermalEngine(  595): #algo_type monitor
+05-07 01:50:08.281 I/ThermalEngine(  595): sampling 1000
+05-07 01:50:08.281 I/ThermalEngine(  595): sensor tsens_tz_sensor11
+05-07 01:50:08.281 I/ThermalEngine(  595): thresholds 5000
+05-07 01:50:08.281 I/ThermalEngine(  595): thresholds_clr 10000
+05-07 01:50:08.281 I/ThermalEngine(  595): actions vdd_restriction
+05-07 01:50:08.281 I/ThermalEngine(  595): action_info 1
+05-07 01:50:08.281 I/ThermalEngine(  595): descending
+05-07 01:50:08.281 I/ThermalEngine(  595): [VDD_RSTR_MONITOR-TSENS10]
+05-07 01:50:08.281 I/ThermalEngine(  595): #algo_type monitor
+05-07 01:50:08.281 I/ThermalEngine(  595): sampling 1000
+05-07 01:50:08.281 I/ThermalEngine(  595): sensor tsens_tz_sensor10
+05-07 01:50:08.281 I/ThermalEngine(  595): thresholds 5000
+05-07 01:50:08.281 I/ThermalEngine(  595): thresholds_clr 10000
+05-07 01:50:08.281 I/ThermalEngine(  595): actions vdd_restriction
+05-07 01:50:08.281 I/ThermalEngine(  595): action_info 1
+05-07 01:50:08.281 I/ThermalEngine(  595): descending
+05-07 01:50:08.281 I/ThermalEngine(  595): [VDD_RSTR_MONITOR-TSENS9]
+05-07 01:50:08.282 I/ThermalEngine(  595): #algo_type monitor
+05-07 01:50:08.282 I/ThermalEngine(  595): sampling 1000
+05-07 01:50:08.282 I/ThermalEngine(  595): sensor tsens_tz_sensor9
+05-07 01:50:08.282 I/ThermalEngine(  595): thresholds 5000
+05-07 01:50:08.282 I/ThermalEngine(  595): thresholds_clr 10000
+05-07 01:50:08.282 I/ThermalEngine(  595): actions vdd_restriction
+05-07 01:50:08.282 I/ThermalEngine(  595): action_info 1
+05-07 01:50:08.282 I/ThermalEngine(  595): descending
+05-07 01:50:08.282 I/ThermalEngine(  595): [VDD_RSTR_MONITOR-TSENS8]
+05-07 01:50:08.282 I/ThermalEngine(  595): #algo_type monitor
+05-07 01:50:08.282 I/ThermalEngine(  595): sampling 1000
+05-07 01:50:08.282 I/ThermalEngine(  595): sensor tsens_tz_sensor8
+05-07 01:50:08.282 I/ThermalEngine(  595): thresholds 5000
+05-07 01:50:08.282 I/ThermalEngine(  595): thresholds_clr 10000
+05-07 01:50:08.282 I/ThermalEngine(  595): actions vdd_restriction
+05-07 01:50:08.282 I/ThermalEngine(  595): action_info 1
+05-07 01:50:08.282 I/ThermalEngine(  595): descending
+05-07 01:50:08.282 I/ThermalEngine(  595): [VDD_RSTR_MONITOR-TSENS7]
+05-07 01:50:08.282 I/ThermalEngine(  595): #algo_type monitor
+05-07 01:50:08.282 I/ThermalEngine(  595): sampling 1000
+05-07 01:50:08.282 I/ThermalEngine(  595): sensor tsens_tz_sensor7
+05-07 01:50:08.282 I/ThermalEngine(  595): thresholds 5000
+05-07 01:50:08.282 I/ThermalEngine(  595): thresholds_clr 10000
+05-07 01:50:08.282 I/ThermalEngine(  595): actions vdd_restriction
+05-07 01:50:08.282 I/ThermalEngine(  595): action_info 1
+05-07 01:50:08.282 I/ThermalEngine(  595): descending
+05-07 01:50:08.282 I/ThermalEngine(  595): [VDD_RSTR_MONITOR-TSENS6]
+05-07 01:50:08.282 I/ThermalEngine(  595): #algo_type monitor
+05-07 01:50:08.282 I/ThermalEngine(  595): sampling 1000
+05-07 01:50:08.282 I/ThermalEngine(  595): sensor tsens_tz_sensor6
+05-07 01:50:08.282 I/ThermalEngine(  595): thresholds 5000
+05-07 01:50:08.282 I/ThermalEngine(  595): thresholds_clr 10000
+05-07 01:50:08.282 I/ThermalEngine(  595): actions vdd_restriction
+05-07 01:50:08.282 I/ThermalEngine(  595): action_info 1
+05-07 01:50:08.282 I/ThermalEngine(  595): descending
+05-07 01:50:08.282 I/ThermalEngine(  595): [VDD_RSTR_MONITOR-TSENS5]
+05-07 01:50:08.282 I/ThermalEngine(  595): #algo_type monitor
+05-07 01:50:08.282 W/SDM     (  509): HWCSession::UEventThread: UEvent dropped. No uevent listener.
+05-07 01:50:08.282 I/ThermalEngine(  595): sampling 1000
+05-07 01:50:08.282 I/ThermalEngine(  595): sensor tsens_tz_sensor5
+05-07 01:50:08.282 I/ThermalEngine(  595): thresholds 5000
+05-07 01:50:08.282 I/ThermalEngine(  595): thresholds_clr 10000
+05-07 01:50:08.282 I/ThermalEngine(  595): actions vdd_restriction
+05-07 01:50:08.282 I/ThermalEngine(  595): action_info 1
+05-07 01:50:08.282 I/ThermalEngine(  595): descending
+05-07 01:50:08.282 I/ThermalEngine(  595): [VDD_RSTR_MONITOR-TSENS4]
+05-07 01:50:08.282 I/ThermalEngine(  595): #algo_type monitor
+05-07 01:50:08.282 I/ThermalEngine(  595): sampling 1000
+05-07 01:50:08.282 I/ThermalEngine(  595): sensor tsens_tz_sensor4
+05-07 01:50:08.282 I/ThermalEngine(  595): thresholds 5000
+05-07 01:50:08.282 I/ThermalEngine(  595): thresholds_clr 10000
+05-07 01:50:08.282 I/ThermalEngine(  595): actions vdd_restriction
+05-07 01:50:08.282 I/ThermalEngine(  595): action_info 1
+05-07 01:50:08.282 I/ThermalEngine(  595): descending
+05-07 01:50:08.282 I/ThermalEngine(  595): [VDD_RSTR_MONITOR-TSENS3]
+05-07 01:50:08.282 I/ThermalEngine(  595): #algo_type monitor
+05-07 01:50:08.282 I/ThermalEngine(  595): sampling 1000
+05-07 01:50:08.282 I/ThermalEngine(  595): sensor tsens_tz_sensor3
+05-07 01:50:08.282 I/ThermalEngine(  595): thresholds 5000
+05-07 01:50:08.282 I/ThermalEngine(  595): thresholds_clr 10000
+05-07 01:50:08.282 I/ThermalEngine(  595): actions vdd_restriction
+05-07 01:50:08.282 I/ThermalEngine(  595): action_info 1
+05-07 01:50:08.282 I/ThermalEngine(  595): descending
+05-07 01:50:08.282 I/ThermalEngine(  595): [VDD_RSTR_MONITOR-TSENS2]
+05-07 01:50:08.282 I/ThermalEngine(  595): #algo_type monitor
+05-07 01:50:08.282 I/ThermalEngine(  595): sampling 1000
+05-07 01:50:08.282 I/ThermalEngine(  595): sensor tsens_tz_sensor2
+05-07 01:50:08.282 I/ThermalEngine(  595): thresholds 5000
+05-07 01:50:08.282 I/ThermalEngine(  595): thresholds_clr 10000
+05-07 01:50:08.282 I/ThermalEngine(  595): actions vdd_restriction
+05-07 01:50:08.282 I/ThermalEngine(  595): action_info 1
+05-07 01:50:08.282 I/ThermalEngine(  595): descending
+05-07 01:50:08.282 I/ThermalEngine(  595): [VDD_RSTR_MONITOR-TSENS1]
+05-07 01:50:08.282 I/ThermalEngine(  595): #algo_type monitor
+05-07 01:50:08.282 I/ThermalEngine(  595): sampling 1000
+05-07 01:50:08.282 I/ThermalEngine(  595): sensor tsens_tz_sensor1
+05-07 01:50:08.282 I/ThermalEngine(  595): thresholds 5000
+05-07 01:50:08.282 I/ThermalEngine(  595): thresholds_clr 10000
+05-07 01:50:08.282 I/ThermalEngine(  595): actions vdd_restriction
+05-07 01:50:08.282 I/ThermalEngine(  595): action_info 1
+05-07 01:50:08.282 I/ThermalEngine(  595): descending
+05-07 01:50:08.282 I/ThermalEngine(  595): [BATT_THERM_REPORT]
+05-07 01:50:08.282 I/ThermalEngine(  595): #algo_type monitor
+05-07 01:50:08.282 I/ThermalEngine(  595): sampling 10000
+05-07 01:50:08.282 I/ThermalEngine(  595): sensor batt_therm
+05-07 01:50:08.282 I/ThermalEngine(  595): thresholds 45000
+05-07 01:50:08.282 I/ThermalEngine(  595): thresholds_clr 43000
+05-07 01:50:08.282 I/ThermalEngine(  595): actions report
+05-07 01:50:08.282 I/ThermalEngine(  595): action_info 1
+05-07 01:50:08.282 I/ThermalEngine(  595): [SS-MSM-CLUSTER0]
+05-07 01:50:08.282 I/ThermalEngine(  595): algo_type ss
+05-07 01:50:08.282 I/ThermalEngine(  595): sampling 1000
+05-07 01:50:08.282 I/ThermalEngine(  595): sensor msm_therm
+05-07 01:50:08.282 I/ThermalEngine(  595): device cluster0
+05-07 01:50:08.282 I/ThermalEngine(  595): set_point 43000
+05-07 01:50:08.282 I/ThermalEngine(  595): set_point_clr 41000
+05-07 01:50:08.282 I/ThermalEngine(  595): time_constant 0
+05-07 01:50:08.282 I/ThermalEngine(  595): device_max_limit 1401600
+05-07 01:50:08.282 I/ThermalEngine(  595): [SS-MSM-GPU]
+05-07 01:50:08.282 I/ThermalEngine(  595): algo_type ss
+05-07 01:50:08.282 I/ThermalEngine(  595): sampling 1000
+05-07 01:50:08.282 I/ThermalEngine(  595): sensor VIRTUAL-MSM-GPU
+05-07 01:50:08.282 I/ThermalEngine(  595): device battery
+05-07 01:50:08.282 I/ThermalEngine(  595): set_point 43000
+05-07 01:50:08.282 I/ThermalEngine(  595): set_point_clr 40000
+05-07 01:50:08.282 I/ThermalEngine(  595): time_constant 0
+05-07 01:50:08.282 I/ThermalEngine(  595): [SS-MSM-CPU]
+05-07 01:50:08.282 I/ThermalEngine(  595): algo_type ss
+05-07 01:50:08.282 I/ThermalEngine(  595): sampling 1000
+05-07 01:50:08.282 I/ThermalEngine(  595): sensor VIRTUAL-MSM-CPU
+05-07 01:50:08.282 I/ThermalEngine(  595): device battery
+05-07 01:50:08.282 I/ThermalEngine(  595): set_point 43000
+05-07 01:50:08.282 I/ThermalEngine(  595): set_point_clr 40000
+05-07 01:50:08.282 I/ThermalEngine(  595): time_constant 0
+05-07 01:50:08.282 W/SDM     (  509): HWCSession::UEventThread: UEvent dropped. No uevent listener.
+05-07 01:50:08.282 I/ThermalEngine(  595): [SS-CHG-BATT]
+05-07 01:50:08.282 I/ThermalEngine(  595): algo_type ss
+05-07 01:50:08.282 I/ThermalEngine(  595): sampling 5000
+05-07 01:50:08.282 I/ThermalEngine(  595): sensor chg_therm
+05-07 01:50:08.282 I/ThermalEngine(  595): device battery
+05-07 01:50:08.282 I/ThermalEngine(  595): set_point 50000
+05-07 01:50:08.282 I/ThermalEngine(  595): set_point_clr 44000
+05-07 01:50:08.282 I/ThermalEngine(  595): time_constant 0
+05-07 01:50:08.282 I/ThermalEngine(  595): [SS-BATT-BATT]
+05-07 01:50:08.282 I/ThermalEngine(  595): algo_type ss
+05-07 01:50:08.282 I/ThermalEngine(  595): sampling 5000
+05-07 01:50:08.282 I/ThermalEngine(  595): sensor batt_therm
+05-07 01:50:08.282 I/ThermalEngine(  595): device battery
+05-07 01:50:08.282 I/ThermalEngine(  595): set_point 44000
+05-07 01:50:08.282 I/ThermalEngine(  595): set_point_clr 42000
+05-07 01:50:08.282 I/ThermalEngine(  595): time_constant 0
+05-07 01:50:08.282 I/ThermalEngine(  595): [SS-GPU]
+05-07 01:50:08.282 I/ThermalEngine(  595): #algo_type ss
+05-07 01:50:08.282 I/ThermalEngine(  595): sampling 250
+05-07 01:50:08.282 I/ThermalEngine(  595): sensor gpu
+05-07 01:50:08.282 I/ThermalEngine(  595): device gpu
+05-07 01:50:08.282 I/ThermalEngine(  595): set_point 95000
+05-07 01:50:08.282 I/ThermalEngine(  595): set_point_clr 65000
+05-07 01:50:08.282 I/ThermalEngine(  595): time_constant 0
+05-07 01:50:08.282 I/ThermalEngine(  595): [SS-CPUS-ALL]
+05-07 01:50:08.282 I/ThermalEngine(  595): #algo_type ss
+05-07 01:50:08.282 I/ThermalEngine(  595): sampling 50
+05-07 01:50:08.282 I/ThermalEngine(  595): sensor VIRTUAL-CPUS
+05-07 01:50:08.282 I/ThermalEngine(  595): device cluster0
+05-07 01:50:08.282 I/ThermalEngine(  595): set_point 95000
+05-07 01:50:08.282 I/ThermalEngine(  595): set_point_clr 55000
+05-07 01:50:08.282 I/ThermalEngine(  595): time_constant 0
+05-07 01:50:08.282 W/hwservicemanager(  463): getTransport: Cannot find entry android.hardware.usb.gadget@1.0::IUsbGadget/default in either framework or device manifest.
+05-07 01:50:08.283 I/ThermalEngine(  595): [SPEAKER-CAL]
+05-07 01:50:08.283 I/ThermalEngine(  595): sampling 30000 30000 10 1800000
+05-07 01:50:08.283 I/ThermalEngine(  595): sensor pm8953_tz
+05-07 01:50:08.283 I/ThermalEngine(  595): sensors tsens_tz_sensor1 tsens_tz_sensor2 tsens_tz_sensor3 tsens_tz_sensor14 tsens_tz_sensor15
+05-07 01:50:08.283 I/ThermalEngine(  595): temp_range 6000 10000 2000
+05-07 01:50:08.283 I/ThermalEngine(  595): max_temp 45000
+05-07 01:50:08.283 I/ThermalEngine(  595): offset -4000
+05-07 01:50:08.283 W/SDM     (  509): HWCSession::UEventThread: UEvent dropped. No uevent listener.
+05-07 01:50:08.283 I/usbd    (  644): Usb HAL not found
+05-07 01:50:08.284 W/statsd  (  618): statscompanion service unavailable!
+05-07 01:50:08.285 I/ThermalEngine(  595): SS:ACTIVE:SS-MSM-GPU:battery=0:VIRTUAL-MSM-GPU=45000
+05-07 01:50:08.285 I/ThermalEngine(  595): SS:ACTIVE:SS-MSM-CPU:battery=0:VIRTUAL-MSM-CPU=53000
+05-07 01:50:08.285 I/android.hardware.gatekeeper@1.0-service(  507): Registration complete for android.hardware.gatekeeper@1.0::IGatekeeper/default.
+05-07 01:50:08.287 I/QC-NETMGR-LIB(  599): onRegistration(): Netd service preexisting : [1]
+05-07 01:50:08.287 D/QC-NETMGR-LIB(  599): registerServerNotification(): Successfully registered for Netd HAL service
+05-07 01:50:08.287 I/QC-NETMGR-LIB(  599): onRegistration(): Service exists, not a restart
+05-07 01:50:08.287 I/QC-NETMGR-LIB(  599): NetmgrNetdClientInit(): Created netd client
+05-07 01:50:08.287 I/QC-NETMGR-LIB(  599): onRegistration(): Starting Netd getService thread
+05-07 01:50:08.288 W/hwservicemanager(  463): getTransport: Cannot find entry android.hardware.keymaster@4.0::IKeymasterDevice/default in either framework or device manifest.
+05-07 01:50:08.289 E/SELinux (  463): avc:  denied  { add } for interface=com.quicinc.cne.api::IApiService pid=634 scontext=u:r:cnd:s0 tcontext=u:object_r:default_android_hwservice:s0 tclass=hwservice_manager permissive=1
+05-07 01:50:08.289 I/mediametrics(  615): ServiceManager: 0x7c9e43d740
+05-07 01:50:08.289 D/MediaAnalyticsService(  615): MediaAnalyticsService created
+05-07 01:50:08.290 I/audioserver(  532): ServiceManager: 0xeda9c100
+05-07 01:50:08.290 E/keymaster1_device(  472): Keymaster Initialized
+05-07 01:50:08.290 E/keymaster1_device(  472): TA API Major Verion: 1
+05-07 01:50:08.290 I/mediaserver(  616): ServiceManager: 0xf469c1c0
+05-07 01:50:08.290 E/keymaster1_device(  472): TA API Minor Verion: 0
+05-07 01:50:08.291 E/keymaster1_device(  472): TA Major Verion: 1
+05-07 01:50:08.291 E/keymaster1_device(  472): TA Minor Verion: 10
+05-07 01:50:08.291 E/keymaster1_device(  472): set_version_req->flags: 1
+05-07 01:50:08.291 W/BatteryNotifier(  616): batterystats service unavailable!
+05-07 01:50:08.291 W/BatteryNotifier(  532): batterystats service unavailable!
+05-07 01:50:08.291 I/cameraserver(  606): ServiceManager: 0xee91c100
+05-07 01:50:08.291 I/CameraService(  606): CameraService started (pid=606)
+05-07 01:50:08.291 I/CameraService(  606): CameraService process starting
+05-07 01:50:08.292 E/SELinux (  462): avc:  denied  { add } for service=com.qualcomm.qti.qseeproxy pid=635 uid=1000 scontext=u:r:qseeproxy:s0 tcontext=u:object_r:default_android_service:s0 tclass=service_manager permissive=1
+05-07 01:50:08.292 D/com.qualcomm.qti.qseeproxy-daemon(  635): QSEEConnector service is now ready
+05-07 01:50:08.293 W/BatteryNotifier(  606): batterystats service unavailable!
+05-07 01:50:08.293 W/BatteryNotifier(  606): batterystats service unavailable!
+05-07 01:50:08.294 I/ServiceManager(  620): Waiting for service 'package_native' on '/dev/binder'...
+05-07 01:50:08.295 I/ServiceManagement(  472): Removing namespace from process name android.hardware.keymaster@3.0-service to keymaster@3.0-service.
+05-07 01:50:08.295 E/QMI_FW  (  634): QMUXD: WARNING qmi_qmux_if_pwr_up_init failed! rc=-6
+05-07 01:50:08.298 I/SDM     (  509): ExtensionInterface::CreateExtensionInterface: 
+05-07 01:50:08.298 I/SDM     (  509): SDM-EXTENSION Version: Date: 12/02/18, Commit: 8acd6b6, Change: I71347032eb
+05-07 01:50:08.299 I/ConfigStore(  534): android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::startGraphicsAllocatorService retrieved: 0
+05-07 01:50:08.299 I/SDM     (  509): HWInfo::GetHWResourceInfo: SDE Version = 5, SDE Revision = 10100000, RGB = 2, VIG = 1, DMA = 1, Cursor = 1
+05-07 01:50:08.299 I/SDM     (  509): HWInfo::GetHWResourceInfo: Upscale Ratio = 20, Downscale Ratio = 4, Blending Stages = 4
+05-07 01:50:08.299 I/SDM     (  509): HWInfo::GetHWResourceInfo: SourceSplit = 0 QSEED3 = 0
+05-07 01:50:08.299 I/SDM     (  509): HWInfo::GetHWResourceInfo: BWC = 0, UBWC = 1, Decimation = 1, Tile Format = 0 Concurrent Writeback = 0
+05-07 01:50:08.299 I/SDM     (  509): HWInfo::GetHWResourceInfo: MaxLowBw = 3400000 , MaxHighBw = 3400000
+05-07 01:50:08.299 I/SDM     (  509): HWInfo::GetHWResourceInfo: MaxPipeBw = 2300000 KBps, MaxSDEClock = 400000000 Hz, ClockFudgeFactor = 1.050000
+05-07 01:50:08.299 I/SDM     (  509): HWInfo::GetHWResourceInfo: Prefill factors: Tiled_NV12 = 8, Tiled = 4, Linear = 1, Scale = 1, Fudge_factor = 2
+05-07 01:50:08.299 I/SDM     (  509): HWInfo::GetMDSSRotatorInfo: MDSS Rotator: Count = 1, Downscale = 1, Min_downscale = 2.000000
+05-07 01:50:08.299 I/SurfaceFlinger(  534): Using HWComposer service: 'default'
+05-07 01:50:08.299 I/SurfaceFlinger(  534): SurfaceFlinger is starting
+05-07 01:50:08.299 I/SDM     (  509): HWInfo::GetHWResourceInfo: Has Support for multiple bw limits shown below
+05-07 01:50:08.299 I/SDM     (  509): HWInfo::GetHWResourceInfo: Mode-index=0  total_bw_limit=3400000 and pipe_bw_limit=2300000
+05-07 01:50:08.299 I/SDM     (  509): HWInfo::GetHWResourceInfo: Mode-index=1  total_bw_limit=3100000 and pipe_bw_limit=2300000
+05-07 01:50:08.299 I/SDM     (  509): HWInfo::GetHWResourceInfo: Mode-index=2  total_bw_limit=3400000 and pipe_bw_limit=2300000
+05-07 01:50:08.299 I/SDM     (  509): HWInfo::GetHWResourceInfo: Mode-index=3  total_bw_limit=3400000 and pipe_bw_limit=2300000
+05-07 01:50:08.300 I/SDM     (  509): SessionManager::SessionManager: Allocate buffers synchronously = 0
+05-07 01:50:08.302 I/statsd  (  618): using statsd socket
+05-07 01:50:08.302 I/android.hardware.keymaster@3.0-service(  472): Registration complete for android.hardware.keymaster@3.0::IKeymasterDevice/default.
+05-07 01:50:08.303 I/QC-NETMGR-LIB(  599): getServiceImpl(): INetd discovered
+05-07 01:50:08.305 I/ThermalEngine(  595): vdd_restriction[MODEM]:0 is recorded and waiting for completing QMI registration
+05-07 01:50:08.305 I/ThermalEngine(  595): vdd_restriction[ADSP]:0 is recorded and waiting for completing QMI registration
+05-07 01:50:08.305 I/ThermalEngine(  595): hotplug_ktm_disable_cb: write out 0
+05-07 01:50:08.306 I/ConfigStore(  534): android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::vsyncEventPhaseOffsetNs retrieved: 1000000 (default)
+05-07 01:50:08.306 I/ConfigStore(  534): android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::vsyncSfEventPhaseOffsetNs retrieved: 1000000 (default)
+05-07 01:50:08.307 I/ConfigStore(  534): android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasSyncFramework retrieved: 1
+05-07 01:50:08.307 I/ConfigStore(  534): android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::presentTimeOffsetFromVSyncNs retrieved: 0
+05-07 01:50:08.307 I/ConfigStore(  534): android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::useHwcForRGBtoYUV retrieved: 1
+05-07 01:50:08.307 I/ConfigStore(  534): android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::maxVirtualDisplaySize retrieved: 4096
+05-07 01:50:08.307 I/ConfigStore(  534): android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::useVrFlinger retrieved: 0 (default)
+05-07 01:50:08.307 I/ConfigStore(  534): android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::maxFrameBufferAcquiredBuffers retrieved: 3
+05-07 01:50:08.307 I/ServiceManagement(  606): getService: Trying again for android.hardware.camera.provider@2.4::ICameraProvider/legacy/0...
+05-07 01:50:08.307 I/keystore(  610): found android.hardware.keymaster@3.0::IKeymasterDevice with interface name default and seclevel TRUSTED_ENVIRONMENT
+05-07 01:50:08.308 W/hwservicemanager(  463): getTransport: Cannot find entry android.hardware.audio@4.0::IDevicesFactory/msd in either framework or device manifest.
+05-07 01:50:08.310 E/SELinux (  463): avc:  denied  { find } for interface=vendor.display.config::IDisplayConfig pid=505 scontext=u:r:hal_configstore_default:s0 tcontext=u:object_r:hal_display_config_hwservice:s0 tclass=hwservice_manager permissive=1
+05-07 01:50:08.311 W/hwservicemanager(  463): getTransport: Cannot find entry vendor.display.config@1.7::IDisplayConfig/default in either framework or device manifest.
+05-07 01:50:08.311 I/ConfigStore(  534): android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+05-07 01:50:08.312 I/ConfigStore(  534): android::hardware::configstore::V1_1::ISurfaceFlingerConfigs::primaryDisplayOrientation retrieved: ORIENTATION_0 (default)
+05-07 01:50:08.312 I/SurfaceFlinger(  534): Disabling Triple Buffering
+05-07 01:50:08.312 I/SurfaceFlinger(  534): Treble testing override: 'false'
+05-07 01:50:08.312 W/SurfaceFlinger(  534): Unable to open libdolphin.so: dlopen failed: library "libdolphin.so" not found.
+05-07 01:50:08.313 I/AudioFlinger(  532): Using default 3000 mSec as standby time.
+05-07 01:50:08.313 W/hwservicemanager(  463): getTransport: Cannot find entry vendor.display.config@1.2::IDisplayConfig/default in either framework or device manifest.
+05-07 01:50:08.314 W/hwservicemanager(  463): getTransport: Cannot find entry vendor.display.config@1.6::IDisplayConfig/default in either framework or device manifest.
+05-07 01:50:08.314 I/SurfaceFlinger(  534): SurfaceFlinger's main thread ready to run. Initializing graphics H/W...
+05-07 01:50:08.314 I/SurfaceFlinger(  534): Phase offest NS: 1000000
+05-07 01:50:08.314 E/APM::Serializer(  532): deserialize: Could not parse /odm/etc/audio_policy_configuration.xml document.
+05-07 01:50:08.315 E/APM::Serializer(  532): deserialize: Could not parse /vendor/etc/audio/audio_policy_configuration.xml document.
+05-07 01:50:08.323 E//vendor/bin/adsprpcd(  597): vendor/qcom/proprietary/commonsys-intf/adsprpc/src/apps_std_imp.c:729:Error 45: fopen failed for remote_heap_config.so. (No such file or directory)
+05-07 01:50:08.326 W/MediaCodecsXmlParser(  623): unable to open media codecs configuration xml file: /data/misc/media/media_codecs_profiling_results.xml
+05-07 01:50:08.326 W/MediaCodecsXmlParser(  623): parseTopLevelXMLFile(/data/misc/media/media_codecs_profiling_results.xml) failed
+05-07 01:50:08.328 I/ServiceManagement(  623): Removing namespace from process name android.hardware.media.omx@1.0-service to omx@1.0-service.
+05-07 01:50:08.330 D/vndksupport(  623): Loading libstagefrighthw.so from current namespace instead of sphal namespace.
+05-07 01:50:08.334 E//vendor/bin/adsprpcd(  597): vendor/qcom/proprietary/commonsys-intf/adsprpc/src/apps_std_imp.c:729:Error 45: fopen failed for adsp_avs_config.acdb. (No such file or directory)
+05-07 01:50:08.335 E//vendor/bin/adsprpcd(  597): vendor/qcom/proprietary/commonsys-intf/adsprpc/src/apps_std_imp.c:729:Error 45: fopen failed for oemconfig.so. (No such file or directory)
+05-07 01:50:08.335 E//vendor/bin/adsprpcd(  597): vendor/qcom/proprietary/commonsys-intf/adsprpc/src/apps_std_imp.c:729:Error 45: fopen failed for testsig-0x46af9dda.so. (No such file or directory)
+05-07 01:50:08.336 E//vendor/bin/adsprpcd(  597): vendor/qcom/proprietary/commonsys-intf/adsprpc/src/apps_std_imp.c:729:Error 45: fopen failed for testsig.so. (No such file or directory)
+05-07 01:50:08.344 I/SDM     (  509): CoreInterface::CreateCore: Open interface handle = 0x7427a70000
+05-07 01:50:08.344 I/SDM     (  509): HWCSession::Register: Set uevent listener = 0x7427a6b000
+05-07 01:50:08.344 I/SDM     (  509): HWInfo::GetFirstDisplayInterfaceType: First display is internal display
+05-07 01:50:08.344 I/SDM     (  509): CPUHint::Init: Invalid CPU Hint Pre-enable Window -1
+05-07 01:50:08.345 I/SDM     (  509): HWDevice::GetHWPanelMaxBrightnessFromNode: Max brightness level = 255
+05-07 01:50:08.345 I/SDM     (  509): HWDevice::Init: access(/dev/graphics/fb0) successful
+05-07 01:50:08.345 I/SDM     (  509): HWDevice::GetHWPanelMaxBrightnessFromNode: Max brightness level = 255
+05-07 01:50:08.345 I/SDM     (  509): HWDevice::PopulateHWPanelInfo: Device type = 0, Display Port = 1, Display Mode = 1, Device Node = 0, Is Primary = 1
+05-07 01:50:08.345 I/SDM     (  509): HWDevice::PopulateHWPanelInfo: Partial Update = 0, supported roi_count =1, Dynamic FPS = 0
+05-07 01:50:08.345 I/SDM     (  509): HWDevice::PopulateHWPanelInfo: Align: left = 0, width = 0, top = 0, height = 0
+05-07 01:50:08.345 I/SDM     (  509): HWDevice::PopulateHWPanelInfo: ROI: min_width = 0, min_height = 0, need_merge = 0
+05-07 01:50:08.345 I/SDM     (  509): HWDevice::PopulateHWPanelInfo: FPS: min = 0, max =0
+05-07 01:50:08.345 I/SDM     (  509): HWDevice::PopulateHWPanelInfo: Ping Pong Split = 0
+05-07 01:50:08.345 I/SDM     (  509): HWDevice::PopulateHWPanelInfo: Left Split = 0, Right Split = 0
+05-07 01:50:08.346 I/SDM     (  509): HWDevice::GetHWPanelMaxBrightnessFromNode: Max brightness level = 255
+05-07 01:50:08.346 I/SDM     (  509): HWDevice::GetHWPanelMaxBrightnessFromNode: Max brightness level = 255
+05-07 01:50:08.346 W/SDM     (  509): HWDevice::GetHWPanelInfoByNode: Failed to open msm_fb_panel_info node device node 2
+05-07 01:50:08.346 W/SDM     (  509): HWDevice::GetHWPanelInfoByNode: Failed to open msm_fb_panel_info node device node 3
+05-07 01:50:08.346 I/SDM     (  509): HWDevice::GetHWPanelMaxBrightnessFromNode: Max brightness level = 255
+05-07 01:50:08.346 I/SDM     (  509): HWDevice::GetHWPanelMaxBrightnessFromNode: Max brightness level = 255
+05-07 01:50:08.346 W/SDM     (  509): HWDevice::GetHWPanelInfoByNode: Failed to open msm_fb_panel_info node device node 2
+05-07 01:50:08.346 W/SDM     (  509): HWDevice::GetHWPanelInfoByNode: Failed to open msm_fb_panel_info node device node 3
+05-07 01:50:08.346 I/SDM     (  509): StrategyImpl::SetIdleTimeoutMs: Idle timeout: active = 70, inactive = 520
+05-07 01:50:08.346 W/SDM     (  509): ColorManager::CreateColorManagerProxy: PAV2 version is versions = 11, version = 11 
+05-07 01:50:08.356 W/MediaCodecsXmlParser(  623): unable to open media codecs configuration xml file: /data/misc/media/media_codecs_profiling_results.xml
+05-07 01:50:08.356 W/MediaCodecsXmlParser(  623): parseTopLevelXMLFile(/data/misc/media/media_codecs_profiling_results.xml) failed
+05-07 01:50:08.356 I/ServiceManagement(  623): Removing namespace from process name android.hardware.media.omx@1.0-service to omx@1.0-service.
+05-07 01:50:08.358 I/media.codec(  623): IOmx HAL service created.
+05-07 01:50:08.367 D/libEGL  (  534): loaded /vendor/lib64/egl/libEGL_adreno.so
+05-07 01:50:08.369 D/vndksupport(  502): Loading /vendor/lib/hw/audio.primary.msm8953.so from current namespace instead of sphal namespace.
+05-07 01:50:08.377 I/rmt_storage(  527): rmt_storage_connect_cb: clnt_h=0x1 conn_h=0x70eca2c020
+05-07 01:50:08.377 I/SDM     (  509): DisplayBase::InitializeColorModes: Number of Color Modes = 22
+05-07 01:50:08.377 I/rmt_storage(  527): rmt_storage_open_cb: /boot/modem_fs1: req_h=0x1 msg_id=1: Client found
+05-07 01:50:08.377 I/rmt_storage(  527): rmt_storage_open_cb: /boot/modem_fs1: req_h=0x1 msg_id=1: Send response: res=0 err=0
+05-07 01:50:08.377 I/rmt_storage(  527): rmt_storage_client_thread: /boot/modem_fs1: Worker thread started
+05-07 01:50:08.377 I/rmt_storage(  527): wake lock name: rmt_storage_485006243056, name creation success: 24
+05-07 01:50:08.378 I/rmt_storage(  527): rmt_storage_disconnect_cb: clnt_h=0x1 conn_h=0x70eca2c020
+05-07 01:50:08.378 I/rmt_storage(  527): rmt_storage_connect_cb: clnt_h=0x2 conn_h=0x70eca2c020
+05-07 01:50:08.378 I/rmt_storage(  527): rmt_storage_open_cb: /boot/modem_fs2: req_h=0x2 msg_id=1: Client found
+05-07 01:50:08.378 I/rmt_storage(  527): rmt_storage_open_cb: /boot/modem_fs2: req_h=0x2 msg_id=1: Send response: res=0 err=0
+05-07 01:50:08.378 I/rmt_storage(  527): rmt_storage_client_thread: /boot/modem_fs2: Worker thread started
+05-07 01:50:08.378 I/rmt_storage(  527): wake lock name: rmt_storage_485005202672, name creation success: 24
+05-07 01:50:08.379 I/rmt_storage(  527): rmt_storage_disconnect_cb: clnt_h=0x2 conn_h=0x70eca2c020
+05-07 01:50:08.379 D/libEGL  (  534): loaded /vendor/lib64/egl/libGLESv1_CM_adreno.so
+05-07 01:50:08.379 I/rmt_storage(  527): rmt_storage_connect_cb: clnt_h=0x3 conn_h=0x70eca2c020
+05-07 01:50:08.379 I/rmt_storage(  527): rmt_storage_open_cb: found fsg req /boot/modem_fsg
+05-07 01:50:08.379 D/rmt_storage(  527): open_gzfsg: b_factory=0, b_device=1, b_carrier=1
+05-07 01:50:08.379 D/rmt_storage(  527): open_gzfsg: b_radio=1, b_multisim=1
+05-07 01:50:08.379 D/rmt_storage(  527): GZFSG open /fsg/sanders_unknown_dsds_india.img.gz
+05-07 01:50:08.381 E/rmt_storage(  527): Couldn't open /fsg/sanders_unknown_dsds_india.img.gz, trying default for product-radio
+05-07 01:50:08.381 D/rmt_storage(  527): GZFSG opened final path /fsg/sanders_dsds_india.img.gz
+05-07 01:50:08.381 I/rmt_storage(  527): rmt_storage_open_cb: /boot/modem_fsg: req_h=0x3 msg_id=1: Client found
+05-07 01:50:08.382 I/rmt_storage(  527): rmt_storage_open_cb: /boot/modem_fsg: req_h=0x3 msg_id=1: Send response: res=0 err=0
+05-07 01:50:08.382 I/rmt_storage(  527): rmt_storage_client_thread: /boot/modem_fsg: Worker thread started
+05-07 01:50:08.382 I/rmt_storage(  527): wake lock name: rmt_storage_485004162288, name creation success: 24
+05-07 01:50:08.383 I/rmt_storage(  527): rmt_storage_connect_cb: clnt_h=0x4 conn_h=0x70eca2c030
+05-07 01:50:08.383 I/rmt_storage(  527): rmt_storage_open_cb: /boot/modem_fsc: req_h=0x4 msg_id=1: Client found
+05-07 01:50:08.383 I/rmt_storage(  527): rmt_storage_client_thread: /boot/modem_fsc: Worker thread started
+05-07 01:50:08.383 I/rmt_storage(  527): rmt_storage_open_cb: /boot/modem_fsc: req_h=0x4 msg_id=1: Send response: res=0 err=0
+05-07 01:50:08.383 I/rmt_storage(  527): wake lock name: rmt_storage_485003121904, name creation success: 24
+05-07 01:50:08.383 I/rmt_storage(  527): rmt_storage_disconnect_cb: clnt_h=0x3 conn_h=0x70eca2c020
+05-07 01:50:08.384 I/rmt_storage(  527): rmt_storage_disconnect_cb: clnt_h=0x4 conn_h=0x70eca2c030
+05-07 01:50:08.384 I/rmt_storage(  527): rmt_storage_connect_cb: clnt_h=0x5 conn_h=0x70eca2c030
+05-07 01:50:08.384 I/rmt_storage(  527): rmt_storage_alloc_buff_cb: /boot/modem_fs1: req_h=0x5 msg_id=4: Alloc request received: Size: 0
+05-07 01:50:08.384 I/rmt_storage(  527): rmt_storage_alloc_buff_cb: /boot/modem_fs1: req_h=0x5 msg_id=4: New client making a dummy request with buffer req size 0
+05-07 01:50:08.384 I/rmt_storage(  527): rmt_storage_alloc_buff_cb: /boot/modem_fs1: req_h=0x5 msg_id=4: Send response: res=0 err=0
+05-07 01:50:08.385 I/rmt_storage(  527): rmt_storage_connect_cb: clnt_h=0x6 conn_h=0x70eca2c020
+05-07 01:50:08.385 I/rmt_storage(  527): rmt_storage_rw_iovec_cb: /boot/modem_fs1: req_h=0x6 msg_id=3: R/W request received
+05-07 01:50:08.385 I/rmt_storage(  527): rw_iovec client->path = /boot/modem_fs1
+05-07 01:50:08.385 I/rmt_storage(  527): wakelock acquired: 1, error no: 42
+05-07 01:50:08.385 I/rmt_storage(  527): rmt_storage_disconnect_cb: clnt_h=0x5 conn_h=0x70eca2c030
+05-07 01:50:08.385 I/rmt_storage(  527): rmt_storage_client_thread: /boot/modem_fs1: Unblock worker thread (th_id: 485006243056)
+05-07 01:50:08.387 I/rmt_storage(  527): rmt_storage_client_thread: /boot/modem_fs1: req_h=0x6 msg_id=3: Bytes read = 512
+05-07 01:50:08.387 I/rmt_storage(  527): rmt_storage_client_thread: /boot/modem_fs1: req_h=0x6 msg_id=3: Send response: res=0 err=0
+05-07 01:50:08.388 I/rmt_storage(  527): rmt_storage_client_thread: /boot/modem_fs1: About to block rmt_storage client thread (th_id: 485006243056) wakelock released: 1, error no: 0
+05-07 01:50:08.388 I/rmt_storage(  527): 
+05-07 01:50:08.388 I/rmt_storage(  527): rmt_storage_disconnect_cb: clnt_h=0x6 conn_h=0x70eca2c020
+05-07 01:50:08.388 I/rmt_storage(  527): rmt_storage_connect_cb: clnt_h=0x7 conn_h=0x70eca2c020
+05-07 01:50:08.388 I/rmt_storage(  527): rmt_storage_rw_iovec_cb: /boot/modem_fs2: req_h=0x7 msg_id=3: R/W request received
+05-07 01:50:08.388 I/rmt_storage(  527): rw_iovec client->path = /boot/modem_fs2
+05-07 01:50:08.388 I/rmt_storage(  527): wakelock acquired: 1, error no: 42
+05-07 01:50:08.388 I/rmt_storage(  527): rmt_storage_client_thread: /boot/modem_fs2: Unblock worker thread (th_id: 485005202672)
+05-07 01:50:08.389 I/rmt_storage(  527): rmt_storage_client_thread: /boot/modem_fs2: req_h=0x7 msg_id=3: Bytes read = 512
+05-07 01:50:08.389 I/rmt_storage(  527): rmt_storage_client_thread: /boot/modem_fs2: req_h=0x7 msg_id=3: Send response: res=0 err=0
+05-07 01:50:08.389 I/rmt_storage(  527): rmt_storage_client_thread: /boot/modem_fs2: About to block rmt_storage client thread (th_id: 485005202672) wakelock released: 1, error no: 0
+05-07 01:50:08.389 I/rmt_storage(  527): 
+05-07 01:50:08.389 I/rmt_storage(  527): rmt_storage_disconnect_cb: clnt_h=0x7 conn_h=0x70eca2c020
+05-07 01:50:08.391 I/rmt_storage(  527): rmt_storage_connect_cb: clnt_h=0x8 conn_h=0x70eca2c020
+05-07 01:50:08.391 I/rmt_storage(  527): rmt_storage_rw_iovec_cb: /boot/modem_fs2: req_h=0x8 msg_id=3: R/W request received
+05-07 01:50:08.391 I/rmt_storage(  527): rw_iovec client->path = /boot/modem_fs2
+05-07 01:50:08.391 I/rmt_storage(  527): wakelock acquired: 1, error no: 42
+05-07 01:50:08.391 I/rmt_storage(  527): rmt_storage_client_thread: /boot/modem_fs2: Unblock worker thread (th_id: 485005202672)
+05-07 01:50:08.394 I/ServiceManager(  620): Waiting for service 'package_native' on '/dev/binder'...
+05-07 01:50:08.395 W/SDM     (  509): HWEvents::InitializePollFd: open failed for display=0 event=idle_power_collapse, error=No such file or directory
+05-07 01:50:08.396 I/SDM     (  509): HWCDisplay::Init: Display created with id: 0
+05-07 01:50:08.396 E/SDM     (  509): DisplayBase::GetColorModeAttr: Failed: Mode hal_srgb without attribute
+05-07 01:50:08.396 E/SDM     (  509): DisplayBase::GetColorModeAttr: Failed: Mode hal_adobe without attribute
+05-07 01:50:08.396 E/SDM     (  509): DisplayBase::GetColorModeAttr: Failed: Mode hal_native without attribute
+05-07 01:50:08.396 E/SDM     (  509): DisplayBase::GetColorModeAttr: Failed: Mode hal_night_a without attribute
+05-07 01:50:08.396 D/audio_hw_primary(  502): adev_open: enter
+05-07 01:50:08.396 E/SDM     (  509): DisplayBase::GetColorModeAttr: Failed: Mode hal_night_b without attribute
+05-07 01:50:08.396 E/SDM     (  509): DisplayBase::GetColorModeAttr: Failed: Mode hal_night_c without attribute
+05-07 01:50:08.396 E/SDM     (  509): DisplayBase::GetColorModeAttr: Failed: Mode hal_night_d without attribute
+05-07 01:50:08.396 E/SDM     (  509): DisplayBase::GetColorModeAttr: Failed: Mode hal_night_e without attribute
+05-07 01:50:08.396 E/SDM     (  509): DisplayBase::GetColorModeAttr: Failed: Mode hal_night_f without attribute
+05-07 01:50:08.396 E/SDM     (  509): DisplayBase::GetColorModeAttr: Failed: Mode hal_night_g without attribute
+05-07 01:50:08.396 E/SDM     (  509): DisplayBase::GetColorModeAttr: Failed: Mode hal_night_h without attribute
+05-07 01:50:08.396 E/SDM     (  509): DisplayBase::GetColorModeAttr: Failed: Mode hal_night_i without attribute
+05-07 01:50:08.396 E/SDM     (  509): DisplayBase::GetColorModeAttr: Failed: Mode hal_night_j without attribute
+05-07 01:50:08.396 E/SDM     (  509): DisplayBase::GetColorModeAttr: Failed: Mode hal_night_k without attribute
+05-07 01:50:08.396 E/SDM     (  509): DisplayBase::GetColorModeAttr: Failed: Mode hal_night_l without attribute
+05-07 01:50:08.396 E/SDM     (  509): DisplayBase::GetColorModeAttr: Failed: Mode hal_night_m without attribute
+05-07 01:50:08.396 E/SDM     (  509): DisplayBase::GetColorModeAttr: Failed: Mode hal_night_n without attribute
+05-07 01:50:08.396 E/SDM     (  509): DisplayBase::GetColorModeAttr: Failed: Mode hal_night_o without attribute
+05-07 01:50:08.396 E/SDM     (  509): DisplayBase::GetColorModeAttr: Failed: Mode hal_night_p without attribute
+05-07 01:50:08.396 E/SDM     (  509): DisplayBase::GetColorModeAttr: Failed: Mode hal_night_q without attribute
+05-07 01:50:08.396 E/SDM     (  509): DisplayBase::GetColorModeAttr: Failed: Mode hal_night_r without attribute
+05-07 01:50:08.396 E/SDM     (  509): DisplayBase::GetColorModeAttr: Failed: Mode hal_night_z_off without attribute
+05-07 01:50:08.396 I/SDM     (  509): HWCDisplay::HandleColorModeTransform: Setting Color Mode = 8 Transform Hint = 0 Success
+05-07 01:50:08.397 I/SDM     (  509): DisplayBase::SetFrameBufferConfig: New framebuffer resolution (1080x1920)
+05-07 01:50:08.398 D/audio_hw_utils(  502): audio_extn_utils_open_snd_mixer: snd_card_name: msm8953-snd-card
+05-07 01:50:08.398 W/hardware_info(  502): update_hardware_info_8x16: Not an 8x16/8909/8917/8920/8937/8939/8940/8952/8953/660 device
+05-07 01:50:08.398 D/audio_hw_utils(  502): audio_extn_utils_open_snd_mixer: Opened sound card:0
+05-07 01:50:08.398 D/msm8916_platform(  502): platform_init: Opened sound card:0
+05-07 01:50:08.398 D/msm8916_platform(  502): platform_init: snd_card_name: msm8953-snd-card
+05-07 01:50:08.398 W/hardware_info(  502): update_hardware_info_8x16: Not an 8x16/8909/8917/8920/8937/8939/8940/8952/8953/660 device
+05-07 01:50:08.398 D/msm8916_platform(  502): platform_init: mixer path file is /vendor/etc/mixer_paths.xml
+05-07 01:50:08.401 I/rmt_storage(  527): rmt_storage_client_thread: /boot/modem_fs2: req_h=0x8 msg_id=3: Bytes read = 1571840
+05-07 01:50:08.401 I/rmt_storage(  527): rmt_storage_client_thread: /boot/modem_fs2: req_h=0x8 msg_id=3: Send response: res=0 err=0
+05-07 01:50:08.401 I/rmt_storage(  527): rmt_storage_client_thread: /boot/modem_fs2: About to block rmt_storage client thread (th_id: 485005202672) wakelock released: 1, error no: 0
+05-07 01:50:08.401 I/rmt_storage(  527): 
+05-07 01:50:08.401 I/rmt_storage(  527): rmt_storage_disconnect_cb: clnt_h=0x8 conn_h=0x70eca2c020
+05-07 01:50:08.402 E//vendor/bin/adsprpcd(  597): vendor/qcom/proprietary/commonsys-intf/adsprpc/src/apps_std_imp.c:729:Error 45: fopen failed for custom_sm_ecns_1.so.1. (No such file or directory)
+05-07 01:50:08.402 E//vendor/bin/adsprpcd(  597): vendor/qcom/proprietary/commonsys-intf/adsprpc/src/apps_std_imp.c:729:Error 45: fopen failed for custom_dm_ecns_1.so.1. (No such file or directory)
+05-07 01:50:08.403 E//vendor/bin/adsprpcd(  597): vendor/qcom/proprietary/commonsys-intf/adsprpc/src/apps_std_imp.c:729:Error 45: fopen failed for custom_dm_ecns_2.so.1. (No such file or directory)
+05-07 01:50:08.404 E//vendor/bin/adsprpcd(  597): vendor/qcom/proprietary/commonsys-intf/adsprpc/src/apps_std_imp.c:729:Error 45: fopen failed for custom_sm_ecns_2.so.1. (No such file or directory)
+05-07 01:50:08.404 E//vendor/bin/adsprpcd(  597): vendor/qcom/proprietary/commonsys-intf/adsprpc/src/apps_std_imp.c:729:Error 45: fopen failed for custom_qm_ecns_1.so.1. (No such file or directory)
+05-07 01:50:08.405 E//vendor/bin/adsprpcd(  597): vendor/qcom/proprietary/commonsys-intf/adsprpc/src/apps_std_imp.c:729:Error 45: fopen failed for custom_qm_ecns_2.so.1. (No such file or directory)
+05-07 01:50:08.407 E//vendor/bin/adsprpcd(  597): vendor/qcom/proprietary/commonsys-intf/adsprpc/src/apps_std_imp.c:729:Error 45: fopen failed for voiceproc_tx.so. (No such file or directory)
+05-07 01:50:08.407 E//vendor/bin/adsprpcd(  597): vendor/qcom/proprietary/commonsys-intf/adsprpc/src/apps_std_imp.c:729:Error 45: fopen failed for voiceproc_rx.so. (No such file or directory)
+05-07 01:50:08.495 I/ServiceManager(  620): Waiting for service 'package_native' on '/dev/binder'...
+05-07 01:50:08.558 D/QSEECOMAPI(  645): Loaded image: APP id = 196611
+05-07 01:50:08.572 E/fpc_fingerprint_hal(  645): node_write open failed /data/.fps/ta_ver: -13
+05-07 01:50:08.572 E/fpc_fingerprint_hal(  645): node_write open failed /data/.fps/tac_ver: -13
+05-07 01:50:08.572 E/fpc_fingerprint_hal(  645): node_write open failed /data/.fps/ic_ver: -13
+05-07 01:50:08.579 D/libEGL  (  534): loaded /vendor/lib64/egl/libGLESv2_adreno.so
+05-07 01:50:08.581 D/QSEECOMAPI(  645): QSEECom_get_handle sb_length = 0x400
+05-07 01:50:08.581 D/QSEECOMAPI(  645): App is already loaded QSEE and app id = 65537
+05-07 01:50:08.582 I/chatty  (  632): uid=1006(camera) mm-qcamera-daem identical 1 line
+05-07 01:50:08.595 I/ServiceManager(  620): Waiting for service 'package_native' on '/dev/binder'...
+05-07 01:50:08.599 I/Adreno  (  534): QUALCOMM build                   : 8397a22, Iaa6c380d7d
+05-07 01:50:08.599 I/Adreno  (  534): Build Date                       : 12/02/18
+05-07 01:50:08.599 I/Adreno  (  534): OpenGL ES Shader Compiler Version: EV031.25.03.02
+05-07 01:50:08.599 I/Adreno  (  534): Local Branch                     : 
+05-07 01:50:08.599 I/Adreno  (  534): Remote Branch                    : 
+05-07 01:50:08.599 I/Adreno  (  534): Remote Branch                    : 
+05-07 01:50:08.599 I/Adreno  (  534): Reconstruct Branch               : 
+05-07 01:50:08.599 I/Adreno  (  534): Build Config                     : S L 6.0.7 AArch64
+05-07 01:50:08.599 D/QSEECOMAPI(  645): QSEECom_dealloc_memory 
+05-07 01:50:08.599 D/QSEECOMAPI(  645): QSEECom_shutdown_app, app_id = 65537
+05-07 01:50:08.601 E/fpc_hal_extension(  645): add_sensortest_service
+05-07 01:50:08.603 E/SELinux (  463): avc:  denied  { add } for interface=com.fingerprints.extension::IFingerprintSensorTest pid=645 scontext=u:r:init:s0 tcontext=u:object_r:default_android_hwservice:s0 tclass=hwservice_manager permissive=1
+05-07 01:50:08.613 I/ServiceManagement(  645): Removing namespace from process name android.hardware.biometrics.fingerprint@2.1-fpcservice to fingerprint@2.1-fpcservice.
+05-07 01:50:08.615 E/SELinux (  463): avc:  denied  { add } for interface=android.hardware.biometrics.fingerprint::IBiometricsFingerprint pid=645 scontext=u:r:init:s0 tcontext=u:object_r:hal_fingerprint_hwservice:s0 tclass=hwservice_manager permissive=1
+05-07 01:50:08.615 I/SDM     (  509): HWCDisplay::SetFrameBufferResolution: New framebuffer resolution (1080x1920)
+05-07 01:50:08.616 I/Adreno  (  534): PFP: 0x005ff110, ME: 0x005ff066
+05-07 01:50:08.616 I/SDM     (  509): HWCColorManager::CreateColorManager: Successfully loaded libsdm-disp-vndapis.so
+05-07 01:50:08.620 I/SDM     (  509): HWCColorManager::CreateColorManager: Successfully loaded libsdm-disp-vndapis.so and libsdm-diag.so and diag_init'ed
+05-07 01:50:08.621 I/ServiceManagement(  509): Removing namespace from process name android.hardware.graphics.composer@2.1-service to composer@2.1-service.
+05-07 01:50:08.622 I/android.hardware.graphics.composer@2.1-service(  509): Registration complete for android.hardware.graphics.composer@2.1::IComposer/default.
+05-07 01:50:08.629 W/hwservicemanager(  463): getTransport: Cannot find entry vendor.display.config@1.7::IDisplayConfig/default in either framework or device manifest.
+05-07 01:50:08.629 I/ConfigStore(  534): android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+05-07 01:50:08.629 W/hwservicemanager(  463): getTransport: Cannot find entry vendor.display.config@1.7::IDisplayConfig/default in either framework or device manifest.
+05-07 01:50:08.630 I/ConfigStore(  534): android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+05-07 01:50:08.634 I/SurfaceFlinger(  534): EGL information:
+05-07 01:50:08.634 I/SurfaceFlinger(  534): vendor    : Android
+05-07 01:50:08.634 I/SurfaceFlinger(  534): version   : 1.4 Android META-EGL
+05-07 01:50:08.634 I/SurfaceFlinger(  534): extensions: EGL_KHR_get_all_proc_addresses EGL_ANDROID_presentation_time EGL_KHR_swap_buffers_with_damage EGL_ANDROID_get_native_client_buffer EGL_ANDROID_front_buffer_auto_refresh EGL_ANDROID_get_frame_timestamps EGL_EXT_surface_SMPTE2086_metadata EGL_EXT_surface_CTA861_3_metadata EGL_KHR_image EGL_KHR_image_base EGL_EXT_image_gl_colorspace EGL_KHR_lock_surface EGL_KHR_gl_colorspace EGL_KHR_gl_texture_2D_image EGL_KHR_gl_texture_3D_image EGL_KHR_gl_texture_cubemap_image EGL_KHR_gl_renderbuffer_image EGL_KHR_reusable_sync EGL_KHR_fence_sync EGL_KHR_create_context EGL_KHR_surfaceless_context EGL_EXT_create_context_robustness EGL_ANDROID_image_native_buffer EGL_KHR_wait_sync EGL_ANDROID_recordable EGL_KHR_partial_update EGL_EXT_pixel_format_float EGL_KHR_create_context_no_error EGL_KHR_mutable_render_buffer EGL_EXT_yuv_surface EGL_EXT_protected_content EGL_IMG_context_priority EGL_KHR_no_config_context 
+05-07 01:50:08.634 I/SurfaceFlinger(  534): Client API: OpenGL_ES
+05-07 01:50:08.634 I/SurfaceFlinger(  534): EGLSurface: 8-8-8-8, config=0x7bb438be80
+05-07 01:50:08.634 I/Atfwd_Daemon(  639): qmi_client_init_instance status retry : 1
+05-07 01:50:08.634 I/Atfwd_Daemon(  639): 
+05-07 01:50:08.634 I/Atfwd_Daemon(  639):  qmi_client_init_instance....
+05-07 01:50:08.634 I/SurfaceFlinger(  534): OpenGL ES informations:
+05-07 01:50:08.634 I/SurfaceFlinger(  534): vendor    : Qualcomm
+05-07 01:50:08.634 I/SurfaceFlinger(  534): renderer  : Adreno (TM) 506
+05-07 01:50:08.634 I/SurfaceFlinger(  534): version   : OpenGL ES 3.2 V@331.0 (GIT@8397a22, Iaa6c380d7d) (Date:12/02/18)
+05-07 01:50:08.634 I/SurfaceFlinger(  534): extensions: GL_OES_EGL_image GL_OES_EGL_image_external GL_OES_EGL_sync GL_OES_vertex_half_float GL_OES_framebuffer_object GL_OES_rgb8_rgba8 GL_OES_compressed_ETC1_RGB8_texture GL_AMD_compressed_ATC_texture GL_KHR_texture_compression_astc_ldr GL_KHR_texture_compression_astc_hdr GL_OES_texture_compression_astc GL_OES_texture_npot GL_EXT_texture_filter_anisotropic GL_EXT_texture_format_BGRA8888 GL_OES_texture_3D GL_EXT_color_buffer_float GL_EXT_color_buffer_half_float GL_QCOM_alpha_test GL_OES_depth24 GL_OES_packed_depth_stencil GL_OES_depth_texture GL_OES_depth_texture_cube_map GL_EXT_sRGB GL_OES_texture_float GL_OES_texture_float_linear GL_OES_texture_half_float GL_OES_texture_half_float_linear GL_EXT_texture_type_2_10_10_10_REV GL_EXT_texture_sRGB_decode GL_EXT_texture_format_sRGB_override GL_OES_element_index_uint GL_EXT_copy_image GL_EXT_geometry_shader GL_EXT_tessellation_shader GL_OES_texture_stencil8 GL_EXT_shader_io_blocks GL_OES_shader_image_atomic GL_OES_sample_variables GL_EXT_texture_border_clamp G
+05-07 01:50:08.635 I/SurfaceFlinger(  534): GL_MAX_TEXTURE_SIZE = 16384
+05-07 01:50:08.635 I/SurfaceFlinger(  534): GL_MAX_VIEWPORT_DIMS = 16384
+05-07 01:50:08.638 D/vndksupport(  509): Loading /vendor/lib64/hw/android.hardware.graphics.mapper@2.0-impl.so from current namespace instead of sphal namespace.
+05-07 01:50:08.638 I/Atfwd_Daemon(  639): qmi_client_init_instance status: -3, num_retries: 2, retryCnt: 1
+05-07 01:50:08.638 I/Atfwd_Daemon(  639): result : -3 	 ,Init step :1 	 ,qmiErrorCode: 0
+05-07 01:50:08.638 I/Atfwd_Daemon(  639): 
+05-07 01:50:08.638 I/Atfwd_Daemon(  639):  Sleeping...
+05-07 01:50:08.650 D/vndksupport(  509): Loading /vendor/lib64/hw/gralloc.msm8953.so from current namespace instead of sphal namespace.
+05-07 01:50:08.652 D/SDM     (  509): HWCSession::RegisterCallback: Registering callback: Hotplug
+05-07 01:50:08.653 I/SDM     (  509): HWCDisplay::GetHdrCapabilities: HDR is not supported
+05-07 01:50:08.653 I/SDM     (  509): HWCDisplay::GetHdrCapabilities: HDR is not supported
+05-07 01:50:08.653 E/HWComposer(  534): getSupportedPerFrameMetadata: getSupportedPerFrameMetadata failed for display 0: Unsupported (8)
+05-07 01:50:08.678 D/SDM     (  509): HWCSession::RegisterCallback: Registering callback: Refresh
+05-07 01:50:08.678 D/SDM     (  509): HWCSession::RegisterCallback: Registering callback: Vsync
+05-07 01:50:08.696 I/ServiceManager(  620): Waiting for service 'package_native' on '/dev/binder'...
+05-07 01:50:08.728 E/Diag_Lib(  601):  Diag_LSM_Init: Failed to open handle to diag driver, error = 13
+05-07 01:50:08.728 E/Diag_Lib(  625):  Diag_LSM_Init: Failed to open handle to diag driver, error = 13
+05-07 01:50:08.756 D/PerMgrSrv(  529): modem state: is on-line, add client QCRIL
+05-07 01:50:08.756 D/PerMgrSrv(  529): QCRIL registered
+05-07 01:50:08.756 D/PerMgrLib(  625): QCRIL successfully registered for modem
+05-07 01:50:08.757 D/PerMgrSrv(  529): modem state: is on-line, add client QCRIL
+05-07 01:50:08.757 D/PerMgrSrv(  529): QCRIL registered
+05-07 01:50:08.757 D/PerMgrLib(  601): QCRIL successfully registered for modem
+05-07 01:50:08.760 I/MDMCTBK (  625): [1] - start:MdmCutbackHndler, createInstance = 0
+05-07 01:50:08.760 I/MDMCTBK (  601): [1] - start:MdmCutbackHndler, createInstance = 2
+05-07 01:50:08.760 I/MDMCTBK (  601): [1] - eventLoop:Start Event loop
+05-07 01:50:08.760 I/MDMCTBK (  601): [1] - eventLoop:Event loop - wait for event
+05-07 01:50:08.760 I/MDMCTBK (  601): [1] - postEventMessage:Post Event - event id = MDMCUTBK_START_CMD
+05-07 01:50:08.761 I/MDMCTBK (  601): [1] - eventLoop:Event loop - event arrived
+05-07 01:50:08.761 I/MDMCTBK (  601): [1] - eventLoop:Event loop - Handle Event = MDMCUTBK_START_CMD
+05-07 01:50:08.761 I/MDMCTBK (  601): [1] - MdmCutbackIpcClientConnect:IPC Client: Enter
+05-07 01:50:08.763 E/MDMCTBK (  601): [1] - MdmCutbackIpcClientConnect:IPC Client: Error - cannot connect to server socket retry_count=1
+05-07 01:50:08.763 I/MDMCTBK (  625): [0] - eventLoop:Start Event loop
+05-07 01:50:08.763 I/MDMCTBK (  625): [0] - eventLoop:Event loop - wait for event
+05-07 01:50:08.764 I/MDMCTBK (  625): [0] - postEventMessage:Post Event - event id = MDMCUTBK_START_CMD
+05-07 01:50:08.764 I/MDMCTBK (  625): [0] - eventLoop:Event loop - event arrived
+05-07 01:50:08.764 I/MDMCTBK (  625): [0] - eventLoop:Event loop - Handle Event = MDMCUTBK_START_CMD
+05-07 01:50:08.765 I/MDMCTBK (  625): [0] - MdmCutbackIpcServerOpen:IPC Server: Enter
+05-07 01:50:08.766 I/MDMCTBK (  625): [0] - MdmCutbackIpcServerOpen:IPC Server - success open server socket to listen
+05-07 01:50:08.766 I/MDMCTBK (  625): [0] - MdmCutbackIpcServerOpen:IPC Server: started the server listener thread 93361392
+05-07 01:50:08.769 I/MDMCTBK (  625): [0] - getCutbackProperty:getCutbackProperty, Values read from property=0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1, length=31
+05-07 01:50:08.769 E/MDMCTBK (  625): [0] - showStatus:MdmCutbackHndler Status: Qmi =0, cg=0, ep=0, vc=0, dc=0, cn=0, wf=0, mf=0,wfd=0, apm=0, usb=0, stopqmi=0, wireless=0, bf=0, md=0,fpf=1
+05-07 01:50:08.771 I/MDMCTBK (  625): [0] - MdmCutbackQmiSarOpen:Started the Sar QMI thread 92321008
+05-07 01:50:08.771 I/MDMCTBK (  625): [0] - initWifiCutbackValues:Wifi Cutback Config File path = /system/etc/motorola/mdmctbk/ctbk_val.cfg
+05-07 01:50:08.771 I/MDMCTBK (  625): [0] - initWifiCutbackValues:File opened failure, default values applied
+05-07 01:50:08.772 I/MDMCTBK (  625): [0] - handleUsbChangerStateChangedEvent:MdmCutbackHndler - handle usb state change - enter
+05-07 01:50:08.773 E/QMI_FW  (  625): QMUXD: WARNING qmi_qmux_if_pwr_up_init failed! rc=-6
+05-07 01:50:08.773 I/MDMCTBK (  625): [0] - MdmCutbackQmiSarInit:mot_sar_qmi_open waiting for QMI service to startup,try 1...
+05-07 01:50:08.773 I/MDMCTBK (  625): [0] - MdmCutbackQmiSarInit:qmi_client_get_service_list() returned -2, num_entries = 0, num_services = 0
+05-07 01:50:08.773 E/MDMCTBK (  625): [0] - MdmCutbackQmiSarInit:mot_sar_qmi_open doesn't find QMI service
+05-07 01:50:08.774 I/MDMCTBK (  625): [0] - handleUsbChangerStateChangedEvent:MdmCutbackHndler - usb, new_state =1
+05-07 01:50:08.774 E/MDMCTBK (  625): [0] - showStatus:MdmCutbackHndler Status: Qmi =0, cg=0, ep=0, vc=0, dc=0, cn=0, wf=0, mf=0,wfd=0, apm=0, usb=1, stopqmi=0, wireless=0, bf=0, md=0,fpf=1
+05-07 01:50:08.774 I/MDMCTBK (  625): [0] - setCutbackProperty:setCutbackProperty, Values updated in the property=0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1
+05-07 01:50:08.775 I/MDMCTBK (  625): [0] - sendSarCtrl:MdmCutbackHndler - sendSarCtrl earpiece_headset = 0
+05-07 01:50:08.775 I/MDMCTBK (  625): [0] - sendSarCtrl:MdmCutbackHndler - charger_connected = 1
+05-07 01:50:08.775 I/MDMCTBK (  625): [0] - MdmCutbackQmiSarSetCtrl:set SAR over QMI, conn:0, ep:0,wf:0, mf:0, chrg:1
+05-07 01:50:08.775 I/MDMCTBK (  625): [0] - MdmCutbackQmiSarSetCtrl:QMI SAR not opened yet or handle is NULL ... Save this info
+05-07 01:50:08.776 I/MDMCTBK (  625): [0] - handleUsbChangerStateChangedEvent:MdmCutbackHndler - handle usb state change - exit
+05-07 01:50:08.776 I/MDMCTBK (  625): [0] - handleHeadsetStateChangedEvent:MdmCutbackHndler - headset state changed event - enter
+05-07 01:50:08.776 I/MDMCTBK (  625): [0] - handleHeadsetStateChangedEvent:MdmCutbackHndler, headset, state is = 0
+05-07 01:50:08.776 I/MDMCTBK (  625): [0] - handleHeadsetStateChangedEvent:MdmCutbackHndler - headset state changed event - exit
+05-07 01:50:08.776 I/MDMCTBK (  625): [0] - initNetlinkHandler:init Netlink handler
+05-07 01:50:08.776 I/MDMCTBK (  625): [0] - MdmCutbackNetlinkHandler:NetlinkHandler, constructor
+05-07 01:50:08.776 I/MDMCTBK (  625): [0] - addListener:NetlinkHandler, addListener
+05-07 01:50:08.776 I/MDMCTBK (  625): [0] - start:NetlinkHandler, start
+05-07 01:50:08.776 I/MDMCTBK (  625): [0] - MdmCutbackAudioSocketInit:sockets initialized
+05-07 01:50:08.777 I/MDMCTBK (  625): [0] - MdmCutbackAudioMonitorStart:Started the cutback monitor thread 88159472
+05-07 01:50:08.777 E/MDMCTBK (  625): [0] - MdmCutbackAudioListener:Failure to create cutback server socket
+05-07 01:50:08.777 I/MDMCTBK (  625): [0] - MdmCutbackAudioMonitorThread:Cutback socket cannot start listener
+05-07 01:50:08.777 I/MDMCTBK (  625): [0] - MdmCutbackAudioMonitorThread:Exiting cutbackMonitorThread...
+05-07 01:50:08.778 E/LocSvc_LocIpc(  696): sendData:206] cannot send to socket. reason:No such file or directory
+05-07 01:50:08.784 E/MDMCTBK (  625): [0] - initWifiCutback:get wlan intf flags for interface = wlan0
+05-07 01:50:08.784 E/MDMCTBK (  625): [0] - initWifiCutback:flags on wlan intf = 0
+05-07 01:50:08.784 E/MDMCTBK (  625): [0] - init:initWifiCutback - time to execute = 0.007478(secs)
+05-07 01:50:08.784 E/MDMCTBK (  625): [0] - mot_sar_sensor_init:sensor init - enter
+05-07 01:50:08.792 I/ServiceManagement(  625): getService: Trying again for android.frameworks.sensorservice@1.0::ISensorManager/default...
+05-07 01:50:08.796 I/ServiceManager(  620): Waiting for service 'package_native' on '/dev/binder'...
+05-07 01:50:08.796 E/qti_sensors_hal(  515): waitForResponse: pthread_cond_timedwait() rc=110 (cond: 0)
+05-07 01:50:08.796 E/qti_sensors_hal(  515): sendEnableReq: ERROR: No response from enable request
+05-07 01:50:08.796 E/SENSORHUB_LOG(  515): send the SAM sensor enable message failed!
+05-07 01:50:08.821 E/QMI_FW  (  957): QMUXD: WARNING qmi_qmux_if_pwr_up_init failed! rc=-6
+05-07 01:50:08.821 E/QMI_FW  (  958): QMUXD: WARNING qmi_qmux_if_pwr_up_init failed! rc=-6
+05-07 01:50:08.826 W/qti_sensors_hal(  515): addSensor : Not supported sensor with handle 68!
+05-07 01:50:08.854 W/qti_sensors_hal(  515): addSensor : Not supported sensor with handle 40!
+05-07 01:50:08.854 W/qti_sensors_hal(  515): addSensor : Not supported sensor with handle 49!
+05-07 01:50:08.854 W/qti_sensors_hal(  515): addSensor : Not supported sensor with handle 50!
+05-07 01:50:08.854 W/qti_sensors_hal(  515): addSensor : Not supported sensor with handle 54!
+05-07 01:50:08.854 W/qti_sensors_hal(  515): addSensor : Not supported sensor with handle 69!
+05-07 01:50:08.865 E/libsensor1(  515): client_get_conn: qmi_client_get_service_list error -2
+05-07 01:50:08.865 E/libsensor1(  515): sensor1_write: Unable to create client connection
+05-07 01:50:08.865 W/qti_sensors_hal(  515): sendAlgoAttribReq: sensor1_write failed at SENSOR1_EBAD_SVC_ID, retrying...4

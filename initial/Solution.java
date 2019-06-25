@@ -1,75 +1,46 @@
-import java.util.Scanner;
-class Person {
-	protected String firstName;
-	protected String lastName;
-	protected int idNumber;
-	
-	// Constructor
-	Person(String firstName, String lastName, int identification){
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.idNumber = identification;
-	}
-	
-	// Print person data
-	public void printPerson(){
-		 System.out.println(
-				"Name: " + firstName + ", " + lastName 
-			+ 	"\nID: " + idNumber); 
-	}
-	 
-}
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
 
-class Student extends Person{
-    private int[] testScores;
-    Student(String firstName,String lastName,int idNumber,int testScores[])
-    {
-    	super(firstName,lastName,idNumber);
-        this.testScores=testScores;
-    }
-    char calculate()
-    {
-        int a=0;
-        for (int i=0;i<testScores.length;i++)
-        { 
-            a=a+testScores[i];
+public class Solution {
+
+    // Complete the repeatedString function below.
+    static long repeatedString(String s, long n) {
+        long count=0;
+        int l=0;
+        for(long i=0;i<=n;i++)
+        {
+            if(s.charAt(l)==s.charAt(0))
+            count++;
+            l++;
+            if(l==s.length())
+            {
+                l=0;
+            }
         }
-        a=a/testScores.length;
-        if (a>=90&&a<=100)
-        return 'O';
-        else if (a<90&&a>=80)
-        return 'E';
-        else if (a<80&&a>=70)
-        return 'A';
-        else if (a>=55&&a<70)
-        return 'P';
-        else if (a<55&&a>=40)
-        return 'D';
-        else
-        return 'T';
+        return count;
+    }
+    private static final Scanner scanner = new Scanner(System.in);
+
+    public static void main(String[] args) throws IOException {
+        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+
+        String s = scanner.nextLine();
+
+        long n = scanner.nextLong();
+        scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+
+        long result = repeatedString(s, n);
+
+        bufferedWriter.write(String.valueOf(result));
+        bufferedWriter.newLine();
+
+        bufferedWriter.close();
+
+        scanner.close();
     }
 }
-class Solution {
-	public static void main(String[] args) {
-		Scanner scan = new Scanner(System.in);
-		System.out.println("Input the first Name");
-		String firstName = scan.next();
-		System.out.println("Input the Last Name");
-		String lastName = scan.next();
-		System.out.println("Input the id");
-		int id = scan.nextInt();
-		System.out.println("how many marks you want average from");
-		int numScores = scan.nextInt();
-		int[] testScores = new int[numScores];
-		for(int i = 0; i < numScores; i++){
-			System.out.println("Input "+(i+1)+" marks");
-			testScores[i] = scan.nextInt();
-		}
-		scan.close();
-		
-		Student s = new Student(firstName, lastName, id, testScores);
-		s.printPerson();
-		System.out.println("Grade: " + s.calculate() );
-	}
-}
-
