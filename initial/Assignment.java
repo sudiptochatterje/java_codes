@@ -24,4 +24,4 @@ public static void main(String[]args){
 hihelloheishenotme
 input the substring
 he
-maxium occurrence of substring :he is->3
+maxium occurrence of substring :he is->3*/
