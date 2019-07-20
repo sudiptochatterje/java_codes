@@ -17,6 +17,11 @@ public static void main(String[]args){
 				count++;
 			}
         }
-        System.out.println("maxium occurrence of substring :"+s1+" "+count);
+        System.out.println("maxium occurrence of substring :"+s1+"is->"+count);
     }
 }
+/*input the main String
+hihelloheishenotme
+input the substring
+he
+maxium occurrence of substring :he is->3
