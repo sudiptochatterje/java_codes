@@ -1,13 +1,15 @@
 public class MultiThread2 {
 	
 	public static void main (String[] args) {
-		CharType c=new CharType();
-		IntType i=new IntType();
-		Thread t1=new Thread(c);
-		Thread t2=new Thread(i);
-		t1.start();
-		t2.start();
-	}
+			CharType c=new CharType();
+			IntType i=new IntType();
+			Thread t1=new Thread(c);
+			Thread t2=new Thread(i);
+			t1.start();
+			t2.start();
+			Thread t=Thread.currentThread();
+			t.interrupt();
+}
 }
 class CharType implements Runnable
 {
